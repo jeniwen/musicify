@@ -1,3 +1,143 @@
 -- Script to create our tables
 
-CREATE TABLE students (sid integer primary key, name varchar(30));
+CREATE TABLE Podcast (
+	pod_name VARCHAR(30) PRIMARY KEY, 
+	description VARCHAR(250), 
+	category VARCHAR(15), 
+	cover_image VARCHAR(50));
+	
+CREATE TABLE b_user (
+	email VARCHAR(30) PRIMARY KEY,
+	username VARCHAR(10),
+	password VARCHAR(20),
+	name VARCHAR(20));
+	
+CREATE TABLE Administrator (
+	email VARCHAR(30) PRIMARY KEY,
+	FOREIGN KEY (email) REFERENCES b_user(email));
+
+CREATE TABLE Artist (
+	email VARCHAR(30) PRIMARY KEY,
+	band_name VARCHAR(30),
+	biography VARCHAR(250));
+
+CREATE TABLE Playlist (
+	email VARCHAR(30) NOT NULL,
+	FOREIGN KEY (email) REFERENCES b_user(email),
+	playlist_name VARCHAR(30) NOT NULL,
+	accessibility INTEGER,
+	description VARCHAR(250),
+	PRIMARY KEY (email, playlist_name));
+	
+CREATE TABLE Podcast_Episode (
+	audiofile_id INTEGER PRIMARY KEY,
+	episode_no INTEGER,
+	release_date DATE,
+	cover_image VARCHAR(50),
+	description VARCHAR(250),
+	pod_name VARCHAR(30),
+	FOREIGN KEY (pod_name) REFERENCES Podcast (pod_name));
+	
+CREATE TABLE b_subscription (
+	subscription_no INTEGER PRIMARY KEY,
+	stype INTEGER,
+	start_date DATE,
+	payment_method VARCHAR(50),
+	email VARCHAR(30),
+	FOREIGN KEY (email) REFERENCES Administrator(email));
+
+CREATE TABLE Audiofile (
+	audiofile_id INTEGER PRIMARY KEY,
+	aname VARCHAR(30),
+	duration INTEGER);
+	
+	
+CREATE TABLE Stream (
+	stream_id INTEGER PRIMARY KEY,
+	start_time TIMESTAMP,
+	email VARCHAR(30),
+	FOREIGN KEY (email) REFERENCES b_user(email),
+	audiofile_id INTEGER,
+	FOREIGN KEY (audiofile_id) REFERENCES Audiofile(audiofile_id));
+
+CREATE TABLE Album (
+	email VARCHAR(30) NOT NULL,
+	FOREIGN KEY (email) REFERENCES Artist(email),
+	album_name VARCHAR(30) NOT NULL,
+	release_year INTEGER,
+	genre VARCHAR(20),
+	cover_image VARCHAR(50),
+	PRIMARY KEY (email, album_name));
+
+CREATE TABLE Song (
+	audiofile_id INTEGER PRIMARY KEY,
+	FOREIGN KEY (audiofile_id) REFERENCES Audiofile(audiofile_id),
+	album_name VARCHAR(30),
+	email VARCHAR(30),
+	FOREIGN KEY (email, album_name) REFERENCES Album(email, album_name),
+	sname VARCHAR(30),
+	duration INTEGER); 
+
+CREATE TABLE Follows_Playlist (
+	user_email VARCHAR(30) NOT NULL,
+	FOREIGN KEY (user_email) REFERENCES b_user(email),
+	playlist_maker_email VARCHAR(30) NOT NULL,
+	playlist_name VARCHAR(30) NOT NULL,
+	FOREIGN KEY (playlist_maker_email, playlist_name) REFERENCES Playlist(email, playlist_name),
+	PRIMARY KEY (user_email, playlist_name, playlist_maker_email));
+
+CREATE TABLE Follows_Podcast (
+	user_email VARCHAR(30) NOT NULL,
+	FOREIGN KEY (user_email) REFERENCES b_user(email),
+	pod_name VARCHAR(30) NOT NULL,
+	FOREIGN KEY (pod_name) REFERENCES Podcast(pod_name),
+	PRIMARY KEY (user_email, pod_name));
+
+CREATE TABLE Follows_Artist (
+	user_email VARCHAR(30) NOT NULL,
+	FOREIGN KEY (user_email) REFERENCES b_user(email),
+	artist_email VARCHAR(30) NOT NULL,
+	FOREIGN KEY (artist_email) REFERENCES Artist(email),
+	PRIMARY KEY (user_email, artist_email));
+
+CREATE TABLE Playlist_Has_Song (
+	audiofile_id INTEGER NOT NULL,
+	FOREIGN KEY (audiofile_id) REFERENCES Song(audiofile_id),
+	playlist_name VARCHAR(30) NOT NULL,
+	email VARCHAR(30) NOT NULL,
+	FOREIGN KEY (email, playlist_name) REFERENCES Playlist(email, playlist_name),
+	PRIMARY KEY (audiofile_id, playlist_name, email)); 
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

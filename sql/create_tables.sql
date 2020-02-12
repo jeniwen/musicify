@@ -1,23 +1,23 @@
 -- Script to create our tables
 
 CREATE TABLE Podcast (
-	pod_name VARCHAR(30) PRIMARY KEY, 
+	pod_name VARCHAR(30) NOT NULL PRIMARY KEY, 
 	description VARCHAR(250), 
 	category VARCHAR(15), 
 	cover_image VARCHAR(50));
 	
 CREATE TABLE b_user (
-	email VARCHAR(30) PRIMARY KEY,
+	email VARCHAR(30) NOT NULL PRIMARY KEY,
 	username VARCHAR(10),
 	password VARCHAR(20),
 	name VARCHAR(20));
 	
 CREATE TABLE Administrator (
-	email VARCHAR(30) PRIMARY KEY,
+	email VARCHAR(30) NOT NULL PRIMARY KEY,
 	FOREIGN KEY (email) REFERENCES b_user(email));
 
 CREATE TABLE Artist (
-	email VARCHAR(30) PRIMARY KEY,
+	email VARCHAR(30) NOT NULL PRIMARY KEY,
 	band_name VARCHAR(30),
 	biography VARCHAR(250));
 
@@ -30,7 +30,7 @@ CREATE TABLE Playlist (
 	PRIMARY KEY (email, playlist_name));
 	
 CREATE TABLE Podcast_Episode (
-	audiofile_id INTEGER PRIMARY KEY,
+	audiofile_id INTEGER NOT NULL PRIMARY KEY,
 	episode_no INTEGER,
 	release_date DATE,
 	cover_image VARCHAR(50),
@@ -39,7 +39,7 @@ CREATE TABLE Podcast_Episode (
 	FOREIGN KEY (pod_name) REFERENCES Podcast (pod_name));
 	
 CREATE TABLE b_subscription (
-	subscription_no INTEGER PRIMARY KEY,
+	subscription_no INTEGER NOT NULL PRIMARY KEY,
 	stype INTEGER,
 	start_date DATE,
 	payment_method VARCHAR(50),
@@ -47,13 +47,13 @@ CREATE TABLE b_subscription (
 	FOREIGN KEY (email) REFERENCES Administrator(email));
 
 CREATE TABLE Audiofile (
-	audiofile_id INTEGER PRIMARY KEY,
+	audiofile_id INTEGER NOT NULL PRIMARY KEY,
 	aname VARCHAR(30),
 	duration INTEGER);
 	
 	
 CREATE TABLE Stream (
-	stream_id INTEGER PRIMARY KEY,
+	stream_id INTEGER NOT NULL PRIMARY KEY,
 	start_time TIMESTAMP,
 	email VARCHAR(30),
 	FOREIGN KEY (email) REFERENCES b_user(email),
@@ -70,7 +70,7 @@ CREATE TABLE Album (
 	PRIMARY KEY (email, album_name));
 
 CREATE TABLE Song (
-	audiofile_id INTEGER PRIMARY KEY,
+	audiofile_id INTEGER NOT NULL PRIMARY KEY,
 	FOREIGN KEY (audiofile_id) REFERENCES Audiofile(audiofile_id),
 	album_name VARCHAR(30),
 	email VARCHAR(30),

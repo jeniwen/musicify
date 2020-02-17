@@ -6,11 +6,25 @@ CREATE TABLE Podcast (
 	category VARCHAR(15), 
 	cover_image VARCHAR(50));
 	
+	
+CREATE TABLE Subscription (
+	subscription_no INTEGER NOT NULL PRIMARY KEY,
+	subscription_type INTEGER,
+	start_date DATE,
+	payment_method VARCHAR(50));
+	
+CREATE TABLE Audiofile (
+	audiofile_id INTEGER NOT NULL PRIMARY KEY,
+	aname VARCHAR(30),
+	duration INTEGER);
+	
 CREATE TABLE b_user (
 	email VARCHAR(30) NOT NULL PRIMARY KEY,
 	username VARCHAR(10),
 	password VARCHAR(20),
-	name VARCHAR(20));
+	name VARCHAR(20),
+	subscription_no INTEGER,
+	FOREIGN KEY (subscription_no) REFERENCES Subscription (subscription_no));
 	
 CREATE TABLE Administrator (
 	email VARCHAR(30) NOT NULL PRIMARY KEY,
@@ -38,20 +52,6 @@ CREATE TABLE Podcast_Episode (
 	pod_name VARCHAR(30),
 	FOREIGN KEY (pod_name) REFERENCES Podcast (pod_name));
 	
-CREATE TABLE b_subscription (
-	subscription_no INTEGER NOT NULL PRIMARY KEY,
-	stype INTEGER,
-	start_date DATE,
-	payment_method VARCHAR(50),
-	email VARCHAR(30),
-	FOREIGN KEY (email) REFERENCES Administrator(email));
-
-CREATE TABLE Audiofile (
-	audiofile_id INTEGER NOT NULL PRIMARY KEY,
-	aname VARCHAR(30),
-	duration INTEGER);
-	
-	
 CREATE TABLE Stream (
 	stream_id INTEGER NOT NULL PRIMARY KEY,
 	start_time TIMESTAMP,
@@ -75,7 +75,7 @@ CREATE TABLE Song (
 	album_name VARCHAR(30),
 	email VARCHAR(30),
 	FOREIGN KEY (email, album_name) REFERENCES Album(email, album_name),
-	sname VARCHAR(30),
+	song_name VARCHAR(30),
 	duration INTEGER); 
 
 CREATE TABLE Follows_Playlist (
@@ -111,6 +111,7 @@ CREATE TABLE Playlist_Has_Song (
 	
 	
 	
+
 
 
 

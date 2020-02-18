@@ -9,7 +9,7 @@ CREATE TABLE Podcast (
 	
 CREATE TABLE Subscription (
 	subscription_no INTEGER NOT NULL PRIMARY KEY,
-	subscription_type INTEGER,
+	subscription_type INTEGER CHECK (subscription_type >=0 AND subscription_type <=2),
 	start_date DATE,
 	payment_method VARCHAR(50));
 	
@@ -22,7 +22,7 @@ CREATE TABLE b_user (
 	email VARCHAR(30) NOT NULL PRIMARY KEY,
 	username VARCHAR(10),
 	password VARCHAR(20),
-	name VARCHAR(20),
+	full_name VARCHAR(20),
 	subscription_no INTEGER,
 	FOREIGN KEY (subscription_no) REFERENCES Subscription (subscription_no));
 	
@@ -39,12 +39,13 @@ CREATE TABLE Playlist (
 	email VARCHAR(30) NOT NULL,
 	FOREIGN KEY (email) REFERENCES b_user(email),
 	playlist_name VARCHAR(30) NOT NULL,
-	accessibility INTEGER,
+	accessibility BIT,
 	description VARCHAR(250),
 	PRIMARY KEY (email, playlist_name));
 	
 CREATE TABLE Podcast_Episode (
 	audiofile_id INTEGER NOT NULL PRIMARY KEY,
+	FOREIGN KEY (audiofile_id) REFERENCES Audiofile (audiofile_id),
 	episode_no INTEGER,
 	release_date DATE,
 	cover_image VARCHAR(50),
@@ -54,7 +55,7 @@ CREATE TABLE Podcast_Episode (
 	
 CREATE TABLE Stream (
 	stream_id INTEGER NOT NULL PRIMARY KEY,
-	start_time TIMESTAMP,
+	start_time TIMESTAMP CHECK (start_time <= CURRENT_TIMESTAMP),
 	email VARCHAR(30),
 	FOREIGN KEY (email) REFERENCES b_user(email),
 	audiofile_id INTEGER,

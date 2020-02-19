@@ -16,7 +16,7 @@ CREATE TABLE Subscription (
 CREATE TABLE Audiofile (
 	audiofile_id INTEGER NOT NULL PRIMARY KEY,
 	aname VARCHAR(30),
-	duration INTEGER);
+	duration TIME);
 	
 CREATE TABLE b_user (
 	email VARCHAR(30) NOT NULL PRIMARY KEY,
@@ -28,7 +28,9 @@ CREATE TABLE b_user (
 	
 CREATE TABLE Administrator (
 	email VARCHAR(30) NOT NULL PRIMARY KEY,
-	FOREIGN KEY (email) REFERENCES b_user(email));
+	FOREIGN KEY (email) REFERENCES b_user(email),
+	subscription_no INTEGER,
+	FOREIGN KEY (subscription_no) REFERENCES Subscription (subscription_no));
 
 CREATE TABLE Artist (
 	email VARCHAR(30) NOT NULL PRIMARY KEY,
@@ -51,7 +53,9 @@ CREATE TABLE Podcast_Episode (
 	cover_image VARCHAR(50),
 	description VARCHAR(250),
 	pod_name VARCHAR(30),
-	FOREIGN KEY (pod_name) REFERENCES Podcast (pod_name));
+	FOREIGN KEY (pod_name) REFERENCES Podcast (pod_name),
+	pod_episode_name VARCHAR(30),
+	duration TIME);
 	
 CREATE TABLE Stream (
 	stream_id INTEGER NOT NULL PRIMARY KEY,
@@ -77,7 +81,7 @@ CREATE TABLE Song (
 	email VARCHAR(30),
 	FOREIGN KEY (email, album_name) REFERENCES Album(email, album_name),
 	song_name VARCHAR(30),
-	duration INTEGER); 
+	duration TIME); 
 
 CREATE TABLE Follows_Playlist (
 	user_email VARCHAR(30) NOT NULL,

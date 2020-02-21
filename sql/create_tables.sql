@@ -39,7 +39,7 @@ CREATE TABLE Playlist (
 	email VARCHAR(30) NOT NULL,
 	FOREIGN KEY (email) REFERENCES b_user(email),
 	playlist_name VARCHAR(30) NOT NULL,
-	accessibility BIT,
+	accessibility CHAR CHECK (accessibility = '1' OR accessibility = '0'),
 	description VARCHAR(250),
 	PRIMARY KEY (email, playlist_name));
 	
@@ -55,7 +55,7 @@ CREATE TABLE Podcast_Episode (
 	
 CREATE TABLE Stream (
 	stream_id INTEGER NOT NULL PRIMARY KEY,
-	start_time TIMESTAMP CHECK (start_time <= CURRENT_TIMESTAMP),
+	start_time TIMESTAMP CHECK (start_time <= '2020‑02‑21‑00.00.00'),
 	email VARCHAR(30),
 	FOREIGN KEY (email) REFERENCES b_user(email),
 	audiofile_id INTEGER,

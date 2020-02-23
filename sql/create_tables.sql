@@ -2,7 +2,7 @@
 
 CREATE TABLE Podcast (
 	pod_name VARCHAR(30) NOT NULL PRIMARY KEY, 
-	description VARCHAR(250), 
+	description VARCHAR(2000), 
 	category VARCHAR(15), 
 	cover_image VARCHAR(50));
 	
@@ -42,7 +42,7 @@ CREATE TABLE Playlist (
 	FOREIGN KEY (email) REFERENCES b_user(email),
 	playlist_name VARCHAR(30) NOT NULL,
 	accessibility BIT,
-	description VARCHAR(250),
+	description VARCHAR(2000),
 	PRIMARY KEY (email, playlist_name));
 	
 CREATE TABLE Podcast_Episode (
@@ -51,7 +51,7 @@ CREATE TABLE Podcast_Episode (
 	episode_no INTEGER,
 	release_date DATE,
 	cover_image VARCHAR(50),
-	description VARCHAR(250),
+	description VARCHAR(2000),
 	pod_name VARCHAR(30),
 	FOREIGN KEY (pod_name) REFERENCES Podcast (pod_name),
 	pod_episode_name VARCHAR(30),

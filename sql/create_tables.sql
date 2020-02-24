@@ -9,7 +9,7 @@ CREATE TABLE Podcast (
 	
 CREATE TABLE Subscription (
 	subscription_no INTEGER NOT NULL PRIMARY KEY,
-	subscription_type INTEGER CHECK (subscription_type >=0 AND subscription_type <=2),
+	subscription_type INTEGER,
 	start_date DATE,
 	payment_method VARCHAR(50));
 	

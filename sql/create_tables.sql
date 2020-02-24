@@ -18,7 +18,7 @@ CREATE TABLE Audiofile (
 	duration TIME);
 	
 CREATE TABLE b_user (
-	email VARCHAR(30) NOT NULL PRIMARY KEY,
+	email VARCHAR(30) NOT NULL PRIMARY KEY CHECK (email LIKE ‘%@%.%‘),
 	username VARCHAR(10),
 	password VARCHAR(20),
 	full_name VARCHAR(20),

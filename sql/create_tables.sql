@@ -2,7 +2,7 @@
 
 CREATE TABLE Podcast (
 	pod_name VARCHAR(30) NOT NULL PRIMARY KEY, 
-	description VARCHAR(250), 
+	description VARCHAR(2000), 
 	category VARCHAR(15), 
 	cover_image VARCHAR(50));
 	
@@ -15,7 +15,6 @@ CREATE TABLE Subscription (
 	
 CREATE TABLE Audiofile (
 	audiofile_id INTEGER NOT NULL PRIMARY KEY,
-	aname VARCHAR(30),
 	duration TIME);
 	
 CREATE TABLE b_user (
@@ -41,8 +40,8 @@ CREATE TABLE Playlist (
 	email VARCHAR(30) NOT NULL,
 	FOREIGN KEY (email) REFERENCES b_user(email),
 	playlist_name VARCHAR(30) NOT NULL,
-	accessibility BIT,
-	description VARCHAR(250),
+	accessibility CHAR CHECK (accessibility = '1' OR accessibility = '0'),
+	description VARCHAR(2000),
 	PRIMARY KEY (email, playlist_name));
 	
 CREATE TABLE Podcast_Episode (
@@ -51,15 +50,14 @@ CREATE TABLE Podcast_Episode (
 	episode_no INTEGER,
 	release_date DATE,
 	cover_image VARCHAR(50),
-	description VARCHAR(250),
+	description VARCHAR(2000),
 	pod_name VARCHAR(30),
 	FOREIGN KEY (pod_name) REFERENCES Podcast (pod_name),
-	pod_episode_name VARCHAR(30),
-	duration TIME);
+	pod_episode_name VARCHAR(30));
 	
 CREATE TABLE Stream (
 	stream_id INTEGER NOT NULL PRIMARY KEY,
-	start_time TIMESTAMP CHECK (start_time <= CURRENT_TIMESTAMP),
+	start_time TIMESTAMP CHECK (start_time <= '2020‑02‑21‑00.00.00'),
 	email VARCHAR(30),
 	FOREIGN KEY (email) REFERENCES b_user(email),
 	audiofile_id INTEGER,
@@ -80,8 +78,7 @@ CREATE TABLE Song (
 	album_name VARCHAR(30),
 	email VARCHAR(30),
 	FOREIGN KEY (email, album_name) REFERENCES Album(email, album_name),
-	song_name VARCHAR(30),
-	duration TIME); 
+	song_name VARCHAR(30)); 
 
 CREATE TABLE Follows_Playlist (
 	user_email VARCHAR(30) NOT NULL,

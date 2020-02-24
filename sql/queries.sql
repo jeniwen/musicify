@@ -4,7 +4,7 @@ SELECT a.band_name, al.album_name, al.release_year
 FROM Artist a INNER JOIN Album al
     ON a.email=al.email
 WHERE al.release_year IN (2018,2019)
-ORDER BY a.band_name;
+ORDER BY a.band_name DESC;
 
 -- Number of streams per category of podcast
 SELECT p.category, SUM(X.streamsum) as catsum
@@ -15,6 +15,7 @@ FROM Stream s INNER JOIN Podcast_Episode pe
 GROUP BY pe.pod_name
 )X
 WHERE X.pod_name=p.pod_name
+GROUP BY p.category
 ORDER BY catsum DESC
 ;
 
@@ -28,7 +29,7 @@ FROM Follows_Playlist fp, Playlist p
 WHERE fp.playlist_name=p.playlist_name AND fp.playlist_maker_email=p.email
 GROUP BY fp.playlist_maker_email, fp.playlist_name
 ORDER BY follow_sum DESC
-LIMIT 5
+FETCH FIRST 5 ROWS ONLY
 )F,
 (
 SELECT phs.playlist_name, phs.email, COUNT(*) as songs_sum

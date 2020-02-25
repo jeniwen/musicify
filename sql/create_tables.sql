@@ -9,7 +9,7 @@ CREATE TABLE Podcast (
 	
 CREATE TABLE Subscription (
 	subscription_no INTEGER NOT NULL PRIMARY KEY,
-	subscription_type INTEGER CHECK (subscription_type >=0 AND subscription_type <=2),
+	subscription_type INTEGER,
 	start_date DATE,
 	payment_method VARCHAR(50));
 	
@@ -18,7 +18,7 @@ CREATE TABLE Audiofile (
 	duration TIME);
 	
 CREATE TABLE b_user (
-	email VARCHAR(30) NOT NULL PRIMARY KEY CHECK (email LIKE ‘%@%.%‘),
+	email VARCHAR(30) NOT NULL PRIMARY KEY,
 	username VARCHAR(10),
 	password VARCHAR(20),
 	full_name VARCHAR(20),
@@ -40,7 +40,7 @@ CREATE TABLE Playlist (
 	email VARCHAR(30) NOT NULL,
 	FOREIGN KEY (email) REFERENCES b_user(email),
 	playlist_name VARCHAR(30) NOT NULL,
-	accessibility CHAR CHECK (accessibility = '1' OR accessibility = '0'),
+	accessibility CHAR,
 	description VARCHAR(2000),
 	PRIMARY KEY (email, playlist_name));
 	
@@ -57,7 +57,7 @@ CREATE TABLE Podcast_Episode (
 	
 CREATE TABLE Stream (
 	stream_id INTEGER NOT NULL PRIMARY KEY,
-	start_time TIMESTAMP CHECK (start_time <= '2020‑02‑28‑00.00.00'),
+	start_time TIMESTAMP,
 	email VARCHAR(30),
 	FOREIGN KEY (email) REFERENCES b_user(email),
 	audiofile_id INTEGER,

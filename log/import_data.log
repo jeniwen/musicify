@@ -1,377 +1,5 @@
 SQL3109N  The utility is beginning to load data from file "Podcast.csv".
 
-SQL3125W  The character data in row "3" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "5" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "6" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "6" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "9" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "11" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "12" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "13" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "15" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "15" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "19" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "19" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "21" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "23" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "23" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "26" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "28" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "32" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "34" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "34" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "35" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "36" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "36" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "37" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "37" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "38" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "40" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "43" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "43" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "48" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "50" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "50" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "53" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "54" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "56" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "58" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "59" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "61" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "62" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "64" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "64" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "66" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "67" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "68" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "70" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "71" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "72" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "72" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "73" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "75" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "78" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "79" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "80" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "81" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "83" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "83" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "89" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "90" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "91" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "91" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "93" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "98" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "101" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "102" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "103" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "104" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "105" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "107" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "107" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "108" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "111" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "113" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "114" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "116" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "117" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "121" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "121" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "122" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "123" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "124" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "125" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "126" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "126" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "127" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "128" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "131" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "132" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "132" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "133" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "134" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "137" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "140" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "141" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "149" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "150" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "152" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "155" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "159" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "160" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "163" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "170" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "172" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "174" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "175" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "177" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "178" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "181" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "181" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "183" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "184" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "186" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "187" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "188" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "188" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "191" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "192" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "193" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "194" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "194" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "195" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "195" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "196" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "198" and column "1" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "199" and column "3" was truncated because 
-the data is longer than the target database column.
-
 SQL3110N  The utility has completed processing.  "200" rows were read from the 
 input file.
 
@@ -414,1506 +42,6 @@ Number of rows committed    = 48
 
 SQL3109N  The utility is beginning to load data from file "Audiofile.csv".
 
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "1".  Column number: "2".  Text in the field: "0:04:12".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "2".  Column number: "2".  Text in the field: "0:03:52".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "3".  Column number: "2".  Text in the field: "0:03:41".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "4".  Column number: "2".  Text in the field: "0:04:10".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "5".  Column number: "2".  Text in the field: "0:04:17".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "6".  Column number: "2".  Text in the field: "0:04:57".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "7".  Column number: "2".  Text in the field: "0:04:50".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "8".  Column number: "2".  Text in the field: "0:04:24".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "9".  Column number: "2".  Text in the field: "0:02:26".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "10".  Column number: "2".  Text in the field: "0:04:30".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "11".  Column number: "2".  Text in the field: "0:03:18".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "12".  Column number: "2".  Text in the field: "0:01:28".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "13".  Column number: "2".  Text in the field: "0:04:11".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "14".  Column number: "2".  Text in the field: "0:03:39".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "15".  Column number: "2".  Text in the field: "0:03:34".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "16".  Column number: "2".  Text in the field: "0:03:40".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "17".  Column number: "2".  Text in the field: "0:03:06".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "18".  Column number: "2".  Text in the field: "0:02:25".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "19".  Column number: "2".  Text in the field: "0:03:38".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "20".  Column number: "2".  Text in the field: "0:02:55".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "21".  Column number: "2".  Text in the field: "0:03:18".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "22".  Column number: "2".  Text in the field: "0:03:57".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "23".  Column number: "2".  Text in the field: "0:02:33".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "24".  Column number: "2".  Text in the field: "0:03:05".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "25".  Column number: "2".  Text in the field: "0:04:13".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "26".  Column number: "2".  Text in the field: "0:02:41".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "27".  Column number: "2".  Text in the field: "0:03:03".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "28".  Column number: "2".  Text in the field: "0:03:20".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "29".  Column number: "2".  Text in the field: "0:03:29".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "30".  Column number: "2".  Text in the field: "0:03:22".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "31".  Column number: "2".  Text in the field: "0:03:12".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "32".  Column number: "2".  Text in the field: "0:04:07".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "33".  Column number: "2".  Text in the field: "0:03:28".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "34".  Column number: "2".  Text in the field: "0:03:03".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "35".  Column number: "2".  Text in the field: "0:03:46".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "36".  Column number: "2".  Text in the field: "0:04:36".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "37".  Column number: "2".  Text in the field: "0:03:16".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "38".  Column number: "2".  Text in the field: "0:04:41".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "39".  Column number: "2".  Text in the field: "0:03:20".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "40".  Column number: "2".  Text in the field: "0:03:31".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "41".  Column number: "2".  Text in the field: "0:05:17".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "42".  Column number: "2".  Text in the field: "0:03:58".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "43".  Column number: "2".  Text in the field: "0:03:40".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "44".  Column number: "2".  Text in the field: "0:02:58".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "45".  Column number: "2".  Text in the field: "0:03:11".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "46".  Column number: "2".  Text in the field: "0:03:04".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "47".  Column number: "2".  Text in the field: "0:04:32".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "48".  Column number: "2".  Text in the field: "0:03:14".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "49".  Column number: "2".  Text in the field: "0:03:54".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "50".  Column number: "2".  Text in the field: "0:04:03".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "51".  Column number: "2".  Text in the field: "0:04:44".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "52".  Column number: "2".  Text in the field: "0:03:35".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "53".  Column number: "2".  Text in the field: "0:02:36".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "54".  Column number: "2".  Text in the field: "0:03:15".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "55".  Column number: "2".  Text in the field: "0:03:57".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "56".  Column number: "2".  Text in the field: "0:04:06".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "57".  Column number: "2".  Text in the field: "0:03:58".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "58".  Column number: "2".  Text in the field: "0:03:33".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "59".  Column number: "2".  Text in the field: "0:05:26".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "60".  Column number: "2".  Text in the field: "0:05:33".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "61".  Column number: "2".  Text in the field: "0:04:16".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "62".  Column number: "2".  Text in the field: "0:04:13".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "63".  Column number: "2".  Text in the field: "0:04:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "64".  Column number: "2".  Text in the field: "0:03:47".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "65".  Column number: "2".  Text in the field: "0:05:20".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "66".  Column number: "2".  Text in the field: "0:03:15".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "67".  Column number: "2".  Text in the field: "0:04:06".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "68".  Column number: "2".  Text in the field: "0:04:26".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "69".  Column number: "2".  Text in the field: "0:05:02".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "70".  Column number: "2".  Text in the field: "0:05:06".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "71".  Column number: "2".  Text in the field: "0:04:46".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "72".  Column number: "2".  Text in the field: "0:03:31".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "73".  Column number: "2".  Text in the field: "0:03:32".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "74".  Column number: "2".  Text in the field: "0:03:34".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "75".  Column number: "2".  Text in the field: "0:04:29".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "76".  Column number: "2".  Text in the field: "0:06:54".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "77".  Column number: "2".  Text in the field: "0:06:56".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "78".  Column number: "2".  Text in the field: "0:02:56".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "79".  Column number: "2".  Text in the field: "0:05:22".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "80".  Column number: "2".  Text in the field: "0:01:07".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "81".  Column number: "2".  Text in the field: "0:03:15".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "82".  Column number: "2".  Text in the field: "0:03:46".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "83".  Column number: "2".  Text in the field: "0:04:35".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "84".  Column number: "2".  Text in the field: "0:03:50".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "85".  Column number: "2".  Text in the field: "0:03:43".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "86".  Column number: "2".  Text in the field: "0:03:55".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "87".  Column number: "2".  Text in the field: "0:04:55".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "88".  Column number: "2".  Text in the field: "0:02:45".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "89".  Column number: "2".  Text in the field: "0:03:33".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "90".  Column number: "2".  Text in the field: "0:02:13".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "91".  Column number: "2".  Text in the field: "0:04:05".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "92".  Column number: "2".  Text in the field: "0:03:19".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "93".  Column number: "2".  Text in the field: "0:02:12".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "94".  Column number: "2".  Text in the field: "0:04:28".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "95".  Column number: "2".  Text in the field: "0:04:20".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "96".  Column number: "2".  Text in the field: "0:03:40".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "97".  Column number: "2".  Text in the field: "0:03:54".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "98".  Column number: "2".  Text in the field: "0:03:16".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "99".  Column number: "2".  Text in the field: "0:02:46".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "100".  Column number: "2".  Text in the field: "0:03:29".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "101".  Column number: "2".  Text in the field: "0:04:25".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "102".  Column number: "2".  Text in the field: "0:03:35".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "103".  Column number: "2".  Text in the field: "0:04:19".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "104".  Column number: "2".  Text in the field: "0:03:27".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "105".  Column number: "2".  Text in the field: "0:03:52".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "106".  Column number: "2".  Text in the field: "0:03:55".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "107".  Column number: "2".  Text in the field: "0:04:09".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "108".  Column number: "2".  Text in the field: "0:04:38".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "109".  Column number: "2".  Text in the field: "0:03:30".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "110".  Column number: "2".  Text in the field: "0:03:36".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "111".  Column number: "2".  Text in the field: "0:04:33".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "112".  Column number: "2".  Text in the field: "0:00:59".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "113".  Column number: "2".  Text in the field: "0:02:13".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "114".  Column number: "2".  Text in the field: "0:03:17".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "115".  Column number: "2".  Text in the field: "0:01:06".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "116".  Column number: "2".  Text in the field: "0:00:44".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "117".  Column number: "2".  Text in the field: "0:02:12".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "118".  Column number: "2".  Text in the field: "0:01:56".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "119".  Column number: "2".  Text in the field: "0:02:45".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "120".  Column number: "2".  Text in the field: "0:03:31".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "121".  Column number: "2".  Text in the field: "0:03:30".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "122".  Column number: "2".  Text in the field: "0:02:29".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "123".  Column number: "2".  Text in the field: "0:04:58".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "124".  Column number: "2".  Text in the field: "0:06:51".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "125".  Column number: "2".  Text in the field: "0:05:56".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "126".  Column number: "2".  Text in the field: "0:06:16".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "127".  Column number: "2".  Text in the field: "0:07:19".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "128".  Column number: "2".  Text in the field: "0:04:47".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "129".  Column number: "2".  Text in the field: "0:03:01".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "130".  Column number: "2".  Text in the field: "0:01:59".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "131".  Column number: "2".  Text in the field: "0:04:13".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "132".  Column number: "2".  Text in the field: "0:06:04".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "133".  Column number: "2".  Text in the field: "0:03:58".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "134".  Column number: "2".  Text in the field: "0:03:03".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "135".  Column number: "2".  Text in the field: "0:04:36".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "136".  Column number: "2".  Text in the field: "0:02:56".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "137".  Column number: "2".  Text in the field: "0:02:54".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "138".  Column number: "2".  Text in the field: "0:05:51".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "139".  Column number: "2".  Text in the field: "0:03:54".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "140".  Column number: "2".  Text in the field: "0:04:31".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "141".  Column number: "2".  Text in the field: "0:03:44".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "142".  Column number: "2".  Text in the field: "0:03:33".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "143".  Column number: "2".  Text in the field: "0:03:15".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "144".  Column number: "2".  Text in the field: "0:04:30".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "145".  Column number: "2".  Text in the field: "0:03:50".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "146".  Column number: "2".  Text in the field: "0:02:49".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "147".  Column number: "2".  Text in the field: "0:04:29".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "148".  Column number: "2".  Text in the field: "0:03:21".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "149".  Column number: "2".  Text in the field: "0:03:32".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "150".  Column number: "2".  Text in the field: "0:05:07".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "151".  Column number: "2".  Text in the field: "0:02:11".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "152".  Column number: "2".  Text in the field: "0:01:59".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "153".  Column number: "2".  Text in the field: "0:02:20".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "154".  Column number: "2".  Text in the field: "0:03:31".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "155".  Column number: "2".  Text in the field: "0:03:23".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "156".  Column number: "2".  Text in the field: "0:02:30".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "157".  Column number: "2".  Text in the field: "0:04:58".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "158".  Column number: "2".  Text in the field: "0:06:51".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "159".  Column number: "2".  Text in the field: "0:05:56".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "160".  Column number: "2".  Text in the field: "0:06:16".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "161".  Column number: "2".  Text in the field: "0:07:19".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "162".  Column number: "2".  Text in the field: "0:03:31".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "163".  Column number: "2".  Text in the field: "0:03:33".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "164".  Column number: "2".  Text in the field: "0:02:41".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "165".  Column number: "2".  Text in the field: "0:04:59".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "166".  Column number: "2".  Text in the field: "0:05:51".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "167".  Column number: "2".  Text in the field: "0:02:13".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "168".  Column number: "2".  Text in the field: "0:03:31".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "169".  Column number: "2".  Text in the field: "0:05:52".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "170".  Column number: "2".  Text in the field: "0:04:48".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "171".  Column number: "2".  Text in the field: "0:03:57".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "172".  Column number: "2".  Text in the field: "0:02:46".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "173".  Column number: "2".  Text in the field: "0:01:06".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "174".  Column number: "2".  Text in the field: "0:03:31".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "175".  Column number: "2".  Text in the field: "0:02:49".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "176".  Column number: "2".  Text in the field: "0:05:07".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "177".  Column number: "2".  Text in the field: "0:03:31".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "178".  Column number: "2".  Text in the field: "0:03:20".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "179".  Column number: "2".  Text in the field: "0:03:03".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "180".  Column number: "2".  Text in the field: "0:03:58".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "181".  Column number: "2".  Text in the field: "0:03:40".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "182".  Column number: "2".  Text in the field: "0:03:54".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "183".  Column number: "2".  Text in the field: "0:05:26".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "184".  Column number: "2".  Text in the field: "0:04:13".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "185".  Column number: "2".  Text in the field: "0:05:20".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "186".  Column number: "2".  Text in the field: "0:06:54".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "187".  Column number: "2".  Text in the field: "0:03:50".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "188".  Column number: "2".  Text in the field: "0:04:55".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "189".  Column number: "2".  Text in the field: "0:03:33".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "190".  Column number: "2".  Text in the field: "0:03:54".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "191".  Column number: "2".  Text in the field: "0:03:29".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "192".  Column number: "2".  Text in the field: "0:04:25".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "193".  Column number: "2".  Text in the field: "0:04:38".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "194".  Column number: "2".  Text in the field: "0:04:33".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "195".  Column number: "2".  Text in the field: "0:01:06".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "196".  Column number: "2".  Text in the field: "0:06:16".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "197".  Column number: "2".  Text in the field: "0:04:36".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "198".  Column number: "2".  Text in the field: "0:02:30".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "199".  Column number: "2".  Text in the field: "0:03:19".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "200".  Column number: "2".  Text in the field: "0:03:58".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "201".  Column number: "2".  Text in the field: "0:03:03".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "202".  Column number: "2".  Text in the field: "0:04:33".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "203".  Column number: "2".  Text in the field: "0:02:22".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "204".  Column number: "2".  Text in the field: "0:04:20".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "205".  Column number: "2".  Text in the field: "0:04:12".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "206".  Column number: "2".  Text in the field: "0:05:57".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "207".  Column number: "2".  Text in the field: "0:03:55".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "208".  Column number: "2".  Text in the field: "0:02:39".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "209".  Column number: "2".  Text in the field: "0:02:22".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "210".  Column number: "2".  Text in the field: "0:02:31".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "211".  Column number: "2".  Text in the field: "0:04:20".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "212".  Column number: "2".  Text in the field: "0:04:12".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "213".  Column number: "2".  Text in the field: "0:05:57".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "214".  Column number: "2".  Text in the field: "0:03:55".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "215".  Column number: "2".  Text in the field: "0:07:08".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "216".  Column number: "2".  Text in the field: "0:01:55".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "217".  Column number: "2".  Text in the field: "0:03:34".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "218".  Column number: "2".  Text in the field: "0:01:54".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "219".  Column number: "2".  Text in the field: "0:03:24".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "220".  Column number: "2".  Text in the field: "0:01:24".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "221".  Column number: "2".  Text in the field: "0:01:24".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "222".  Column number: "2".  Text in the field: "0:02:35".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "223".  Column number: "2".  Text in the field: "0:05:22".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "224".  Column number: "2".  Text in the field: "0:05:24".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "225".  Column number: "2".  Text in the field: "0:05:50".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "226".  Column number: "2".  Text in the field: "0:05:07".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "227".  Column number: "2".  Text in the field: "0:07:32".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "228".  Column number: "2".  Text in the field: "0:02:52".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "229".  Column number: "2".  Text in the field: "0:04:18".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "230".  Column number: "2".  Text in the field: "0:06:59".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "231".  Column number: "2".  Text in the field: "0:04:08".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "232".  Column number: "2".  Text in the field: "0:04:31".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "233".  Column number: "2".  Text in the field: "0:13:54".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "234".  Column number: "2".  Text in the field: "0:04:15".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "235".  Column number: "2".  Text in the field: "0:03:51".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "236".  Column number: "2".  Text in the field: "0:04:15".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "237".  Column number: "2".  Text in the field: "0:06:03".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "238".  Column number: "2".  Text in the field: "0:04:25".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "239".  Column number: "2".  Text in the field: "0:05:48".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "240".  Column number: "2".  Text in the field: "0:04:18".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "241".  Column number: "2".  Text in the field: "0:03:56".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "242".  Column number: "2".  Text in the field: "0:05:06".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "243".  Column number: "2".  Text in the field: "0:05:40".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "244".  Column number: "2".  Text in the field: "0:07:04".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "245".  Column number: "2".  Text in the field: "0:07:10".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "246".  Column number: "2".  Text in the field: "0:06:37".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "247".  Column number: "2".  Text in the field: "0:04:09".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "248".  Column number: "2".  Text in the field: "0:02:59".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "249".  Column number: "2".  Text in the field: "0:02:45".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "250".  Column number: "2".  Text in the field: "0:04:06".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "251".  Column number: "2".  Text in the field: "0:03:17".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "252".  Column number: "2".  Text in the field: "0:03:12".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "253".  Column number: "2".  Text in the field: "0:03:33".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "254".  Column number: "2".  Text in the field: "0:05:15".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "255".  Column number: "2".  Text in the field: "0:04:16".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "256".  Column number: "2".  Text in the field: "0:04:40".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "257".  Column number: "2".  Text in the field: "0:03:57".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "258".  Column number: "2".  Text in the field: "0:02:52".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "259".  Column number: "2".  Text in the field: "0:03:12".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "260".  Column number: "2".  Text in the field: "0:04:14".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "261".  Column number: "2".  Text in the field: "0:04:27".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "262".  Column number: "2".  Text in the field: "0:03:51".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "263".  Column number: "2".  Text in the field: "0:03:21".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "264".  Column number: "2".  Text in the field: "0:04:28".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "265".  Column number: "2".  Text in the field: "0:05:01".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "266".  Column number: "2".  Text in the field: "0:02:54".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "267".  Column number: "2".  Text in the field: "0:05:26".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "268".  Column number: "2".  Text in the field: "0:04:45".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "269".  Column number: "2".  Text in the field: "0:01:28".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "270".  Column number: "2".  Text in the field: "0:05:04".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "271".  Column number: "2".  Text in the field: "0:03:48".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "272".  Column number: "2".  Text in the field: "0:03:28".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "273".  Column number: "2".  Text in the field: "0:04:05".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "274".  Column number: "2".  Text in the field: "0:04:14".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "275".  Column number: "2".  Text in the field: "0:03:59".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "276".  Column number: "2".  Text in the field: "0:03:24".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "277".  Column number: "2".  Text in the field: "0:04:29".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "278".  Column number: "2".  Text in the field: "0:06:54".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "279".  Column number: "2".  Text in the field: "0:03:12".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "280".  Column number: "2".  Text in the field: "0:02:29".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "281".  Column number: "2".  Text in the field: "0:03:47".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "282".  Column number: "2".  Text in the field: "0:03:54".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "283".  Column number: "2".  Text in the field: "0:03:56".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "284".  Column number: "2".  Text in the field: "0:02:19".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "285".  Column number: "2".  Text in the field: "0:07:02".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "286".  Column number: "2".  Text in the field: "0:03:10".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "287".  Column number: "2".  Text in the field: "0:03:16".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "288".  Column number: "2".  Text in the field: "0:03:10".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "289".  Column number: "2".  Text in the field: "0:03:18".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "290".  Column number: "2".  Text in the field: "0:02:38".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "291".  Column number: "2".  Text in the field: "0:03:05".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "292".  Column number: "2".  Text in the field: "0:02:44".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "293".  Column number: "2".  Text in the field: "0:02:51".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "294".  Column number: "2".  Text in the field: "0:02:38".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "295".  Column number: "2".  Text in the field: "0:03:08".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "296".  Column number: "2".  Text in the field: "0:02:35".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "297".  Column number: "2".  Text in the field: "0:02:48".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "298".  Column number: "2".  Text in the field: "0:02:52".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "299".  Column number: "2".  Text in the field: "0:02:31".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "300".  Column number: "2".  Text in the field: "0:02:56".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "301".  Column number: "2".  Text in the field: "1:01:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "302".  Column number: "2".  Text in the field: "2:30:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "303".  Column number: "2".  Text in the field: "2:00:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "304".  Column number: "2".  Text in the field: "1:16:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "305".  Column number: "2".  Text in the field: "1:36:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "306".  Column number: "2".  Text in the field: "2:58:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "307".  Column number: "2".  Text in the field: "2:18:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "308".  Column number: "2".  Text in the field: "3:54:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "309".  Column number: "2".  Text in the field: "3:29:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "310".  Column number: "2".  Text in the field: "3:55:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "311".  Column number: "2".  Text in the field: "3:25:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "312".  Column number: "2".  Text in the field: "1:25:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "313".  Column number: "2".  Text in the field: "2:52:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "314".  Column number: "2".  Text in the field: "3:33:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "315".  Column number: "2".  Text in the field: "3:12:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "316".  Column number: "2".  Text in the field: "1:54:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "317".  Column number: "2".  Text in the field: "2:03:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "318".  Column number: "2".  Text in the field: "3:54:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "319".  Column number: "2".  Text in the field: "2:55:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "320".  Column number: "2".  Text in the field: "3:57:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "321".  Column number: "2".  Text in the field: "2:41:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "322".  Column number: "2".  Text in the field: "1:48:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "323".  Column number: "2".  Text in the field: "3:48:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "324".  Column number: "2".  Text in the field: "1:57:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "325".  Column number: "2".  Text in the field: "3:53:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "326".  Column number: "2".  Text in the field: "2:07:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "327".  Column number: "2".  Text in the field: "3:32:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "328".  Column number: "2".  Text in the field: "3:48:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "329".  Column number: "2".  Text in the field: "3:49:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "330".  Column number: "2".  Text in the field: "3:46:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "331".  Column number: "2".  Text in the field: "1:01:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "332".  Column number: "2".  Text in the field: "3:22:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "333".  Column number: "2".  Text in the field: "1:11:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "334".  Column number: "2".  Text in the field: "3:38:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "335".  Column number: "2".  Text in the field: "2:52:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "336".  Column number: "2".  Text in the field: "3:17:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "337".  Column number: "2".  Text in the field: "2:48:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "338".  Column number: "2".  Text in the field: "1:05:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "339".  Column number: "2".  Text in the field: "3:40:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "340".  Column number: "2".  Text in the field: "2:58:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "341".  Column number: "2".  Text in the field: "2:36:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "342".  Column number: "2".  Text in the field: "2:58:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "343".  Column number: "2".  Text in the field: "1:22:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "344".  Column number: "2".  Text in the field: "1:28:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "345".  Column number: "2".  Text in the field: "3:03:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "346".  Column number: "2".  Text in the field: "1:09:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "347".  Column number: "2".  Text in the field: "3:48:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "348".  Column number: "2".  Text in the field: "2:07:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "349".  Column number: "2".  Text in the field: "1:29:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "350".  Column number: "2".  Text in the field: "3:14:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "351".  Column number: "2".  Text in the field: "2:45:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "352".  Column number: "2".  Text in the field: "2:53:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "353".  Column number: "2".  Text in the field: "1:10:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "354".  Column number: "2".  Text in the field: "1:03:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "355".  Column number: "2".  Text in the field: "3:41:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "356".  Column number: "2".  Text in the field: "1:53:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "357".  Column number: "2".  Text in the field: "3:44:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "358".  Column number: "2".  Text in the field: "1:56:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "359".  Column number: "2".  Text in the field: "3:43:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "360".  Column number: "2".  Text in the field: "2:18:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "361".  Column number: "2".  Text in the field: "2:40:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "362".  Column number: "2".  Text in the field: "2:59:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "363".  Column number: "2".  Text in the field: "1:42:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "364".  Column number: "2".  Text in the field: "2:37:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "365".  Column number: "2".  Text in the field: "1:10:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "366".  Column number: "2".  Text in the field: "1:01:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "367".  Column number: "2".  Text in the field: "3:39:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "368".  Column number: "2".  Text in the field: "3:21:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "369".  Column number: "2".  Text in the field: "3:38:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "370".  Column number: "2".  Text in the field: "1:17:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "371".  Column number: "2".  Text in the field: "3:39:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "372".  Column number: "2".  Text in the field: "3:47:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "373".  Column number: "2".  Text in the field: "2:23:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "374".  Column number: "2".  Text in the field: "1:39:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "375".  Column number: "2".  Text in the field: "3:01:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "376".  Column number: "2".  Text in the field: "3:52:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "377".  Column number: "2".  Text in the field: "1:37:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "378".  Column number: "2".  Text in the field: "3:29:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "379".  Column number: "2".  Text in the field: "1:18:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "380".  Column number: "2".  Text in the field: "1:08:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "381".  Column number: "2".  Text in the field: "1:59:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "382".  Column number: "2".  Text in the field: "3:30:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "383".  Column number: "2".  Text in the field: "1:42:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "384".  Column number: "2".  Text in the field: "3:02:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "385".  Column number: "2".  Text in the field: "3:41:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "386".  Column number: "2".  Text in the field: "1:33:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "387".  Column number: "2".  Text in the field: "3:17:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "388".  Column number: "2".  Text in the field: "1:30:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "389".  Column number: "2".  Text in the field: "2:19:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "390".  Column number: "2".  Text in the field: "2:19:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "391".  Column number: "2".  Text in the field: "3:19:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "392".  Column number: "2".  Text in the field: "1:59:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "393".  Column number: "2".  Text in the field: "1:08:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "394".  Column number: "2".  Text in the field: "1:56:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "395".  Column number: "2".  Text in the field: "3:35:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "396".  Column number: "2".  Text in the field: "3:31:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "397".  Column number: "2".  Text in the field: "2:36:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "398".  Column number: "2".  Text in the field: "3:04:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "399".  Column number: "2".  Text in the field: "3:05:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "400".  Column number: "2".  Text in the field: "3:32:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "401".  Column number: "2".  Text in the field: "3:11:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "402".  Column number: "2".  Text in the field: "2:49:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "403".  Column number: "2".  Text in the field: "2:08:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "404".  Column number: "2".  Text in the field: "1:58:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "405".  Column number: "2".  Text in the field: "3:02:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "406".  Column number: "2".  Text in the field: "3:02:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "407".  Column number: "2".  Text in the field: "2:38:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "408".  Column number: "2".  Text in the field: "3:08:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "409".  Column number: "2".  Text in the field: "3:06:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "410".  Column number: "2".  Text in the field: "2:31:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "411".  Column number: "2".  Text in the field: "2:49:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "412".  Column number: "2".  Text in the field: "1:58:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "413".  Column number: "2".  Text in the field: "1:30:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "414".  Column number: "2".  Text in the field: "3:39:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "415".  Column number: "2".  Text in the field: "3:35:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "416".  Column number: "2".  Text in the field: "1:51:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "417".  Column number: "2".  Text in the field: "3:18:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "418".  Column number: "2".  Text in the field: "3:06:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "419".  Column number: "2".  Text in the field: "3:09:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "420".  Column number: "2".  Text in the field: "1:07:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "421".  Column number: "2".  Text in the field: "2:26:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "422".  Column number: "2".  Text in the field: "1:02:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "423".  Column number: "2".  Text in the field: "1:45:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "424".  Column number: "2".  Text in the field: "3:01:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "425".  Column number: "2".  Text in the field: "2:16:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "426".  Column number: "2".  Text in the field: "3:14:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "427".  Column number: "2".  Text in the field: "1:29:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "428".  Column number: "2".  Text in the field: "3:48:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "429".  Column number: "2".  Text in the field: "1:50:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "430".  Column number: "2".  Text in the field: "2:05:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "431".  Column number: "2".  Text in the field: "2:20:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "432".  Column number: "2".  Text in the field: "2:26:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "433".  Column number: "2".  Text in the field: "1:55:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "434".  Column number: "2".  Text in the field: "3:16:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "435".  Column number: "2".  Text in the field: "1:03:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "436".  Column number: "2".  Text in the field: "3:13:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "437".  Column number: "2".  Text in the field: "1:46:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "438".  Column number: "2".  Text in the field: "2:18:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "439".  Column number: "2".  Text in the field: "1:54:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "440".  Column number: "2".  Text in the field: "3:41:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "441".  Column number: "2".  Text in the field: "1:58:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "442".  Column number: "2".  Text in the field: "2:58:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "443".  Column number: "2".  Text in the field: "3:33:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "444".  Column number: "2".  Text in the field: "2:18:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "445".  Column number: "2".  Text in the field: "3:39:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "446".  Column number: "2".  Text in the field: "3:26:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "447".  Column number: "2".  Text in the field: "3:43:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "448".  Column number: "2".  Text in the field: "1:44:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "449".  Column number: "2".  Text in the field: "2:56:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "450".  Column number: "2".  Text in the field: "2:59:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "451".  Column number: "2".  Text in the field: "2:33:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "452".  Column number: "2".  Text in the field: "3:50:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "453".  Column number: "2".  Text in the field: "3:17:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "454".  Column number: "2".  Text in the field: "1:02:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "455".  Column number: "2".  Text in the field: "1:20:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "456".  Column number: "2".  Text in the field: "3:41:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "457".  Column number: "2".  Text in the field: "3:19:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "458".  Column number: "2".  Text in the field: "2:54:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "459".  Column number: "2".  Text in the field: "2:34:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "460".  Column number: "2".  Text in the field: "3:00:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "461".  Column number: "2".  Text in the field: "1:13:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "462".  Column number: "2".  Text in the field: "3:47:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "463".  Column number: "2".  Text in the field: "2:38:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "464".  Column number: "2".  Text in the field: "3:17:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "465".  Column number: "2".  Text in the field: "3:30:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "466".  Column number: "2".  Text in the field: "2:27:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "467".  Column number: "2".  Text in the field: "1:12:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "468".  Column number: "2".  Text in the field: "3:46:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "469".  Column number: "2".  Text in the field: "1:43:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "470".  Column number: "2".  Text in the field: "2:04:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "471".  Column number: "2".  Text in the field: "2:10:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "472".  Column number: "2".  Text in the field: "3:37:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "473".  Column number: "2".  Text in the field: "3:23:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "474".  Column number: "2".  Text in the field: "2:03:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "475".  Column number: "2".  Text in the field: "3:48:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "476".  Column number: "2".  Text in the field: "2:42:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "477".  Column number: "2".  Text in the field: "1:32:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "478".  Column number: "2".  Text in the field: "3:19:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "479".  Column number: "2".  Text in the field: "2:16:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "480".  Column number: "2".  Text in the field: "1:13:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "481".  Column number: "2".  Text in the field: "1:09:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "482".  Column number: "2".  Text in the field: "3:45:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "483".  Column number: "2".  Text in the field: "3:15:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "484".  Column number: "2".  Text in the field: "3:52:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "485".  Column number: "2".  Text in the field: "2:06:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "486".  Column number: "2".  Text in the field: "3:40:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "487".  Column number: "2".  Text in the field: "3:59:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "488".  Column number: "2".  Text in the field: "3:54:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "489".  Column number: "2".  Text in the field: "3:28:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "490".  Column number: "2".  Text in the field: "2:24:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "491".  Column number: "2".  Text in the field: "1:41:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "492".  Column number: "2".  Text in the field: "2:24:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "493".  Column number: "2".  Text in the field: "2:49:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "494".  Column number: "2".  Text in the field: "2:28:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "495".  Column number: "2".  Text in the field: "2:02:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "496".  Column number: "2".  Text in the field: "2:57:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "497".  Column number: "2".  Text in the field: "3:28:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "498".  Column number: "2".  Text in the field: "1:57:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "499".  Column number: "2".  Text in the field: "1:27:00".
-
-SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "500".  Column number: "2".  Text in the field: "2:03:00".
-
 SQL3110N  The utility has completed processing.  "500" rows were read from the 
 input file.
 
@@ -1934,102 +62,6 @@ Number of rows committed    = 500
 
 
 SQL3109N  The utility is beginning to load data from file "b_user.csv".
-
-SQL3125W  The character data in row "1" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "6" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "9" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "11" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "14" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "16" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "18" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "19" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "20" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "22" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "25" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "26" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "27" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "28" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "31" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "35" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "39" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "40" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "46" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "47" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "49" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "52" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "61" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "64" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "66" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "72" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "79" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "80" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "83" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "86" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "87" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "91" and column "2" was truncated because 
-the data is longer than the target database column.
 
 SQL3110N  The utility has completed processing.  "96" rows were read from the 
 input file.
@@ -2072,21 +104,6 @@ Number of rows committed    = 48
 
 
 SQL3109N  The utility is beginning to load data from file "Artist.csv".
-
-SQL3125W  The character data in row "1" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "2" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "5" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "23" and column "3" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "26" and column "3" was truncated because 
-the data is longer than the target database column.
 
 SQL3110N  The utility has completed processing.  "30" rows were read from the 
 input file.
@@ -2131,474 +148,6 @@ Number of rows committed    = 21
 SQL3109N  The utility is beginning to load data from file 
 "Podcast_Episode.csv".
 
-SQL3125W  The character data in row "4" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "4" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "5" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "5" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "6" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "6" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "7" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "7" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "8" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "10" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "12" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "13" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "13" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "16" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "16" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "19" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "19" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "20" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "21" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "21" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "22" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "22" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "24" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "25" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "26" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "27" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "28" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "30" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "30" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "31" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "31" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "32" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "32" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "33" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "33" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "34" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "37" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "37" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "38" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "42" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "42" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "45" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "45" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "46" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "47" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "47" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "49" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "50" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "50" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "54" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "57" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "57" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "58" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "58" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "60" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "61" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "61" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "62" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "64" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "64" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "65" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "65" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "66" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "66" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "67" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "69" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "70" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "71" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "72" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "73" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "74" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "74" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "75" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "75" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "76" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "76" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "77" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "77" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "85" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "86" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "90" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "90" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "91" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "91" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "92" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "92" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "93" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "93" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "94" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "95" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "96" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "97" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "99" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "100" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "101" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "102" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "102" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "106" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "106" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "107" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "107" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "108" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "108" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "109" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "109" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "110" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "110" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "111" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "111" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "112" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "112" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "113" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "114" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "115" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "116" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "117" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "118" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "119" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "120" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "121" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "122" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "123" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "124" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "125" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "125" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "126" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "126" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "127" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "127" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "128" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "128" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "129" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "129" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "130" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "130" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "131" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "131" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "132" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "132" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "133" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "134" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "141" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "142" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "142" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "143" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "143" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "144" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "144" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "145" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "145" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "146" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "146" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "147" and column "6" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "147" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "148" and column "7" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "149" and column "7" was truncated because 
-the data is longer than the target database column.
-
 SQL3110N  The utility has completed processing.  "150" rows were read from the 
 input file.
 
@@ -2621,7 +170,7 @@ Number of rows committed    = 150
 SQL3109N  The utility is beginning to load data from file "Stream.csv".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "1".  Column number: "2".  Text in the field: "2012-02-05 3:05:11".
+number: "1".  Column number: "2".  Text in the field: "2012-02-05 03:05:11".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "2".  Column number: "2".  Text in the field: "2012-06-18 14:17:02".
@@ -2633,25 +182,25 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "4".  Column number: "2".  Text in the field: "2016-01-21 14:53:52".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "5".  Column number: "2".  Text in the field: "2014-09-24 1:46:03".
+number: "5".  Column number: "2".  Text in the field: "2014-09-24 01:46:03".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "6".  Column number: "2".  Text in the field: "2012-01-16 23:43:54".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "7".  Column number: "2".  Text in the field: "2014-03-06 2:19:02".
+number: "7".  Column number: "2".  Text in the field: "2014-03-06 02:19:02".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "8".  Column number: "2".  Text in the field: "2014-08-27 22:45:32".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "9".  Column number: "2".  Text in the field: "2012-02-10 0:48:04".
+number: "9".  Column number: "2".  Text in the field: "2012-02-10 00:48:04".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "10".  Column number: "2".  Text in the field: "2015-01-14 21:19:07".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "11".  Column number: "2".  Text in the field: "2016-05-11 0:56:14".
+number: "11".  Column number: "2".  Text in the field: "2016-05-11 00:56:14".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "12".  Column number: "2".  Text in the field: "2019-05-12 23:14:37".
@@ -2666,16 +215,16 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "15".  Column number: "2".  Text in the field: "2017-10-18 20:35:19".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "16".  Column number: "2".  Text in the field: "2018-01-12 4:53:47".
+number: "16".  Column number: "2".  Text in the field: "2018-01-12 04:53:47".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "17".  Column number: "2".  Text in the field: "2015-12-03 19:42:18".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "18".  Column number: "2".  Text in the field: "2014-09-06 4:43:32".
+number: "18".  Column number: "2".  Text in the field: "2014-09-06 04:43:32".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "19".  Column number: "2".  Text in the field: "2014-08-04 8:35:03".
+number: "19".  Column number: "2".  Text in the field: "2014-08-04 08:35:03".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "20".  Column number: "2".  Text in the field: "2016-06-03 10:37:56".
@@ -2708,13 +257,13 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "29".  Column number: "2".  Text in the field: "2019-02-05 16:47:55".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "30".  Column number: "2".  Text in the field: "2017-04-23 5:32:35".
+number: "30".  Column number: "2".  Text in the field: "2017-04-23 05:32:35".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "31".  Column number: "2".  Text in the field: "2018-03-28 19:22:48".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "32".  Column number: "2".  Text in the field: "2017-05-11 6:19:52".
+number: "32".  Column number: "2".  Text in the field: "2017-05-11 06:19:52".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "33".  Column number: "2".  Text in the field: "2019-11-05 17:51:09".
@@ -2726,10 +275,10 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "35".  Column number: "2".  Text in the field: "2014-05-17 20:57:57".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "36".  Column number: "2".  Text in the field: "2017-10-07 2:36:53".
+number: "36".  Column number: "2".  Text in the field: "2017-10-07 02:36:53".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "37".  Column number: "2".  Text in the field: "2017-07-19 5:12:16".
+number: "37".  Column number: "2".  Text in the field: "2017-07-19 05:12:16".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "38".  Column number: "2".  Text in the field: "2017-07-21 15:30:09".
@@ -2744,16 +293,16 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "41".  Column number: "2".  Text in the field: "2017-11-15 19:08:41".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "42".  Column number: "2".  Text in the field: "2017-05-07 9:28:28".
+number: "42".  Column number: "2".  Text in the field: "2017-05-07 09:28:28".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "43".  Column number: "2".  Text in the field: "2017-05-16 4:32:56".
+number: "43".  Column number: "2".  Text in the field: "2017-05-16 04:32:56".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "44".  Column number: "2".  Text in the field: "2017-01-27 10:05:56".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "45".  Column number: "2".  Text in the field: "2016-02-19 8:53:28".
+number: "45".  Column number: "2".  Text in the field: "2016-02-19 08:53:28".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "46".  Column number: "2".  Text in the field: "2017-08-20 17:15:08".
@@ -2762,7 +311,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "47".  Column number: "2".  Text in the field: "2015-12-19 12:38:38".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "48".  Column number: "2".  Text in the field: "2019-09-15 2:48:57".
+number: "48".  Column number: "2".  Text in the field: "2019-09-15 02:48:57".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "49".  Column number: "2".  Text in the field: "2018-08-30 19:45:54".
@@ -2771,13 +320,13 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "50".  Column number: "2".  Text in the field: "2012-06-20 14:23:24".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "51".  Column number: "2".  Text in the field: "2017-04-16 3:55:31".
+number: "51".  Column number: "2".  Text in the field: "2017-04-16 03:55:31".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "52".  Column number: "2".  Text in the field: "2017-09-05 14:51:08".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "53".  Column number: "2".  Text in the field: "2013-07-20 7:09:55".
+number: "53".  Column number: "2".  Text in the field: "2013-07-20 07:09:55".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "54".  Column number: "2".  Text in the field: "2012-12-25 10:37:54".
@@ -2786,7 +335,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "55".  Column number: "2".  Text in the field: "2014-07-05 18:54:27".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "56".  Column number: "2".  Text in the field: "2018-06-25 9:20:07".
+number: "56".  Column number: "2".  Text in the field: "2018-06-25 09:20:07".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "57".  Column number: "2".  Text in the field: "2019-02-15 15:30:22".
@@ -2798,10 +347,10 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "59".  Column number: "2".  Text in the field: "2017-01-23 20:09:07".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "60".  Column number: "2".  Text in the field: "2018-07-14 0:32:10".
+number: "60".  Column number: "2".  Text in the field: "2018-07-14 00:32:10".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "61".  Column number: "2".  Text in the field: "2016-07-22 0:05:08".
+number: "61".  Column number: "2".  Text in the field: "2016-07-22 00:05:08".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "62".  Column number: "2".  Text in the field: "2013-02-01 23:20:09".
@@ -2813,7 +362,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "64".  Column number: "2".  Text in the field: "2014-04-29 11:54:39".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "65".  Column number: "2".  Text in the field: "2013-10-07 3:08:58".
+number: "65".  Column number: "2".  Text in the field: "2013-10-07 03:08:58".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "66".  Column number: "2".  Text in the field: "2016-07-09 11:57:30".
@@ -2822,22 +371,22 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "67".  Column number: "2".  Text in the field: "2016-03-08 22:55:04".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "68".  Column number: "2".  Text in the field: "2016-12-31 0:23:42".
+number: "68".  Column number: "2".  Text in the field: "2016-12-31 00:23:42".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "69".  Column number: "2".  Text in the field: "2016-04-13 15:30:30".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "70".  Column number: "2".  Text in the field: "2013-03-05 7:39:24".
+number: "70".  Column number: "2".  Text in the field: "2013-03-05 07:39:24".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "71".  Column number: "2".  Text in the field: "2018-01-08 23:15:29".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "72".  Column number: "2".  Text in the field: "2016-05-03 3:21:13".
+number: "72".  Column number: "2".  Text in the field: "2016-05-03 03:21:13".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "73".  Column number: "2".  Text in the field: "2019-04-07 2:26:24".
+number: "73".  Column number: "2".  Text in the field: "2019-04-07 02:26:24".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "74".  Column number: "2".  Text in the field: "2015-08-14 11:27:41".
@@ -2852,25 +401,25 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "77".  Column number: "2".  Text in the field: "2012-04-24 17:37:06".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "78".  Column number: "2".  Text in the field: "2015-10-25 8:25:46".
+number: "78".  Column number: "2".  Text in the field: "2015-10-25 08:25:46".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "79".  Column number: "2".  Text in the field: "2013-01-24 16:45:37".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "80".  Column number: "2".  Text in the field: "2016-07-22 7:58:26".
+number: "80".  Column number: "2".  Text in the field: "2016-07-22 07:58:26".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "81".  Column number: "2".  Text in the field: "2012-09-19 3:16:43".
+number: "81".  Column number: "2".  Text in the field: "2012-09-19 03:16:43".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "82".  Column number: "2".  Text in the field: "2018-12-19 9:45:47".
+number: "82".  Column number: "2".  Text in the field: "2018-12-19 09:45:47".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "83".  Column number: "2".  Text in the field: "2016-04-07 5:00:53".
+number: "83".  Column number: "2".  Text in the field: "2016-04-07 05:00:53".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "84".  Column number: "2".  Text in the field: "2014-12-10 6:45:48".
+number: "84".  Column number: "2".  Text in the field: "2014-12-10 06:45:48".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "85".  Column number: "2".  Text in the field: "2016-10-01 19:32:35".
@@ -2882,10 +431,10 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "87".  Column number: "2".  Text in the field: "2015-06-18 16:24:19".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "88".  Column number: "2".  Text in the field: "2019-06-17 3:36:58".
+number: "88".  Column number: "2".  Text in the field: "2019-06-17 03:36:58".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "89".  Column number: "2".  Text in the field: "2015-10-05 6:22:02".
+number: "89".  Column number: "2".  Text in the field: "2015-10-05 06:22:02".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "90".  Column number: "2".  Text in the field: "2019-04-08 10:15:40".
@@ -2894,7 +443,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "91".  Column number: "2".  Text in the field: "2013-08-31 11:49:56".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "92".  Column number: "2".  Text in the field: "2017-10-11 4:47:46".
+number: "92".  Column number: "2".  Text in the field: "2017-10-11 04:47:46".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "93".  Column number: "2".  Text in the field: "2017-09-19 17:49:45".
@@ -2906,19 +455,19 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "95".  Column number: "2".  Text in the field: "2014-12-01 23:58:55".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "96".  Column number: "2".  Text in the field: "2015-12-17 8:24:31".
+number: "96".  Column number: "2".  Text in the field: "2015-12-17 08:24:31".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "97".  Column number: "2".  Text in the field: "2016-01-02 23:10:51".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "98".  Column number: "2".  Text in the field: "2012-05-01 6:48:45".
+number: "98".  Column number: "2".  Text in the field: "2012-05-01 06:48:45".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "99".  Column number: "2".  Text in the field: "2019-06-30 4:35:50".
+number: "99".  Column number: "2".  Text in the field: "2019-06-30 04:35:50".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "100".  Column number: "2".  Text in the field: "2012-10-24 8:57:42".
+number: "100".  Column number: "2".  Text in the field: "2012-10-24 08:57:42".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "101".  Column number: "2".  Text in the field: "2019-11-25 15:44:59".
@@ -2927,7 +476,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "102".  Column number: "2".  Text in the field: "2017-08-01 19:33:04".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "103".  Column number: "2".  Text in the field: "2012-03-14 9:59:03".
+number: "103".  Column number: "2".  Text in the field: "2012-03-14 09:59:03".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "104".  Column number: "2".  Text in the field: "2015-07-17 18:02:11".
@@ -2939,7 +488,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "106".  Column number: "2".  Text in the field: "2015-04-08 11:48:27".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "107".  Column number: "2".  Text in the field: "2013-07-31 1:49:31".
+number: "107".  Column number: "2".  Text in the field: "2013-07-31 01:49:31".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "108".  Column number: "2".  Text in the field: "2018-05-14 11:06:47".
@@ -2951,22 +500,22 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "110".  Column number: "2".  Text in the field: "2019-06-14 23:14:57".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "111".  Column number: "2".  Text in the field: "2013-02-25 5:41:48".
+number: "111".  Column number: "2".  Text in the field: "2013-02-25 05:41:48".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "112".  Column number: "2".  Text in the field: "2014-10-16 4:38:03".
+number: "112".  Column number: "2".  Text in the field: "2014-10-16 04:38:03".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "113".  Column number: "2".  Text in the field: "2013-07-30 22:24:18".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "114".  Column number: "2".  Text in the field: "2017-03-20 1:44:09".
+number: "114".  Column number: "2".  Text in the field: "2017-03-20 01:44:09".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "115".  Column number: "2".  Text in the field: "2014-09-05 6:31:35".
+number: "115".  Column number: "2".  Text in the field: "2014-09-05 06:31:35".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "116".  Column number: "2".  Text in the field: "2013-07-11 1:27:23".
+number: "116".  Column number: "2".  Text in the field: "2013-07-11 01:27:23".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "117".  Column number: "2".  Text in the field: "2012-03-11 13:47:19".
@@ -2987,43 +536,43 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "122".  Column number: "2".  Text in the field: "2017-08-31 14:03:21".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "123".  Column number: "2".  Text in the field: "2015-12-02 5:05:26".
+number: "123".  Column number: "2".  Text in the field: "2015-12-02 05:05:26".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "124".  Column number: "2".  Text in the field: "2014-10-11 0:45:24".
+number: "124".  Column number: "2".  Text in the field: "2014-10-11 00:45:24".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "125".  Column number: "2".  Text in the field: "2014-08-26 13:40:13".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "126".  Column number: "2".  Text in the field: "2012-09-14 0:54:58".
+number: "126".  Column number: "2".  Text in the field: "2012-09-14 00:54:58".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "127".  Column number: "2".  Text in the field: "2017-06-28 2:46:33".
+number: "127".  Column number: "2".  Text in the field: "2017-06-28 02:46:33".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "128".  Column number: "2".  Text in the field: "2019-01-07 4:06:29".
+number: "128".  Column number: "2".  Text in the field: "2019-01-07 04:06:29".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "129".  Column number: "2".  Text in the field: "2019-04-28 22:07:01".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "130".  Column number: "2".  Text in the field: "2017-04-28 2:47:51".
+number: "130".  Column number: "2".  Text in the field: "2017-04-28 02:47:51".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "131".  Column number: "2".  Text in the field: "2015-02-02 23:51:27".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "132".  Column number: "2".  Text in the field: "2015-01-09 2:36:45".
+number: "132".  Column number: "2".  Text in the field: "2015-01-09 02:36:45".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "133".  Column number: "2".  Text in the field: "2019-08-22 8:06:45".
+number: "133".  Column number: "2".  Text in the field: "2019-08-22 08:06:45".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "134".  Column number: "2".  Text in the field: "2015-10-18 12:23:09".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "135".  Column number: "2".  Text in the field: "2014-03-28 1:50:08".
+number: "135".  Column number: "2".  Text in the field: "2014-03-28 01:50:08".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "136".  Column number: "2".  Text in the field: "2016-11-10 17:21:31".
@@ -3032,10 +581,10 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "137".  Column number: "2".  Text in the field: "2014-03-31 18:28:38".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "138".  Column number: "2".  Text in the field: "2015-08-14 5:18:53".
+number: "138".  Column number: "2".  Text in the field: "2015-08-14 05:18:53".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "139".  Column number: "2".  Text in the field: "2018-04-27 9:53:17".
+number: "139".  Column number: "2".  Text in the field: "2018-04-27 09:53:17".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "140".  Column number: "2".  Text in the field: "2012-11-04 22:13:42".
@@ -3053,16 +602,16 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "144".  Column number: "2".  Text in the field: "2015-01-25 14:40:55".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "145".  Column number: "2".  Text in the field: "2012-07-18 2:40:35".
+number: "145".  Column number: "2".  Text in the field: "2012-07-18 02:40:35".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "146".  Column number: "2".  Text in the field: "2015-02-19 15:53:14".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "147".  Column number: "2".  Text in the field: "2016-10-19 6:21:23".
+number: "147".  Column number: "2".  Text in the field: "2016-10-19 06:21:23".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "148".  Column number: "2".  Text in the field: "2012-05-31 1:14:29".
+number: "148".  Column number: "2".  Text in the field: "2012-05-31 01:14:29".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "149".  Column number: "2".  Text in the field: "2012-08-27 20:14:03".
@@ -3077,16 +626,16 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "152".  Column number: "2".  Text in the field: "2016-09-08 18:29:21".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "153".  Column number: "2".  Text in the field: "2014-04-09 3:32:30".
+number: "153".  Column number: "2".  Text in the field: "2014-04-09 03:32:30".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "154".  Column number: "2".  Text in the field: "2017-09-26 5:00:17".
+number: "154".  Column number: "2".  Text in the field: "2017-09-26 05:00:17".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "155".  Column number: "2".  Text in the field: "2013-07-20 6:41:59".
+number: "155".  Column number: "2".  Text in the field: "2013-07-20 06:41:59".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "156".  Column number: "2".  Text in the field: "2015-06-25 1:43:19".
+number: "156".  Column number: "2".  Text in the field: "2015-06-25 01:43:19".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "157".  Column number: "2".  Text in the field: "2013-04-10 12:32:28".
@@ -3098,19 +647,19 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "159".  Column number: "2".  Text in the field: "2015-04-18 14:04:25".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "160".  Column number: "2".  Text in the field: "2015-07-22 6:12:56".
+number: "160".  Column number: "2".  Text in the field: "2015-07-22 06:12:56".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "161".  Column number: "2".  Text in the field: "2012-11-05 3:40:22".
+number: "161".  Column number: "2".  Text in the field: "2012-11-05 03:40:22".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "162".  Column number: "2".  Text in the field: "2012-07-23 3:54:57".
+number: "162".  Column number: "2".  Text in the field: "2012-07-23 03:54:57".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "163".  Column number: "2".  Text in the field: "2014-06-24 18:26:41".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "164".  Column number: "2".  Text in the field: "2012-11-18 5:25:51".
+number: "164".  Column number: "2".  Text in the field: "2012-11-18 05:25:51".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "165".  Column number: "2".  Text in the field: "2016-12-10 23:25:05".
@@ -3122,16 +671,16 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "167".  Column number: "2".  Text in the field: "2016-08-07 18:13:08".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "168".  Column number: "2".  Text in the field: "2012-01-31 2:39:09".
+number: "168".  Column number: "2".  Text in the field: "2012-01-31 02:39:09".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "169".  Column number: "2".  Text in the field: "2015-03-03 4:26:57".
+number: "169".  Column number: "2".  Text in the field: "2015-03-03 04:26:57".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "170".  Column number: "2".  Text in the field: "2017-03-05 12:10:39".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "171".  Column number: "2".  Text in the field: "2015-01-17 2:16:10".
+number: "171".  Column number: "2".  Text in the field: "2015-01-17 02:16:10".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "172".  Column number: "2".  Text in the field: "2015-10-26 22:42:35".
@@ -3140,43 +689,43 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "173".  Column number: "2".  Text in the field: "2013-05-02 14:02:35".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "174".  Column number: "2".  Text in the field: "2016-06-05 1:04:26".
+number: "174".  Column number: "2".  Text in the field: "2016-06-05 01:04:26".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "175".  Column number: "2".  Text in the field: "2019-10-22 7:04:04".
+number: "175".  Column number: "2".  Text in the field: "2019-10-22 07:04:04".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "176".  Column number: "2".  Text in the field: "2015-05-29 11:25:55".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "177".  Column number: "2".  Text in the field: "2018-01-19 4:55:05".
+number: "177".  Column number: "2".  Text in the field: "2018-01-19 04:55:05".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "178".  Column number: "2".  Text in the field: "2012-07-08 16:51:41".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "179".  Column number: "2".  Text in the field: "2016-07-05 7:00:48".
+number: "179".  Column number: "2".  Text in the field: "2016-07-05 07:00:48".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "180".  Column number: "2".  Text in the field: "2013-06-06 14:23:59".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "181".  Column number: "2".  Text in the field: "2018-04-08 1:32:34".
+number: "181".  Column number: "2".  Text in the field: "2018-04-08 01:32:34".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "182".  Column number: "2".  Text in the field: "2012-02-25 9:06:52".
+number: "182".  Column number: "2".  Text in the field: "2012-02-25 09:06:52".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "183".  Column number: "2".  Text in the field: "2015-04-06 16:03:00".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "184".  Column number: "2".  Text in the field: "2012-10-15 0:36:02".
+number: "184".  Column number: "2".  Text in the field: "2012-10-15 00:36:02".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "185".  Column number: "2".  Text in the field: "2017-01-15 7:53:46".
+number: "185".  Column number: "2".  Text in the field: "2017-01-15 07:53:46".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "186".  Column number: "2".  Text in the field: "2014-05-27 5:59:41".
+number: "186".  Column number: "2".  Text in the field: "2014-05-27 05:59:41".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "187".  Column number: "2".  Text in the field: "2019-12-28 13:15:43".
@@ -3185,7 +734,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "188".  Column number: "2".  Text in the field: "2014-09-17 10:58:58".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "189".  Column number: "2".  Text in the field: "2015-05-21 8:16:49".
+number: "189".  Column number: "2".  Text in the field: "2015-05-21 08:16:49".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "190".  Column number: "2".  Text in the field: "2012-02-21 16:10:16".
@@ -3203,10 +752,10 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "194".  Column number: "2".  Text in the field: "2012-03-31 20:38:42".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "195".  Column number: "2".  Text in the field: "2015-12-23 5:22:46".
+number: "195".  Column number: "2".  Text in the field: "2015-12-23 05:22:46".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "196".  Column number: "2".  Text in the field: "2013-01-18 9:01:49".
+number: "196".  Column number: "2".  Text in the field: "2013-01-18 09:01:49".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "197".  Column number: "2".  Text in the field: "2015-12-08 11:40:58".
@@ -3215,25 +764,25 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "198".  Column number: "2".  Text in the field: "2018-01-28 23:35:19".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "199".  Column number: "2".  Text in the field: "2019-07-21 2:13:30".
+number: "199".  Column number: "2".  Text in the field: "2019-07-21 02:13:30".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "200".  Column number: "2".  Text in the field: "2012-12-02 20:03:43".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "201".  Column number: "2".  Text in the field: "2015-12-29 4:08:27".
+number: "201".  Column number: "2".  Text in the field: "2015-12-29 04:08:27".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "202".  Column number: "2".  Text in the field: "2012-01-30 7:50:11".
+number: "202".  Column number: "2".  Text in the field: "2012-01-30 07:50:11".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "203".  Column number: "2".  Text in the field: "2016-11-24 9:38:04".
+number: "203".  Column number: "2".  Text in the field: "2016-11-24 09:38:04".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "204".  Column number: "2".  Text in the field: "2018-08-26 2:06:30".
+number: "204".  Column number: "2".  Text in the field: "2018-08-26 02:06:30".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "205".  Column number: "2".  Text in the field: "2017-03-24 5:18:22".
+number: "205".  Column number: "2".  Text in the field: "2017-03-24 05:18:22".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "206".  Column number: "2".  Text in the field: "2016-06-12 22:56:12".
@@ -3251,7 +800,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "210".  Column number: "2".  Text in the field: "2013-08-04 18:15:37".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "211".  Column number: "2".  Text in the field: "2014-04-12 3:22:36".
+number: "211".  Column number: "2".  Text in the field: "2014-04-12 03:22:36".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "212".  Column number: "2".  Text in the field: "2013-05-06 10:08:43".
@@ -3263,58 +812,58 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "214".  Column number: "2".  Text in the field: "2014-03-07 11:58:00".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "215".  Column number: "2".  Text in the field: "2015-08-19 5:56:09".
+number: "215".  Column number: "2".  Text in the field: "2015-08-19 05:56:09".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "216".  Column number: "2".  Text in the field: "2015-01-06 0:07:29".
+number: "216".  Column number: "2".  Text in the field: "2015-01-06 00:07:29".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "217".  Column number: "2".  Text in the field: "2016-07-31 20:03:07".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "218".  Column number: "2".  Text in the field: "2018-03-18 3:50:05".
+number: "218".  Column number: "2".  Text in the field: "2018-03-18 03:50:05".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "219".  Column number: "2".  Text in the field: "2019-12-12 7:18:10".
+number: "219".  Column number: "2".  Text in the field: "2019-12-12 07:18:10".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "220".  Column number: "2".  Text in the field: "2016-03-30 5:20:48".
+number: "220".  Column number: "2".  Text in the field: "2016-03-30 05:20:48".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "221".  Column number: "2".  Text in the field: "2018-12-04 2:21:47".
+number: "221".  Column number: "2".  Text in the field: "2018-12-04 02:21:47".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "222".  Column number: "2".  Text in the field: "2013-07-27 16:33:41".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "223".  Column number: "2".  Text in the field: "2019-10-29 0:05:32".
+number: "223".  Column number: "2".  Text in the field: "2019-10-29 00:05:32".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "224".  Column number: "2".  Text in the field: "2013-09-28 19:23:49".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "225".  Column number: "2".  Text in the field: "2019-08-06 3:04:15".
+number: "225".  Column number: "2".  Text in the field: "2019-08-06 03:04:15".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "226".  Column number: "2".  Text in the field: "2015-08-05 19:42:32".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "227".  Column number: "2".  Text in the field: "2013-10-01 1:28:51".
+number: "227".  Column number: "2".  Text in the field: "2013-10-01 01:28:51".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "228".  Column number: "2".  Text in the field: "2018-11-19 19:12:19".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "229".  Column number: "2".  Text in the field: "2016-12-01 9:01:12".
+number: "229".  Column number: "2".  Text in the field: "2016-12-01 09:01:12".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "230".  Column number: "2".  Text in the field: "2012-08-12 4:50:17".
+number: "230".  Column number: "2".  Text in the field: "2012-08-12 04:50:17".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "231".  Column number: "2".  Text in the field: "2013-12-26 18:13:04".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "232".  Column number: "2".  Text in the field: "2012-10-21 3:07:22".
+number: "232".  Column number: "2".  Text in the field: "2012-10-21 03:07:22".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "233".  Column number: "2".  Text in the field: "2018-11-21 18:32:25".
@@ -3326,7 +875,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "235".  Column number: "2".  Text in the field: "2018-11-19 19:54:05".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "236".  Column number: "2".  Text in the field: "2014-01-14 6:49:55".
+number: "236".  Column number: "2".  Text in the field: "2014-01-14 06:49:55".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "237".  Column number: "2".  Text in the field: "2014-05-14 19:20:10".
@@ -3341,10 +890,10 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "240".  Column number: "2".  Text in the field: "2017-01-12 13:39:30".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "241".  Column number: "2".  Text in the field: "2019-01-27 4:53:21".
+number: "241".  Column number: "2".  Text in the field: "2019-01-27 04:53:21".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "242".  Column number: "2".  Text in the field: "2014-04-03 0:24:41".
+number: "242".  Column number: "2".  Text in the field: "2014-04-03 00:24:41".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "243".  Column number: "2".  Text in the field: "2016-09-03 10:47:45".
@@ -3353,13 +902,13 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "244".  Column number: "2".  Text in the field: "2014-07-29 22:38:34".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "245".  Column number: "2".  Text in the field: "2016-09-22 0:27:34".
+number: "245".  Column number: "2".  Text in the field: "2016-09-22 00:27:34".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "246".  Column number: "2".  Text in the field: "2018-10-28 9:36:07".
+number: "246".  Column number: "2".  Text in the field: "2018-10-28 09:36:07".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "247".  Column number: "2".  Text in the field: "2016-02-06 8:14:57".
+number: "247".  Column number: "2".  Text in the field: "2016-02-06 08:14:57".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "248".  Column number: "2".  Text in the field: "2019-06-09 19:47:01".
@@ -3368,16 +917,16 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "249".  Column number: "2".  Text in the field: "2012-06-05 12:16:07".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "250".  Column number: "2".  Text in the field: "2012-01-23 1:53:16".
+number: "250".  Column number: "2".  Text in the field: "2012-01-23 01:53:16".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "251".  Column number: "2".  Text in the field: "2013-11-09 1:53:28".
+number: "251".  Column number: "2".  Text in the field: "2013-11-09 01:53:28".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "252".  Column number: "2".  Text in the field: "2014-04-01 7:08:57".
+number: "252".  Column number: "2".  Text in the field: "2014-04-01 07:08:57".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "253".  Column number: "2".  Text in the field: "2013-05-24 1:26:45".
+number: "253".  Column number: "2".  Text in the field: "2013-05-24 01:26:45".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "254".  Column number: "2".  Text in the field: "2013-07-06 18:05:39".
@@ -3386,16 +935,16 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "255".  Column number: "2".  Text in the field: "2019-10-22 10:33:29".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "256".  Column number: "2".  Text in the field: "2017-11-30 2:17:11".
+number: "256".  Column number: "2".  Text in the field: "2017-11-30 02:17:11".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "257".  Column number: "2".  Text in the field: "2015-08-15 0:02:29".
+number: "257".  Column number: "2".  Text in the field: "2015-08-15 00:02:29".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "258".  Column number: "2".  Text in the field: "2015-04-24 10:26:10".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "259".  Column number: "2".  Text in the field: "2016-11-03 3:24:10".
+number: "259".  Column number: "2".  Text in the field: "2016-11-03 03:24:10".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "260".  Column number: "2".  Text in the field: "2017-09-04 18:47:19".
@@ -3404,7 +953,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "261".  Column number: "2".  Text in the field: "2015-02-08 13:48:51".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "262".  Column number: "2".  Text in the field: "2013-01-29 2:20:38".
+number: "262".  Column number: "2".  Text in the field: "2013-01-29 02:20:38".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "263".  Column number: "2".  Text in the field: "2016-04-13 22:03:36".
@@ -3413,19 +962,19 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "264".  Column number: "2".  Text in the field: "2016-05-23 18:04:31".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "265".  Column number: "2".  Text in the field: "2013-09-28 0:09:34".
+number: "265".  Column number: "2".  Text in the field: "2013-09-28 00:09:34".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "266".  Column number: "2".  Text in the field: "2017-08-19 11:22:18".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "267".  Column number: "2".  Text in the field: "2012-08-27 4:08:17".
+number: "267".  Column number: "2".  Text in the field: "2012-08-27 04:08:17".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "268".  Column number: "2".  Text in the field: "2017-11-16 22:55:13".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "269".  Column number: "2".  Text in the field: "2019-10-22 4:30:54".
+number: "269".  Column number: "2".  Text in the field: "2019-10-22 04:30:54".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "270".  Column number: "2".  Text in the field: "2018-11-30 11:20:57".
@@ -3449,34 +998,34 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "276".  Column number: "2".  Text in the field: "2013-01-03 16:27:22".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "277".  Column number: "2".  Text in the field: "2019-06-30 4:54:25".
+number: "277".  Column number: "2".  Text in the field: "2019-06-30 04:54:25".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "278".  Column number: "2".  Text in the field: "2016-10-28 8:33:17".
+number: "278".  Column number: "2".  Text in the field: "2016-10-28 08:33:17".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "279".  Column number: "2".  Text in the field: "2015-04-08 8:03:31".
+number: "279".  Column number: "2".  Text in the field: "2015-04-08 08:03:31".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "280".  Column number: "2".  Text in the field: "2018-03-03 19:17:47".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "281".  Column number: "2".  Text in the field: "2017-09-25 5:47:16".
+number: "281".  Column number: "2".  Text in the field: "2017-09-25 05:47:16".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "282".  Column number: "2".  Text in the field: "2017-12-26 4:34:03".
+number: "282".  Column number: "2".  Text in the field: "2017-12-26 04:34:03".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "283".  Column number: "2".  Text in the field: "2018-09-03 12:44:22".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "284".  Column number: "2".  Text in the field: "2013-02-02 6:30:02".
+number: "284".  Column number: "2".  Text in the field: "2013-02-02 06:30:02".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "285".  Column number: "2".  Text in the field: "2016-01-16 6:20:05".
+number: "285".  Column number: "2".  Text in the field: "2016-01-16 06:20:05".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "286".  Column number: "2".  Text in the field: "2013-05-16 0:08:40".
+number: "286".  Column number: "2".  Text in the field: "2013-05-16 00:08:40".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "287".  Column number: "2".  Text in the field: "2014-12-24 11:44:28".
@@ -3488,19 +1037,19 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "289".  Column number: "2".  Text in the field: "2015-02-26 20:09:30".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "290".  Column number: "2".  Text in the field: "2015-08-10 5:34:18".
+number: "290".  Column number: "2".  Text in the field: "2015-08-10 05:34:18".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "291".  Column number: "2".  Text in the field: "2018-04-17 19:20:41".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "292".  Column number: "2".  Text in the field: "2017-03-21 3:52:19".
+number: "292".  Column number: "2".  Text in the field: "2017-03-21 03:52:19".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "293".  Column number: "2".  Text in the field: "2014-02-08 20:22:27".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "294".  Column number: "2".  Text in the field: "2013-12-21 3:36:49".
+number: "294".  Column number: "2".  Text in the field: "2013-12-21 03:36:49".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "295".  Column number: "2".  Text in the field: "2012-03-05 17:58:54".
@@ -3509,7 +1058,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "296".  Column number: "2".  Text in the field: "2016-12-24 18:05:58".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "297".  Column number: "2".  Text in the field: "2014-03-22 7:02:12".
+number: "297".  Column number: "2".  Text in the field: "2014-03-22 07:02:12".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "298".  Column number: "2".  Text in the field: "2019-09-13 13:09:15".
@@ -3521,34 +1070,34 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "300".  Column number: "2".  Text in the field: "2013-05-19 16:19:10".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "301".  Column number: "2".  Text in the field: "2015-08-16 9:13:01".
+number: "301".  Column number: "2".  Text in the field: "2015-08-16 09:13:01".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "302".  Column number: "2".  Text in the field: "2014-06-29 13:58:27".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "303".  Column number: "2".  Text in the field: "2018-11-29 9:20:59".
+number: "303".  Column number: "2".  Text in the field: "2018-11-29 09:20:59".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "304".  Column number: "2".  Text in the field: "2015-07-08 12:38:32".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "305".  Column number: "2".  Text in the field: "2019-11-30 2:13:09".
+number: "305".  Column number: "2".  Text in the field: "2019-11-30 02:13:09".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "306".  Column number: "2".  Text in the field: "2017-10-03 4:42:31".
+number: "306".  Column number: "2".  Text in the field: "2017-10-03 04:42:31".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "307".  Column number: "2".  Text in the field: "2012-02-10 11:35:54".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "308".  Column number: "2".  Text in the field: "2015-07-15 1:49:07".
+number: "308".  Column number: "2".  Text in the field: "2015-07-15 01:49:07".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "309".  Column number: "2".  Text in the field: "2019-06-28 19:19:43".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "310".  Column number: "2".  Text in the field: "2018-09-24 7:04:57".
+number: "310".  Column number: "2".  Text in the field: "2018-09-24 07:04:57".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "311".  Column number: "2".  Text in the field: "2012-09-17 22:10:49".
@@ -3569,13 +1118,13 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "316".  Column number: "2".  Text in the field: "2019-02-21 19:08:06".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "317".  Column number: "2".  Text in the field: "2014-04-22 7:05:21".
+number: "317".  Column number: "2".  Text in the field: "2014-04-22 07:05:21".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "318".  Column number: "2".  Text in the field: "2016-06-07 23:31:10".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "319".  Column number: "2".  Text in the field: "2014-06-23 0:18:07".
+number: "319".  Column number: "2".  Text in the field: "2014-06-23 00:18:07".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "320".  Column number: "2".  Text in the field: "2016-04-04 10:52:05".
@@ -3584,7 +1133,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "321".  Column number: "2".  Text in the field: "2016-12-30 16:37:57".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "322".  Column number: "2".  Text in the field: "2018-07-12 0:20:09".
+number: "322".  Column number: "2".  Text in the field: "2018-07-12 00:20:09".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "323".  Column number: "2".  Text in the field: "2017-10-31 15:14:34".
@@ -3596,7 +1145,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "325".  Column number: "2".  Text in the field: "2019-04-27 14:58:08".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "326".  Column number: "2".  Text in the field: "2017-12-30 4:00:31".
+number: "326".  Column number: "2".  Text in the field: "2017-12-30 04:00:31".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "327".  Column number: "2".  Text in the field: "2016-09-29 23:21:16".
@@ -3611,37 +1160,37 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "330".  Column number: "2".  Text in the field: "2018-05-19 13:21:41".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "331".  Column number: "2".  Text in the field: "2014-08-29 0:01:59".
+number: "331".  Column number: "2".  Text in the field: "2014-08-29 00:01:59".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "332".  Column number: "2".  Text in the field: "2014-12-11 5:42:39".
+number: "332".  Column number: "2".  Text in the field: "2014-12-11 05:42:39".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "333".  Column number: "2".  Text in the field: "2015-05-24 9:48:40".
+number: "333".  Column number: "2".  Text in the field: "2015-05-24 09:48:40".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "334".  Column number: "2".  Text in the field: "2017-05-27 0:43:29".
+number: "334".  Column number: "2".  Text in the field: "2017-05-27 00:43:29".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "335".  Column number: "2".  Text in the field: "2014-11-15 18:06:46".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "336".  Column number: "2".  Text in the field: "2019-08-25 9:19:19".
+number: "336".  Column number: "2".  Text in the field: "2019-08-25 09:19:19".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "337".  Column number: "2".  Text in the field: "2013-06-01 5:05:42".
+number: "337".  Column number: "2".  Text in the field: "2013-06-01 05:05:42".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "338".  Column number: "2".  Text in the field: "2019-11-18 3:19:03".
+number: "338".  Column number: "2".  Text in the field: "2019-11-18 03:19:03".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "339".  Column number: "2".  Text in the field: "2017-11-19 18:09:38".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "340".  Column number: "2".  Text in the field: "2017-11-09 7:58:57".
+number: "340".  Column number: "2".  Text in the field: "2017-11-09 07:58:57".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "341".  Column number: "2".  Text in the field: "2014-07-18 7:26:40".
+number: "341".  Column number: "2".  Text in the field: "2014-07-18 07:26:40".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "342".  Column number: "2".  Text in the field: "2015-07-14 14:19:13".
@@ -3650,16 +1199,16 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "343".  Column number: "2".  Text in the field: "2016-01-22 14:07:26".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "344".  Column number: "2".  Text in the field: "2018-10-31 4:40:28".
+number: "344".  Column number: "2".  Text in the field: "2018-10-31 04:40:28".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "345".  Column number: "2".  Text in the field: "2015-04-15 2:31:25".
+number: "345".  Column number: "2".  Text in the field: "2015-04-15 02:31:25".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "346".  Column number: "2".  Text in the field: "2014-04-15 12:06:13".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "347".  Column number: "2".  Text in the field: "2012-05-07 4:03:40".
+number: "347".  Column number: "2".  Text in the field: "2012-05-07 04:03:40".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "348".  Column number: "2".  Text in the field: "2017-11-11 19:07:46".
@@ -3674,31 +1223,31 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "351".  Column number: "2".  Text in the field: "2019-09-29 12:20:29".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "352".  Column number: "2".  Text in the field: "2012-11-26 9:54:49".
+number: "352".  Column number: "2".  Text in the field: "2012-11-26 09:54:49".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "353".  Column number: "2".  Text in the field: "2016-06-04 1:31:46".
+number: "353".  Column number: "2".  Text in the field: "2016-06-04 01:31:46".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "354".  Column number: "2".  Text in the field: "2014-08-25 6:31:05".
+number: "354".  Column number: "2".  Text in the field: "2014-08-25 06:31:05".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "355".  Column number: "2".  Text in the field: "2013-08-01 10:54:30".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "356".  Column number: "2".  Text in the field: "2017-04-16 0:46:13".
+number: "356".  Column number: "2".  Text in the field: "2017-04-16 00:46:13".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "357".  Column number: "2".  Text in the field: "2015-01-16 4:23:10".
+number: "357".  Column number: "2".  Text in the field: "2015-01-16 04:23:10".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "358".  Column number: "2".  Text in the field: "2015-02-27 17:50:40".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "359".  Column number: "2".  Text in the field: "2017-06-07 7:29:50".
+number: "359".  Column number: "2".  Text in the field: "2017-06-07 07:29:50".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "360".  Column number: "2".  Text in the field: "2019-09-17 6:21:39".
+number: "360".  Column number: "2".  Text in the field: "2019-09-17 06:21:39".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "361".  Column number: "2".  Text in the field: "2012-04-04 18:30:39".
@@ -3716,7 +1265,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "365".  Column number: "2".  Text in the field: "2012-06-07 20:55:29".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "366".  Column number: "2".  Text in the field: "2013-11-01 9:15:19".
+number: "366".  Column number: "2".  Text in the field: "2013-11-01 09:15:19".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "367".  Column number: "2".  Text in the field: "2015-03-20 10:44:34".
@@ -3725,7 +1274,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "368".  Column number: "2".  Text in the field: "2016-05-27 10:41:30".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "369".  Column number: "2".  Text in the field: "2012-09-13 0:48:48".
+number: "369".  Column number: "2".  Text in the field: "2012-09-13 00:48:48".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "370".  Column number: "2".  Text in the field: "2015-11-07 17:04:06".
@@ -3749,19 +1298,19 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "376".  Column number: "2".  Text in the field: "2019-03-23 10:27:33".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "377".  Column number: "2".  Text in the field: "2017-05-18 9:21:34".
+number: "377".  Column number: "2".  Text in the field: "2017-05-18 09:21:34".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "378".  Column number: "2".  Text in the field: "2014-02-15 9:08:39".
+number: "378".  Column number: "2".  Text in the field: "2014-02-15 09:08:39".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "379".  Column number: "2".  Text in the field: "2018-03-10 15:57:19".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "380".  Column number: "2".  Text in the field: "2018-05-18 9:11:08".
+number: "380".  Column number: "2".  Text in the field: "2018-05-18 09:11:08".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "381".  Column number: "2".  Text in the field: "2019-01-27 4:30:07".
+number: "381".  Column number: "2".  Text in the field: "2019-01-27 04:30:07".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "382".  Column number: "2".  Text in the field: "2014-07-12 19:15:15".
@@ -3770,7 +1319,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "383".  Column number: "2".  Text in the field: "2018-06-08 13:46:25".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "384".  Column number: "2".  Text in the field: "2015-10-12 4:00:19".
+number: "384".  Column number: "2".  Text in the field: "2015-10-12 04:00:19".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "385".  Column number: "2".  Text in the field: "2019-09-26 10:20:46".
@@ -3779,7 +1328,7 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "386".  Column number: "2".  Text in the field: "2013-07-15 14:17:40".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "387".  Column number: "2".  Text in the field: "2016-06-29 3:53:55".
+number: "387".  Column number: "2".  Text in the field: "2016-06-29 03:53:55".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "388".  Column number: "2".  Text in the field: "2015-06-05 15:22:43".
@@ -3791,13 +1340,13 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "390".  Column number: "2".  Text in the field: "2012-12-19 19:25:26".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "391".  Column number: "2".  Text in the field: "2017-02-09 6:55:40".
+number: "391".  Column number: "2".  Text in the field: "2017-02-09 06:55:40".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "392".  Column number: "2".  Text in the field: "2013-06-14 15:18:00".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "393".  Column number: "2".  Text in the field: "2012-11-24 4:14:04".
+number: "393".  Column number: "2".  Text in the field: "2012-11-24 04:14:04".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "394".  Column number: "2".  Text in the field: "2017-06-04 16:13:43".
@@ -3812,22 +1361,22 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "397".  Column number: "2".  Text in the field: "2013-02-20 16:25:24".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "398".  Column number: "2".  Text in the field: "2019-10-22 7:06:46".
+number: "398".  Column number: "2".  Text in the field: "2019-10-22 07:06:46".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "399".  Column number: "2".  Text in the field: "2014-07-16 22:48:50".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "400".  Column number: "2".  Text in the field: "2017-08-04 6:24:37".
+number: "400".  Column number: "2".  Text in the field: "2017-08-04 06:24:37".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "401".  Column number: "2".  Text in the field: "2016-03-26 0:34:43".
+number: "401".  Column number: "2".  Text in the field: "2016-03-26 00:34:43".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "402".  Column number: "2".  Text in the field: "2018-06-23 22:51:51".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "403".  Column number: "2".  Text in the field: "2015-12-20 9:22:44".
+number: "403".  Column number: "2".  Text in the field: "2015-12-20 09:22:44".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "404".  Column number: "2".  Text in the field: "2019-10-21 10:48:10".
@@ -3848,16 +1397,16 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "409".  Column number: "2".  Text in the field: "2012-01-29 14:28:43".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "410".  Column number: "2".  Text in the field: "2018-12-24 4:50:31".
+number: "410".  Column number: "2".  Text in the field: "2018-12-24 04:50:31".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "411".  Column number: "2".  Text in the field: "2016-05-05 2:46:29".
+number: "411".  Column number: "2".  Text in the field: "2016-05-05 02:46:29".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "412".  Column number: "2".  Text in the field: "2016-07-26 18:57:06".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "413".  Column number: "2".  Text in the field: "2015-09-13 1:28:59".
+number: "413".  Column number: "2".  Text in the field: "2015-09-13 01:28:59".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "414".  Column number: "2".  Text in the field: "2017-05-02 19:58:37".
@@ -3866,10 +1415,10 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "415".  Column number: "2".  Text in the field: "2015-09-15 10:56:38".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "416".  Column number: "2".  Text in the field: "2015-10-09 1:02:52".
+number: "416".  Column number: "2".  Text in the field: "2015-10-09 01:02:52".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "417".  Column number: "2".  Text in the field: "2019-08-13 9:55:23".
+number: "417".  Column number: "2".  Text in the field: "2019-08-13 09:55:23".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "418".  Column number: "2".  Text in the field: "2013-05-14 11:09:31".
@@ -3878,40 +1427,40 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "419".  Column number: "2".  Text in the field: "2013-05-07 17:41:28".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "420".  Column number: "2".  Text in the field: "2014-08-16 2:06:21".
+number: "420".  Column number: "2".  Text in the field: "2014-08-16 02:06:21".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "421".  Column number: "2".  Text in the field: "2015-08-20 14:09:31".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "422".  Column number: "2".  Text in the field: "2019-12-14 2:25:03".
+number: "422".  Column number: "2".  Text in the field: "2019-12-14 02:25:03".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "423".  Column number: "2".  Text in the field: "2013-11-02 8:06:26".
+number: "423".  Column number: "2".  Text in the field: "2013-11-02 08:06:26".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "424".  Column number: "2".  Text in the field: "2017-04-22 7:31:32".
+number: "424".  Column number: "2".  Text in the field: "2017-04-22 07:31:32".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "425".  Column number: "2".  Text in the field: "2014-05-16 1:47:34".
+number: "425".  Column number: "2".  Text in the field: "2014-05-16 01:47:34".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "426".  Column number: "2".  Text in the field: "2019-11-15 6:36:08".
+number: "426".  Column number: "2".  Text in the field: "2019-11-15 06:36:08".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "427".  Column number: "2".  Text in the field: "2012-01-30 5:19:12".
+number: "427".  Column number: "2".  Text in the field: "2012-01-30 05:19:12".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "428".  Column number: "2".  Text in the field: "2014-02-25 7:48:42".
+number: "428".  Column number: "2".  Text in the field: "2014-02-25 07:48:42".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "429".  Column number: "2".  Text in the field: "2016-03-08 12:07:32".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "430".  Column number: "2".  Text in the field: "2016-11-24 8:06:23".
+number: "430".  Column number: "2".  Text in the field: "2016-11-24 08:06:23".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "431".  Column number: "2".  Text in the field: "2017-07-13 5:04:42".
+number: "431".  Column number: "2".  Text in the field: "2017-07-13 05:04:42".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "432".  Column number: "2".  Text in the field: "2017-09-30 12:11:48".
@@ -3923,10 +1472,10 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "434".  Column number: "2".  Text in the field: "2013-11-28 12:41:23".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "435".  Column number: "2".  Text in the field: "2014-12-06 8:23:51".
+number: "435".  Column number: "2".  Text in the field: "2014-12-06 08:23:51".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "436".  Column number: "2".  Text in the field: "2019-08-03 2:35:25".
+number: "436".  Column number: "2".  Text in the field: "2019-08-03 02:35:25".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "437".  Column number: "2".  Text in the field: "2013-10-11 17:24:02".
@@ -3935,19 +1484,19 @@ SQL3129W  A date, time, or timestamp field was padded with blanks.  Row
 number: "438".  Column number: "2".  Text in the field: "2018-03-29 10:49:50".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "439".  Column number: "2".  Text in the field: "2016-10-07 1:06:10".
+number: "439".  Column number: "2".  Text in the field: "2016-10-07 01:06:10".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
 number: "440".  Column number: "2".  Text in the field: "2013-12-11 21:22:35".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "441".  Column number: "2".  Text in the field: "2012-10-12 2:19:32".
+number: "441".  Column number: "2".  Text in the field: "2012-10-12 02:19:32".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "442".  Column number: "2".  Text in the field: "2014-01-13 7:14:37".
+number: "442".  Column number: "2".  Text in the field: "2014-01-13 07:14:37".
 
 SQL3129W  A date, time, or timestamp field was padded with blanks.  Row 
-number: "443".  Column number: "2".  Text in the field: "2017-02-28 4:15:49".
+number: "443".  Column number: "2".  Text in the field: "2017-02-28 04:15:49".
 
 SQL3110N  The utility has completed processing.  "443" rows were read from the 
 input file.
@@ -3970,12 +1519,6 @@ Number of rows committed    = 443
 
 SQL3109N  The utility is beginning to load data from file "Album.csv".
 
-SQL3125W  The character data in row "17" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "35" and column "2" was truncated because 
-the data is longer than the target database column.
-
 SQL3110N  The utility has completed processing.  "43" rows were read from the 
 input file.
 
@@ -3997,75 +1540,6 @@ Number of rows committed    = 43
 
 SQL3109N  The utility is beginning to load data from file "Song.csv".
 
-SQL3125W  The character data in row "48" and column "4" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "59" and column "4" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "63" and column "4" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "70" and column "4" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "92" and column "4" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "112" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "113" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "114" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "115" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "116" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "117" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "118" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "193" and column "4" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "215" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "216" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "217" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "218" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "218" and column "4" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "219" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "220" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "221" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3116W  The field value in row "229" and column "1" is missing, but the 
-target column is not nullable.
-
-SQL3125W  The character data in row "267" and column "4" was truncated because 
-the data is longer than the target database column.
-
 SQL3110N  The utility has completed processing.  "300" rows were read from the 
 input file.
 
@@ -4073,15 +1547,15 @@ SQL3221W  ...Begin COMMIT WORK. Input Record Count = "300".
 
 SQL3222W  ...COMMIT of any database changes was successful.
 
-SQL3149N  "300" rows were processed from the input file.  "299" rows were 
-successfully inserted into the table.  "1" rows were rejected.
+SQL3149N  "300" rows were processed from the input file.  "300" rows were 
+successfully inserted into the table.  "0" rows were rejected.
 
 
 Number of rows read         = 300
 Number of rows skipped      = 0
-Number of rows inserted     = 299
+Number of rows inserted     = 300
 Number of rows updated      = 0
-Number of rows rejected     = 1
+Number of rows rejected     = 0
 Number of rows committed    = 300
 
 
@@ -4110,45 +1584,6 @@ Number of rows committed    = 39
 SQL3109N  The utility is beginning to load data from file 
 "Follows_Podcast.csv".
 
-SQL3125W  The character data in row "3" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "9" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "12" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "13" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "14" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3148W  A row from the input file was not inserted into the table.  SQLCODE 
-"-803" was returned.
-
-SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
-foreign key update caused by a DELETE statement are not valid because the 
-primary key, unique constraint or unique index identified by "1" constrains 
-table "CS421G11.FOLLOWS_PODCAST" from having duplicate values for the index 
-key.  SQLSTATE=23505
-
-SQL3185W  The previous error occurred while processing data from row "14" of 
-the input file.
-
-SQL3125W  The character data in row "17" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "26" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "27" and column "2" was truncated because 
-the data is longer than the target database column.
-
-SQL3125W  The character data in row "28" and column "2" was truncated because 
-the data is longer than the target database column.
-
 SQL3110N  The utility has completed processing.  "29" rows were read from the 
 input file.
 
@@ -4156,15 +1591,15 @@ SQL3221W  ...Begin COMMIT WORK. Input Record Count = "29".
 
 SQL3222W  ...COMMIT of any database changes was successful.
 
-SQL3149N  "29" rows were processed from the input file.  "28" rows were 
-successfully inserted into the table.  "1" rows were rejected.
+SQL3149N  "29" rows were processed from the input file.  "29" rows were 
+successfully inserted into the table.  "0" rows were rejected.
 
 
 Number of rows read         = 29
 Number of rows skipped      = 0
-Number of rows inserted     = 28
+Number of rows inserted     = 29
 Number of rows updated      = 0
-Number of rows rejected     = 1
+Number of rows rejected     = 0
 Number of rows committed    = 29
 
 
@@ -4193,44 +1628,22 @@ Number of rows committed    = 31
 SQL3109N  The utility is beginning to load data from file 
 "Playlist_Has_Song.csv".
 
-SQL3148W  A row from the input file was not inserted into the table.  SQLCODE 
-"-530" was returned.
-
-SQL0530N  The insert or update value of the FOREIGN KEY 
-"CS421G11.PLAYLIST_HAS_SONG.SQL200225150604450" is not equal to any value of 
-the parent key of the parent table.  SQLSTATE=23503
-
-SQL3185W  The previous error occurred while processing data from row "43" of 
-the input file.
-
-SQL3148W  A row from the input file was not inserted into the table.  SQLCODE 
-"-803" was returned.
-
-SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
-foreign key update caused by a DELETE statement are not valid because the 
-primary key, unique constraint or unique index identified by "1" constrains 
-table "CS421G11.PLAYLIST_HAS_SONG" from having duplicate values for the index 
-key.  SQLSTATE=23505
-
-SQL3185W  The previous error occurred while processing data from row "52" of 
-the input file.
-
-SQL3110N  The utility has completed processing.  "302" rows were read from the 
+SQL3110N  The utility has completed processing.  "301" rows were read from the 
 input file.
 
-SQL3221W  ...Begin COMMIT WORK. Input Record Count = "302".
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "301".
 
 SQL3222W  ...COMMIT of any database changes was successful.
 
-SQL3149N  "302" rows were processed from the input file.  "300" rows were 
-successfully inserted into the table.  "2" rows were rejected.
+SQL3149N  "301" rows were processed from the input file.  "301" rows were 
+successfully inserted into the table.  "0" rows were rejected.
 
 
-Number of rows read         = 302
+Number of rows read         = 301
 Number of rows skipped      = 0
-Number of rows inserted     = 300
+Number of rows inserted     = 301
 Number of rows updated      = 0
-Number of rows rejected     = 2
-Number of rows committed    = 302
+Number of rows rejected     = 0
+Number of rows committed    = 301
 
 

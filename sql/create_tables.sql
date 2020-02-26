@@ -34,7 +34,7 @@ CREATE TABLE Administrator (
 CREATE TABLE Artist (
 	email VARCHAR(30) NOT NULL PRIMARY KEY,
 	band_name VARCHAR(30),
-	biography VARCHAR(250));
+	biography VARCHAR(600));
 
 CREATE TABLE Playlist (
 	email VARCHAR(30) NOT NULL,
@@ -53,7 +53,7 @@ CREATE TABLE Podcast_Episode (
 	description VARCHAR(2000),
 	pod_name VARCHAR(130),
 	FOREIGN KEY (pod_name) REFERENCES Podcast (pod_name),
-	pod_episode_name VARCHAR(30));
+	pod_episode_name VARCHAR(150));
 	
 CREATE TABLE Stream (
 	stream_id INTEGER NOT NULL PRIMARY KEY,
@@ -66,7 +66,7 @@ CREATE TABLE Stream (
 CREATE TABLE Album (
 	email VARCHAR(30) NOT NULL,
 	FOREIGN KEY (email) REFERENCES Artist(email),
-	album_name VARCHAR(30) NOT NULL,
+	album_name VARCHAR(50) NOT NULL,
 	release_year INTEGER,
 	genre VARCHAR(20),
 	cover_image VARCHAR(50),
@@ -75,10 +75,10 @@ CREATE TABLE Album (
 CREATE TABLE Song (
 	audiofile_id INTEGER NOT NULL PRIMARY KEY,
 	FOREIGN KEY (audiofile_id) REFERENCES Audiofile(audiofile_id),
-	album_name VARCHAR(30),
+	album_name VARCHAR(50),
 	email VARCHAR(30),
 	FOREIGN KEY (email, album_name) REFERENCES Album(email, album_name),
-	song_name VARCHAR(30)); 
+	song_name VARCHAR(50)); 
 
 CREATE TABLE Follows_Playlist (
 	user_email VARCHAR(30) NOT NULL,

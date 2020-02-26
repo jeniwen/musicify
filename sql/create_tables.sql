@@ -1,9 +1,9 @@
 -- Script to create our tables
 
 CREATE TABLE Podcast (
-	pod_name VARCHAR(30) NOT NULL PRIMARY KEY, 
+	pod_name VARCHAR(130) NOT NULL PRIMARY KEY, 
 	description VARCHAR(2000), 
-	category VARCHAR(15), 
+	category VARCHAR(30), 
 	cover_image VARCHAR(50));
 	
 	
@@ -19,7 +19,7 @@ CREATE TABLE Audiofile (
 	
 CREATE TABLE b_user (
 	email VARCHAR(30) NOT NULL PRIMARY KEY,
-	username VARCHAR(10),
+	username VARCHAR(20),
 	password VARCHAR(20),
 	full_name VARCHAR(20),
 	subscription_no INTEGER,
@@ -51,7 +51,7 @@ CREATE TABLE Podcast_Episode (
 	release_date DATE,
 	cover_image VARCHAR(50),
 	description VARCHAR(2000),
-	pod_name VARCHAR(30),
+	pod_name VARCHAR(130),
 	FOREIGN KEY (pod_name) REFERENCES Podcast (pod_name),
 	pod_episode_name VARCHAR(30));
 	
@@ -91,7 +91,7 @@ CREATE TABLE Follows_Playlist (
 CREATE TABLE Follows_Podcast (
 	user_email VARCHAR(30) NOT NULL,
 	FOREIGN KEY (user_email) REFERENCES b_user(email),
-	pod_name VARCHAR(30) NOT NULL,
+	pod_name VARCHAR(130) NOT NULL,
 	FOREIGN KEY (pod_name) REFERENCES Podcast(pod_name),
 	PRIMARY KEY (user_email, pod_name));
 

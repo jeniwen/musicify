@@ -16,7 +16,7 @@ WHERE u.full_name NOT IN (
 	FROM Administrator a INNER JOIN b_user us ON a.email LIKE u.email
 );
 
--- update view: give all the same subscription number
+-- update view: give all in the view the same name
 UPDATE UsersListening2014 
 SET full_name='Mary Contrary';
 

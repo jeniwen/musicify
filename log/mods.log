@@ -1,30 +1,70 @@
 
 BAND_NAME                     
 ------------------------------
+Milky Chance                  
 Norah Jones                   
 Bryan Adams                   
+U2                            
+George Ezra                   
+The Internet                  
 Gorillaz                      
 Bloc Party                    
+Thylacine                     
+Daniel Pemberton              
+Retrovision                   
+Too Many Zooz                 
+OVERWERK                      
+Sturgill Simpson              
+Woodkid                       
+KONGOS                        
+Nuages                        
+Mal Blum                      
+Big Thief                     
+Noname                        
+Tom Rosenthal                 
+cavetown                      
 Johann Sebastian Bach         
+Nightwish                     
+Bri Babineaux                 
+Jonathan McReynolds           
+XYLØ ‎                        
 Arcade Fire                   
+Sevdaliza                     
 Ma Rainey                     
 
-  7 record(s) selected.
+  30 record(s) selected.
+
+
+
+USER_EMAIL                     ARTIST_EMAIL                  
+------------------------------ ------------------------------
+
+  0 record(s) selected.
+
+
+SQL0100W  No row was found for FETCH, UPDATE or DELETE; or the result of a 
+query is an empty table.  SQLSTATE=02000
+
+
+USER_EMAIL                     ARTIST_EMAIL                  
+------------------------------ ------------------------------
+
+  0 record(s) selected.
 
 
 
 ALBUM_NAME                                         RELEASE_YEAR
 -------------------------------------------------- ------------
-Blossom                                                    2017
-Sadnecessary                                               2014
-Mind the Moon                                              2019
-Come Away with Me                                          2002
-Feels  like Home                                           2004
-Cuts Like a Knife                                          1983
-Reckless                                                   1984
-Live From Paris                                            2007
-Songs of Innocence                                         2014
-Staying at Tamara's                                        2018
+Blossom                                                    1974
+Sadnecessary                                               1974
+Mind the Moon                                              1974
+Come Away with Me                                          1974
+Feels  like Home                                           1974
+Cuts Like a Knife                                          1974
+Reckless                                                   1974
+Live From Paris                                            1974
+Songs of Innocence                                         1974
+Staying at Tamara's                                        1974
 
   10 record(s) selected.
 
@@ -63,11 +103,26 @@ AUDIOFILE_ID PLAYLIST_NAME                  EMAIL
          226 late night study               adelarosa342@yahoo.com        
          227 late night study               adelarosa342@yahoo.com        
          171 late night study               adelarosa342@yahoo.com        
+         183 late night study               adelarosa342@yahoo.com        
+         184 late night study               adelarosa342@yahoo.com        
+         185 late night study               adelarosa342@yahoo.com        
+         186 late night study               adelarosa342@yahoo.com        
+         187 late night study               adelarosa342@yahoo.com        
+         188 late night study               adelarosa342@yahoo.com        
+         189 late night study               adelarosa342@yahoo.com        
+         190 late night study               adelarosa342@yahoo.com        
+         191 late night study               adelarosa342@yahoo.com        
 
-  12 record(s) selected.
+  21 record(s) selected.
 
 
-DB20000I  The SQL command completed successfully.
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G11.PLAYLIST_HAS_SONG" from having duplicate values for the index 
+key.  SQLSTATE=23505
 
 
 AUDIOFILE_ID PLAYLIST_NAME                  EMAIL                         
@@ -101,11 +156,41 @@ AUDIOFILE_ID PLAYLIST_NAME                  EMAIL
 USER_EMAIL                     POD_NAME                                                                                                                          
 ------------------------------ ----------------------------------------------------------------------------------------------------------------------------------
 nbutler362@hotmail.com         AWAKEN THE GUARDIAN                                                                                                               
+nbutler362@hotmail.com         Beautiful Stories From Anonymous People                                                                                           
+nbutler362@hotmail.com         Bodega Boys                                                                                                                       
+nbutler362@hotmail.com         By The Book                                                                                                                       
+nbutler362@hotmail.com         Fairly Normal w/Josh Wolf                                                                                                         
+nbutler362@hotmail.com         Guys We F****d                                                                                                                    
+nbutler362@hotmail.com         Heartland Radio: Presented by The Pat McAfee Show                                                                                 
+nbutler362@hotmail.com         Inappropriate Earl                                                                                                                
+nbutler362@hotmail.com         Live from the Poundstone Institute                                                                                                
+nbutler362@hotmail.com         No Such Thing As A Fish                                                                                                           
+nbutler362@hotmail.com         Not Too Deep with Grace Helbig                                                                                                    
+nbutler362@hotmail.com         POINTLESS: WITH KEVIN PEREIRA                                                                                                     
+nbutler362@hotmail.com         Straight Talk with Ross Mathews                                                                                                   
+nbutler362@hotmail.com         Tell 'Em Steve-Dave                                                                                                               
+nbutler362@hotmail.com         The Bitch Bible                                                                                                                   
+nbutler362@hotmail.com         The CrabFeast with Ryan Sickler and Jay Larson                                                                                    
+nbutler362@hotmail.com         The Cure                                                                                                                          
+nbutler362@hotmail.com         The Hilarious World of Depression                                                                                                 
+nbutler362@hotmail.com         The Kevin & Bean Show on KROQ                                                                                                     
+nbutler362@hotmail.com         The Man Cave Chronicles                                                                                                           
+nbutler362@hotmail.com         The Ricky Gervais Podcast                                                                                                         
+nbutler362@hotmail.com         The SDR Show (Sex, Drugs, & Rock-n-Roll Show) w/Ralph Sutton & Big Jay Oakerson                                                   
+nbutler362@hotmail.com         Total Talk Nonsense (TTN)                                                                                                         
+nbutler362@hotmail.com         WTF with Marc Maron Podcast                                                                                                       
+nbutler362@hotmail.com         Yo, Is This Racist?                                                                                                               
 
-  1 record(s) selected.
+  25 record(s) selected.
 
 
-DB20000I  The SQL command completed successfully.
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G11.FOLLOWS_PODCAST" from having duplicate values for the index 
+key.  SQLSTATE=23505
 
 
 USER_EMAIL                     POD_NAME                                                                                                                          

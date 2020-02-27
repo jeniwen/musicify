@@ -1,0 +1,53 @@
+DB20000I  The SQL command completed successfully.
+
+
+FULL_NAME           
+--------------------
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+Mary Contrary       
+
+  21 record(s) selected.
+
+
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+
+
+EMAIL                         
+------------------------------
+aweber752@hotmail.com         
+bjohns529@yahoo.com           
+madkins871@hotmail.com        
+oobrien710@yahoo.com          
+
+  4 record(s) selected.
+
+
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0104N  An unexpected token "UPDATE LISTENINGTOU2 SET audiofile_id=3;" was 
+found following "BEGIN-OF-STATEMENT".  Expected tokens may include:  
+"<space>".  SQLSTATE=42601
+

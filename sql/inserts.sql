@@ -6,3 +6,12 @@ INSERT INTO Artist VALUES('hmhc@gmail.com','Homemade Haircut', 'Homemade Haircut
 INSERT INTO Album VALUES('hmhc@gmail.com', 'Homemade Buzzcut', 2020, 'Indie Rock', 'http://imgur.com/f34uGk7Lipd8CTq3TbhU');
 INSERT INTO Audiofile VALUES(501, '00:04:21');
 INSERT INTO Song VALUES(501, 'Homemade Buzzcut', 'hmhc@gmail.com', 'It Went Wrong');
+
+INSERT INTO Playlist VALUES('jennn@hotmail.com', 'robbie', 1, 'my fave dude robbie');
+INSERT INTO Playlist_Has_Song VALUES(205,'robbie', 'jennn@hotmail.com');
+INSERT INTO Playlist_Has_Song VALUES(206,'robbie', 'jennn@hotmail.com');
+INSERT INTO Playlist_Has_Song VALUES(207,'robbie', 'jennn@hotmail.com');
+INSERT INTO Playlist_Has_Song VALUES(208,'robbie', 'jennn@hotmail.com');
+INSERT INTO Playlist_Has_Song VALUES(209,'robbie', 'jennn@hotmail.com');
+
+SELECT * FROM Playlist_Has_Song;

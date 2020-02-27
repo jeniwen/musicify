@@ -1,12 +1,30 @@
 -- Get all artists who released music in 2018 and 2019
-
 SELECT a.band_name, al.album_name, al.release_year
 FROM Artist a INNER JOIN Album al
     ON a.email=al.email
 WHERE al.release_year IN (2018,2019)
 ORDER BY a.band_name DESC;
+-- Artist
+--                                 Data type                     Column
+-- Column name                     schema    Data type name      Length     Scale Nulls
+-- ------------------------------- --------- ------------------- ---------- ----- ------
+-- EMAIL                           SYSIBM    VARCHAR                     30     0 No    
+-- BAND_NAME                       SYSIBM    VARCHAR                     30     0 Yes   
+-- BIOGRAPHY                       SYSIBM    VARCHAR                    600     0 Yes 
 
--- Number of streams per category of podcast
+
+-- Album
+-- Column name                     schema    Data type name      Length     Scale Nulls
+-- ------------------------------- --------- ------------------- ---------- ----- ------
+-- EMAIL                           SYSIBM    VARCHAR                     30     0 No    
+-- ALBUM_NAME                      SYSIBM    VARCHAR                     50     0 No    
+-- RELEASE_YEAR                    SYSIBM    INTEGER                      4     0 Yes   
+-- GENRE                           SYSIBM    VARCHAR                     20     0 Yes   
+-- COVER_IMAGE                     SYSIBM    VARCHAR                     50     0 Yes 
+
+
+
+-- Number of streams per category of podcast, ordered by most number of streams
 SELECT p.category, SUM(X.streamsum) as catsum
 FROM Podcast p,
 (SELECT pe.pod_name, COUNT(s.stream_id) as streamsum
@@ -18,6 +36,41 @@ WHERE X.pod_name=p.pod_name
 GROUP BY p.category
 ORDER BY catsum DESC
 ;
+-- Podcast
+--                                Data type                     Column
+-- Column name                     schema    Data type name      Length     Scale Nulls
+-- ------------------------------- --------- ------------------- ---------- ----- ------
+-- POD_NAME                        SYSIBM    VARCHAR                    130     0 No    
+-- DESCRIPTION                     SYSIBM    VARCHAR                   2000     0 Yes   
+-- CATEGORY                        SYSIBM    VARCHAR                     30     0 Yes   
+-- COVER_IMAGE                     SYSIBM    VARCHAR                     50     0 Yes   
+
+-- Stream
+--                                Data type                     Column
+-- Column name                     schema    Data type name      Length     Scale Nulls
+-- ------------------------------- --------- ------------------- ---------- ----- ------
+-- POD_NAME                        SYSIBM    VARCHAR                    130     0 No    
+-- DESCRIPTION                     SYSIBM    VARCHAR                   2000     0 Yes   
+-- CATEGORY                        SYSIBM    VARCHAR                     30     0 Yes   
+-- COVER_IMAGE                     SYSIBM    VARCHAR                     50     0 Yes   
+
+-- Podcast_Episode
+-- Column name                     schema    Data type name      Length     Scale Nulls
+-- ------------------------------- --------- ------------------- ---------- ----- ------
+-- AUDIOFILE_ID                    SYSIBM    INTEGER                      4     0 No    
+-- EPISODE_NO                      SYSIBM    INTEGER                      4     0 Yes   
+-- RELEASE_DATE                    SYSIBM    DATE                         4     0 Yes   
+-- COVER_IMAGE                     SYSIBM    VARCHAR                     50     0 Yes   
+-- DESCRIPTION                     SYSIBM    VARCHAR                   2000     0 Yes   
+-- POD_NAME                        SYSIBM    VARCHAR                    130     0 Yes   
+-- POD_EPISODE_NAME                SYSIBM    VARCHAR                    150     0 Yes
+
+
+
+
+
+
+
 
 
 -- Get the average number of songs in the playlists with the most followers
@@ -41,7 +94,26 @@ WHERE F.playlist_maker_email=H.email AND F.playlist_name=H.playlist_name
 ORDER BY F.follow_sum DESC
 ;
 
--- Get the users who streamed the most so far this year, ordered by number of streams
--- Get the average album length across all albums, singles not included. 
+-- Playlist
+-- Column name                     schema    Data type name      Length     Scale Nulls
+-- ------------------------------- --------- ------------------- ---------- ----- ------
+-- EMAIL                           SYSIBM    VARCHAR                     30     0 No    
+-- PLAYLIST_NAME                   SYSIBM    VARCHAR                     30     0 No    
+-- ACCESSIBILITY                   SYSIBM    CHARACTER                    1     0 Yes   
+-- DESCRIPTION                     SYSIBM    VARCHAR                   2000     0 Yes 
 
 
+-- Playlist_Has_Song
+-- Column name                     schema    Data type name      Length     Scale Nulls
+-- ------------------------------- --------- ------------------- ---------- ----- ------
+-- EMAIL                           SYSIBM    VARCHAR                     30     0 No    
+-- PLAYLIST_NAME                   SYSIBM    VARCHAR                     30     0 No    
+-- ACCESSIBILITY                   SYSIBM    CHARACTER                    1     0 Yes   
+-- DESCRIPTION                     SYSIBM    VARCHAR                   2000     0 Yes 
+
+-- Follows_Playlist
+-- Column name                     schema    Data type name      Length     Scale Nulls
+-- ------------------------------- --------- ------------------- ---------- ----- ------
+-- USER_EMAIL                      SYSIBM    VARCHAR                     30     0 No    
+-- PLAYLIST_MAKER_EMAIL            SYSIBM    VARCHAR                     30     0 No    
+-- PLAYLIST_NAME                   SYSIBM    VARCHAR                     30     0 No  

@@ -23,7 +23,6 @@ ORDER BY a.band_name DESC;
 -- COVER_IMAGE                     SYSIBM    VARCHAR                     50     0 Yes 
 
 
-
 -- Number of streams per category of podcast, ordered by most number of streams
 SELECT p.category, SUM(X.streamsum) as catsum
 FROM Podcast p,
@@ -69,10 +68,6 @@ ORDER BY catsum DESC
 
 
 
-
-
-
-
 -- Get the average number of songs in the playlists with the most followers
 SELECT F.playlist_name, F.follow_sum, H.songs_sum
 FROM 
@@ -103,6 +98,7 @@ ORDER BY F.follow_sum DESC
 -- DESCRIPTION                     SYSIBM    VARCHAR                   2000     0 Yes 
 
 
+
 -- Playlist_Has_Song
 -- Column name                     schema    Data type name      Length     Scale Nulls
 -- ------------------------------- --------- ------------------- ---------- ----- ------
@@ -117,3 +113,91 @@ ORDER BY F.follow_sum DESC
 -- USER_EMAIL                      SYSIBM    VARCHAR                     30     0 No    
 -- PLAYLIST_MAKER_EMAIL            SYSIBM    VARCHAR                     30     0 No    
 -- PLAYLIST_NAME                   SYSIBM    VARCHAR                     30     0 No  
+
+-- Get the users who streamed the most so far this year, ordered by number of streams
+SELECT U.full_name, U.email, sum(s.scount) as stream_sum
+FROM b_User U,
+        (
+        SELECT s.email, count(s.stream_id) as scount
+        FROM Stream s
+        GROUP BY s.email
+        ORDER BY scount DESC
+        FETCH FIRST 5 ROWS ONLY
+         ) S
+WHERE U.email = S.email
+GROUP BY U.email, U.full_name
+ORDER BY stream_sum DESC
+;
+
+--Stream
+--Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+--STREAM_ID                       SYSIBM    INTEGER                      4     0 No
+--START_TIME                      SYSIBM    TIMESTAMP                   10     6 Yes
+--EMAIL                           SYSIBM    VARCHAR                     30     0 Yes
+--AUDIOFILE_ID                    SYSIBM    INTEGER                      4     0 Yes
+
+--b_User
+--Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+--EMAIL                           SYSIBM    VARCHAR                     30     0 No
+--USERNAME                        SYSIBM    VARCHAR                     20     0 Yes
+--PASSWORD                        SYSIBM    VARCHAR                     20     0 Yes
+--FULL_NAME                       SYSIBM    VARCHAR                     20     0 Yes
+--SUBSCRIPTION_NO                 SYSIBM    INTEGER                      4     0 Yes
+
+-- Get album lengths across all albums, singles not included. This is a subquery for the next query, but it might be useful in the future.
+SELECT nosingles.album_name, TIME('00:00:00') + (SUM(MIDNIGHT_SECONDS(af.duration)))seconds AS album_duration  
+        FROM (   
+               --exclude singles and get song durations
+                SELECT so.album_name, so.sc, s.audiofile_id
+                FROM song s, (
+                        SELECT s.album_name, COUNT(album_name) AS sc 
+                        FROM song s
+                        GROUP BY s.album_name
+                        ORDER BY sc DESC
+                         ) so 
+                 WHERE so.sc > 1 AND s.album_name = so.album_name
+                 ) nosingles 
+        INNER JOIN Audiofile af
+            ON af.audiofile_id = nosingles.audiofile_id
+        GROUP BY nosingles.album_name
+ ;        
+                                                                      
+-- Get the average album length across all albums, singles not included.                                                                       
+SELECT TIME('00:00:00') + (AVG(MIDNIGHT_SECONDS(albums.album_duration)))seconds AS album_average_duration
+FROM(   --get album durations w/o singles
+        SELECT nosingles.album_name, TIME('00:00:00') + (SUM(MIDNIGHT_SECONDS(af.duration)))seconds AS album_duration  
+        FROM (   
+               --exclude singles and get song durations
+                SELECT so.album_name, so.sc, s.audiofile_id
+                FROM song s, (
+                        SELECT s.album_name, COUNT(album_name) AS sc 
+                        FROM song s
+                        GROUP BY s.album_name
+                        ORDER BY sc DESC
+                         ) so 
+                 WHERE so.sc > 1 AND s.album_name = so.album_name
+                 ) nosingles 
+        INNER JOIN Audiofile af
+            ON af.audiofile_id = nosingles.audiofile_id
+        GROUP BY nosingles.album_name
+    )albums
+ ;        
+ 
+--song 
+--                                 Data type                     Column
+--Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+--AUDIOFILE_ID                    SYSIBM    INTEGER                      4     0 No
+--ALBUM_NAME                      SYSIBM    VARCHAR                     50     0 Yes
+--EMAIL                           SYSIBM    VARCHAR                     30     0 Yes
+--SONG_NAME                       SYSIBM    VARCHAR                     50     0 Yes
+                                                             
+--audiofile 
+--                                Data type                     Column
+--Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+--AUDIOFILE_ID                    SYSIBM    INTEGER                      4     0 No
+--DURATION                        SYSIBM    TIME                         3     0 Yes
+

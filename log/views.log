@@ -1,0 +1,52 @@
+DB20000I  The SQL command completed successfully.
+
+
+FULL_NAME           
+--------------------
+Aoi Cook            
+Aqil Rush           
+Asmita Weber        
+Bolormaa Cordova    
+Bence Hall          
+Bishal Shah         
+Emirhan Drake       
+Elif Mccann         
+Eyal Waters         
+Fanta Boyd          
+Jameson Zavala      
+Lei Burgess         
+Mariam Adkins       
+Modibo Fox          
+Milagros Hawkins    
+Maysoun Woodard     
+Noor Hurst          
+Pihla Garner        
+Somsak Gilmore      
+Stanley Huber       
+Xhoel Shah          
+
+  21 record(s) selected.
+
+
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0601N  The name of the object to be created is identical to the existing 
+name "CS421G11.LISTENINGTOU2" of type "VIEW".  SQLSTATE=42710
+
+
+EMAIL                         
+------------------------------
+
+  0 record(s) selected.
+
+
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0104N  An unexpected token "UPDATE LISTENINGTOU2 SET audiofile_id=3;" was 
+found following "BEGIN-OF-STATEMENT".  Expected tokens may include:  
+"<space>".  SQLSTATE=42601
+

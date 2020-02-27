@@ -13,6 +13,27 @@ Ma Rainey
 
 
 
+USER_EMAIL                     ARTIST_EMAIL                  
+------------------------------ ------------------------------
+lfrazier445@hotmail.com        milkychance.hq@gmail.com      
+kbonilla431@hotmail.com        milkychance.hq@gmail.com      
+tcox196@live.com               milkychance.hq@gmail.com      
+ystewart716@hotmail.com        milkychance.hq@gmail.com      
+cvalencia294@hotmail.com       milkychance.hq@gmail.com      
+
+  5 record(s) selected.
+
+
+DB20000I  The SQL command completed successfully.
+
+
+USER_EMAIL                     ARTIST_EMAIL                  
+------------------------------ ------------------------------
+
+  0 record(s) selected.
+
+
+
 ALBUM_NAME                                         RELEASE_YEAR
 -------------------------------------------------- ------------
 Blossom                                                    2017

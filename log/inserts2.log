@@ -1,0 +1,18 @@
+DB20000I  The SQL command completed successfully.
+
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0104N  An unexpected token "(443, TIMESTAMP('2016-4-4 10:52:05'),'oob" was 
+found following "T INTO STREAM VALUES".  Expected tokens may include:  
+"<space>".  SQLSTATE=42601
+
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+
+DB20000I  The SQL command completed successfully.
+

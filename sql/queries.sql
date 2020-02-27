@@ -41,7 +41,4 @@ WHERE F.playlist_maker_email=H.email AND F.playlist_name=H.playlist_name
 ORDER BY F.follow_sum DESC
 ;
 
--- Get the users who streamed the most so far this year, ordered by number of streams
--- Get the average album length across all albums, singles not included. 
-
 

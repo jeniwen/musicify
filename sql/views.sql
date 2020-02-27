@@ -18,8 +18,7 @@ WHERE u.full_name NOT IN (
 
 -- update view: give all the same subscription number
 UPDATE UsersListening2014 
-SET subscription_no=100;
-
+SET full_name='Mary Contrary';
 
 -- clean up
 DROP VIEW UsersListening2014;

@@ -4,3 +4,6 @@ INSERT INTO Stream VALUES (444, TIMESTAMP('2016-4-7 16:51:01'),'kpittman180@msn.
 INSERT INTO Stream VALUES (445, TIMESTAMP('2016-4-7 17:17:01'),'nhurst331@yahoo.com',40);
 INSERT INTO Stream VALUES (446, TIMESTAMP('2017-9-25 5:47:16'),'aweber752@hotmail.com',43);
 INSERT INTO Stream VALUES (447, TIMESTAMP('2017-9-25 5:50:16'),'aweber752@hotmail.com',66);
+
+INSERT INTO Follows_Artist VALUES ('ystewart716@hotmail.com', 'milkychance.hq@gmail.com');
+INSERT INTO Follows_Artist VALUES ('cvalencia294@hotmail.com', 'milkychance.hq@gmail.com');

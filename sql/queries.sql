@@ -42,6 +42,19 @@ ORDER BY F.follow_sum DESC
 ;
 
 -- Get the users who streamed the most so far this year, ordered by number of streams
+SELECT U.full_name, U.email, sum(s.scount) as stream_sum
+FROM b_User U,
+        (
+        SELECT s.email, count(s.stream_id) as scount
+        FROM Stream s
+        GROUP BY s.email
+        ORDER BY scount DESC
+        FETCH FIRST 5 ROWS ONLY
+         ) S
+WHERE U.email = S.email
+GROUP BY U.email, U.full_name
+ORDER BY stream_sum DESC
+;
 -- Get the average album length across all albums, singles not included. 
 
 

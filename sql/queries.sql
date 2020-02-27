@@ -144,25 +144,7 @@ ORDER BY stream_sum DESC
 --USERNAME                        SYSIBM    VARCHAR                     20     0 Yes
 --PASSWORD                        SYSIBM    VARCHAR                     20     0 Yes
 --FULL_NAME                       SYSIBM    VARCHAR                     20     0 Yes
---SUBSCRIPTION_NO                 SYSIBM    INTEGER                      4     0 Yes
-
--- Get album lengths across all albums, singles not included. This is a subquery for the next query, but it might be useful in the future.
-SELECT nosingles.album_name, TIME('00:00:00') + (SUM(MIDNIGHT_SECONDS(af.duration)))seconds AS album_duration  
-        FROM (   
-               --exclude singles and get song durations
-                SELECT so.album_name, so.sc, s.audiofile_id
-                FROM song s, (
-                        SELECT s.album_name, COUNT(album_name) AS sc 
-                        FROM song s
-                        GROUP BY s.album_name
-                        ORDER BY sc DESC
-                         ) so 
-                 WHERE so.sc > 1 AND s.album_name = so.album_name
-                 ) nosingles 
-        INNER JOIN Audiofile af
-            ON af.audiofile_id = nosingles.audiofile_id
-        GROUP BY nosingles.album_name
- ;        
+--SUBSCRIPTION_NO                 SYSIBM    INTEGER                      4     0 Yes       
                                                                       
 -- Get the average album length across all albums, singles not included.                                                                       
 SELECT TIME('00:00:00') + (AVG(MIDNIGHT_SECONDS(albums.album_duration)))seconds AS album_average_duration

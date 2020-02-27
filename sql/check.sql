@@ -12,5 +12,5 @@ CHECK (accessibility = '1' OR accessibility = '0');
 
 ALTER TABLE Stream 
 ADD CONSTRAINT conStream 
-CHECK (start_time <= '2020‑02‑28‑00.00.00'),
+CHECK (start_time <= '2020‑02‑28‑00.00.00');
 

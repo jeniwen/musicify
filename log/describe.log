@@ -1,0 +1,174 @@
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+POD_NAME                        SYSIBM    VARCHAR                    130     0 No    
+DESCRIPTION                     SYSIBM    VARCHAR                   2000     0 Yes   
+CATEGORY                        SYSIBM    VARCHAR                     30     0 Yes   
+COVER_IMAGE                     SYSIBM    VARCHAR                     50     0 Yes   
+
+  4 record(s) selected.
+
+
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+SUBSCRIPTION_NO                 SYSIBM    INTEGER                      4     0 No    
+SUBSCRIPTION_TYPE               SYSIBM    INTEGER                      4     0 Yes   
+START_DATE                      SYSIBM    DATE                         4     0 Yes   
+PAYMENT_METHOD                  SYSIBM    VARCHAR                     50     0 Yes   
+
+  4 record(s) selected.
+
+
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+AUDIOFILE_ID                    SYSIBM    INTEGER                      4     0 No    
+DURATION                        SYSIBM    TIME                         3     0 Yes   
+
+  2 record(s) selected.
+
+
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+EMAIL                           SYSIBM    VARCHAR                     30     0 No    
+USERNAME                        SYSIBM    VARCHAR                     20     0 Yes   
+PASSWORD                        SYSIBM    VARCHAR                     20     0 Yes   
+FULL_NAME                       SYSIBM    VARCHAR                     20     0 Yes   
+SUBSCRIPTION_NO                 SYSIBM    INTEGER                      4     0 Yes   
+
+  5 record(s) selected.
+
+
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+EMAIL                           SYSIBM    VARCHAR                     30     0 No    
+SUBSCRIPTION_NO                 SYSIBM    INTEGER                      4     0 Yes   
+
+  2 record(s) selected.
+
+
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+EMAIL                           SYSIBM    VARCHAR                     30     0 No    
+BAND_NAME                       SYSIBM    VARCHAR                     30     0 Yes   
+BIOGRAPHY                       SYSIBM    VARCHAR                    600     0 Yes   
+
+  3 record(s) selected.
+
+
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+EMAIL                           SYSIBM    VARCHAR                     30     0 No    
+PLAYLIST_NAME                   SYSIBM    VARCHAR                     30     0 No    
+ACCESSIBILITY                   SYSIBM    CHARACTER                    1     0 Yes   
+DESCRIPTION                     SYSIBM    VARCHAR                   2000     0 Yes   
+
+  4 record(s) selected.
+
+
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+AUDIOFILE_ID                    SYSIBM    INTEGER                      4     0 No    
+EPISODE_NO                      SYSIBM    INTEGER                      4     0 Yes   
+RELEASE_DATE                    SYSIBM    DATE                         4     0 Yes   
+COVER_IMAGE                     SYSIBM    VARCHAR                     50     0 Yes   
+DESCRIPTION                     SYSIBM    VARCHAR                   2000     0 Yes   
+POD_NAME                        SYSIBM    VARCHAR                    130     0 Yes   
+POD_EPISODE_NAME                SYSIBM    VARCHAR                    150     0 Yes   
+
+  7 record(s) selected.
+
+
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+STREAM_ID                       SYSIBM    INTEGER                      4     0 No    
+START_TIME                      SYSIBM    TIMESTAMP                   10     6 Yes   
+EMAIL                           SYSIBM    VARCHAR                     30     0 Yes   
+AUDIOFILE_ID                    SYSIBM    INTEGER                      4     0 Yes   
+
+  4 record(s) selected.
+
+
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+EMAIL                           SYSIBM    VARCHAR                     30     0 No    
+ALBUM_NAME                      SYSIBM    VARCHAR                     50     0 No    
+RELEASE_YEAR                    SYSIBM    INTEGER                      4     0 Yes   
+GENRE                           SYSIBM    VARCHAR                     20     0 Yes   
+COVER_IMAGE                     SYSIBM    VARCHAR                     50     0 Yes   
+
+  5 record(s) selected.
+
+
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+AUDIOFILE_ID                    SYSIBM    INTEGER                      4     0 No    
+ALBUM_NAME                      SYSIBM    VARCHAR                     50     0 Yes   
+EMAIL                           SYSIBM    VARCHAR                     30     0 Yes   
+SONG_NAME                       SYSIBM    VARCHAR                     50     0 Yes   
+
+  4 record(s) selected.
+
+
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+USER_EMAIL                      SYSIBM    VARCHAR                     30     0 No    
+PLAYLIST_MAKER_EMAIL            SYSIBM    VARCHAR                     30     0 No    
+PLAYLIST_NAME                   SYSIBM    VARCHAR                     30     0 No    
+
+  3 record(s) selected.
+
+
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+USER_EMAIL                      SYSIBM    VARCHAR                     30     0 No    
+POD_NAME                        SYSIBM    VARCHAR                    130     0 No    
+
+  2 record(s) selected.
+
+
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+USER_EMAIL                      SYSIBM    VARCHAR                     30     0 No    
+ARTIST_EMAIL                    SYSIBM    VARCHAR                     30     0 No    
+
+  2 record(s) selected.
+
+
+
+                                Data type                     Column
+Column name                     schema    Data type name      Length     Scale Nulls
+------------------------------- --------- ------------------- ---------- ----- ------
+AUDIOFILE_ID                    SYSIBM    INTEGER                      4     0 No    
+PLAYLIST_NAME                   SYSIBM    VARCHAR                     30     0 No    
+EMAIL                           SYSIBM    VARCHAR                     30     0 No    
+
+  3 record(s) selected.
+
+

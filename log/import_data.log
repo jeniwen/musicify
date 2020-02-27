@@ -1,0 +1,320 @@
+SQL3109N  The utility is beginning to load data from file "Podcast.csv".
+
+SQL3110N  The utility has completed processing.  "200" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "200".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "200" rows were processed from the input file.  "200" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 200
+Number of rows skipped      = 0
+Number of rows inserted     = 200
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 200
+
+
+SQL3109N  The utility is beginning to load data from file "Subscription.csv".
+
+SQL3110N  The utility has completed processing.  "48" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "48".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "48" rows were processed from the input file.  "48" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 48
+Number of rows skipped      = 0
+Number of rows inserted     = 48
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 48
+
+
+SQL3109N  The utility is beginning to load data from file "Audiofile.csv".
+
+SQL3110N  The utility has completed processing.  "500" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "500".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "500" rows were processed from the input file.  "500" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 500
+Number of rows skipped      = 0
+Number of rows inserted     = 500
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 500
+
+
+SQL3109N  The utility is beginning to load data from file "b_user.csv".
+
+SQL3110N  The utility has completed processing.  "96" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "96".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "96" rows were processed from the input file.  "96" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 96
+Number of rows skipped      = 0
+Number of rows inserted     = 96
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 96
+
+
+SQL3109N  The utility is beginning to load data from file "Administrator.csv".
+
+SQL3110N  The utility has completed processing.  "48" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "48".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "48" rows were processed from the input file.  "48" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 48
+Number of rows skipped      = 0
+Number of rows inserted     = 48
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 48
+
+
+SQL3109N  The utility is beginning to load data from file "Artist.csv".
+
+SQL3110N  The utility has completed processing.  "30" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "30".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "30" rows were processed from the input file.  "30" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 30
+Number of rows skipped      = 0
+Number of rows inserted     = 30
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 30
+
+
+SQL3109N  The utility is beginning to load data from file "Playlist.csv".
+
+SQL3110N  The utility has completed processing.  "21" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "21".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "21" rows were processed from the input file.  "21" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 21
+Number of rows skipped      = 0
+Number of rows inserted     = 21
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 21
+
+
+SQL3109N  The utility is beginning to load data from file 
+"Podcast_Episode.csv".
+
+SQL3110N  The utility has completed processing.  "150" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "150".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "150" rows were processed from the input file.  "150" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 150
+Number of rows skipped      = 0
+Number of rows inserted     = 150
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 150
+
+
+SQL3109N  The utility is beginning to load data from file "Stream.csv".
+
+SQL3110N  The utility has completed processing.  "443" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "443".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "443" rows were processed from the input file.  "443" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 443
+Number of rows skipped      = 0
+Number of rows inserted     = 443
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 443
+
+
+SQL3109N  The utility is beginning to load data from file "Album.csv".
+
+SQL3110N  The utility has completed processing.  "43" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "43".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "43" rows were processed from the input file.  "43" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 43
+Number of rows skipped      = 0
+Number of rows inserted     = 43
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 43
+
+
+SQL3109N  The utility is beginning to load data from file "Song.csv".
+
+SQL3110N  The utility has completed processing.  "300" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "300".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "300" rows were processed from the input file.  "300" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 300
+Number of rows skipped      = 0
+Number of rows inserted     = 300
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 300
+
+
+SQL3109N  The utility is beginning to load data from file 
+"Follows_Playlist.csv".
+
+SQL3110N  The utility has completed processing.  "39" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "39".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "39" rows were processed from the input file.  "39" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 39
+Number of rows skipped      = 0
+Number of rows inserted     = 39
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 39
+
+
+SQL3109N  The utility is beginning to load data from file 
+"Follows_Podcast.csv".
+
+SQL3110N  The utility has completed processing.  "29" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "29".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "29" rows were processed from the input file.  "29" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 29
+Number of rows skipped      = 0
+Number of rows inserted     = 29
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 29
+
+
+SQL3109N  The utility is beginning to load data from file 
+"Follows_Artist.csv".
+
+SQL3110N  The utility has completed processing.  "31" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "31".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "31" rows were processed from the input file.  "31" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 31
+Number of rows skipped      = 0
+Number of rows inserted     = 31
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 31
+
+
+SQL3109N  The utility is beginning to load data from file 
+"Playlist_Has_Song.csv".
+
+SQL3110N  The utility has completed processing.  "301" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "301".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "301" rows were processed from the input file.  "301" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 301
+Number of rows skipped      = 0
+Number of rows inserted     = 301
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 301
+
+

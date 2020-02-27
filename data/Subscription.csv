@@ -1,27 +1,48 @@
-0,0,2015-04-19 22:18,Paypal
-1,0,2016-04-11 13:43,Paypal
-2,0,2017-05-10 15:48,Visa
-3,1,2016-04-14 13:01,Mastercard
-4,1,2016-11-04 5:26,Paypal
-5,2,2016-08-04 11:40,Interac
-6,0,2016-10-01 7:54,Interac
-7,1,2018-04-24 1:24,Visa
-8,2,2016-07-11 18:04,American Express
-9,1,2018-08-12 7:26,Paypal
-10,1,2016-08-31 18:25,Visa
-11,2,2016-05-15 20:54,Visa
-12,1,2016-02-24 6:49,Visa
-13,1,2018-04-26 18:23,Visa
-14,2,2015-11-26 9:00,Mastercard
-15,1,2015-08-28 5:56,American Express
-16,1,2020-02-03 21:58,American Express
-17,2,2015-11-16 14:21,Interac
-18,0,2017-05-24 10:13,Mastercard
-19,1,2018-10-29 2:24,Paypal
-20,1,2013-01-22 9:01,Visa
-21,1,2012-11-08 2:56,Visa
-22,1,2018-01-31 21:12,Mastercard
-23,1,2014-11-16 14:21,American Express
-24,1,2013-05-24 10:13,American Express
-25,1,2018-09-21 2:24,Interac
-26,1,2017-02-27 2:24,Paypal
+1,1,2010-04-24,Mastercard
+2,1,2019-02-03,Paypal
+3,1,2016-10-14,American Express
+4,1,2015-04-29,Paypal
+5,1,2017-01-08,American Express
+6,1,2011-03-07,American Express
+7,1,2010-02-05,American Express
+8,1,2010-01-19,American Express
+9,1,2015-07-25,Paypal
+10,1,2015-01-26,Visa
+11,1,2010-10-17,American Express
+12,1,2014-04-14,American Express
+13,1,2011-07-25,Paypal
+14,1,2019-11-15,American Express
+15,1,2019-03-28,Paypal
+16,1,2018-05-27,Paypal
+17,0,2018-10-08,American Express
+18,0,2017-12-21,American Express
+19,0,2015-04-08,American Express
+20,0,2015-01-13,Visa
+21,0,2011-05-20,Visa
+22,0,2016-05-18,Mastercard
+23,0,2018-05-03,Visa
+24,0,2019-09-13,Interac
+25,0,2015-08-29,Mastercard
+26,0,2017-09-24,Paypal
+27,0,2015-07-11,Mastercard
+28,0,2010-02-07,Interac
+29,0,2012-02-22,American Express
+30,0,2010-04-18,Mastercard
+31,0,2014-08-10,Visa
+32,2,2017-11-24,Visa
+33,2,2011-07-07,American Express
+34,2,2010-03-08,Paypal
+35,2,2015-12-19,Paypal
+36,2,2016-11-09,Visa
+37,2,2015-02-18,Visa
+38,2,2014-12-17,Mastercard
+39,2,2015-04-22,Visa
+40,2,2017-09-24,Mastercard
+41,2,2015-08-11,Paypal
+42,2,2016-04-29,American Express
+43,2,2012-11-28,Mastercard
+44,2,2019-05-12,Paypal
+45,2,2018-05-12,Visa
+46,2,2018-01-10,Interac
+47,2,2012-01-20,American Express
+48,2,2019-12-09,Interac

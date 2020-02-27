@@ -68,7 +68,7 @@ ORDER BY catsum DESC
 
 
 
--- Get the average number of songs in the playlists with the most followers
+-- Get the number of songs in the playlists with the most followers
 SELECT F.playlist_name, F.follow_sum, H.songs_sum
 FROM 
 (

@@ -7,6 +7,29 @@ WHERE a.band_name NOT IN (
         WHERE al.release_year > 2010
 );
 
+-- delete all Follows_artist relations for users following Milky Chance
+
+SELECT * from Follows_Artist 
+WHERE artist_email LIKE 'milkychance.hq@gmail.com';
+
+DELETE FROM Follows_Artist 
+WHERE artist_email LIKE 'milkychance.hq@gmail.com';
+
+SELECT * from Follows_Artist 
+WHERE artist_email LIKE 'milkychance.hq@gmail.com';
+
+-- USER_EMAIL                   ARTIST_EMAIL
+-- -------------------------    ------------------------
+-- cvalencia294@hotmail.com     milkychance.hq@gmail.com
+-- kbonilla431@hotmail.com      milkychance.hq@gmail.com
+-- lfrazier445@hotmail.com      milkychance.hq@gmail.com
+-- tcox196@live.com             milkychance.hq@gmail.com
+-- ystewart716@hotmail.com      milkychance.hq@gmail.com
+
+-- Empty result set fetched
+
+-- ------------------------------------------------------------------------------------------------------------------------------
+
 -- set the year of all albums to the oldest album's year
 UPDATE Album al 
 SET al.release_year = (

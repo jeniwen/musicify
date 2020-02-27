@@ -55,20 +55,42 @@ WHERE U.email = S.email
 GROUP BY U.email, U.full_name
 ORDER BY stream_sum DESC
 ;
+
 -- Get album lengths across all albums, singles not included. 
 SELECT nosingles.album_name, TIME('00:00:00') + (SUM(MIDNIGHT_SECONDS(af.duration)))seconds AS album_duration  
-FROM (
-        SELECT so.album_name, so.sc, s.audiofile_id
-        FROM song s, (
-                select s.album_name, count(album_name) as sc 
-                from song s
-                GROUP BY s.album_name
-                ORDER BY sc DESC
-                 ) so 
-         where so.sc > 1 AND s.album_name = so.album_name
-         ) nosingles 
-INNER JOIN Audiofile af
-    ON af.audiofile_id = nosingles.audiofile_id
- GROUP BY nosingles.album_name
+        FROM (   
+               --exclude singles and get song durations
+                SELECT so.album_name, so.sc, s.audiofile_id
+                FROM song s, (
+                        SELECT s.album_name, COUNT(album_name) AS sc 
+                        FROM song s
+                        GROUP BY s.album_name
+                        ORDER BY sc DESC
+                         ) so 
+                 WHERE so.sc > 1 AND s.album_name = so.album_name
+                 ) nosingles 
+        INNER JOIN Audiofile af
+            ON af.audiofile_id = nosingles.audiofile_id
+        GROUP BY nosingles.album_name
  ;        
--- Get the average album length across all albums, singles not included. 
+                                                                      
+-- Get the average album length across all albums, singles not included.                                                                       
+SELECT TIME('00:00:00') + (AVG(MIDNIGHT_SECONDS(albums.album_duration)))seconds AS album_average_duration
+FROM(   --get album durations w/o singles
+        SELECT nosingles.album_name, TIME('00:00:00') + (SUM(MIDNIGHT_SECONDS(af.duration)))seconds AS album_duration  
+        FROM (   
+               --exclude singles and get song durations
+                SELECT so.album_name, so.sc, s.audiofile_id
+                FROM song s, (
+                        SELECT s.album_name, COUNT(album_name) AS sc 
+                        FROM song s
+                        GROUP BY s.album_name
+                        ORDER BY sc DESC
+                         ) so 
+                 WHERE so.sc > 1 AND s.album_name = so.album_name
+                 ) nosingles 
+        INNER JOIN Audiofile af
+            ON af.audiofile_id = nosingles.audiofile_id
+        GROUP BY nosingles.album_name
+    )albums
+ ;        

@@ -23,7 +23,6 @@ ORDER BY a.band_name DESC;
 -- COVER_IMAGE                     SYSIBM    VARCHAR                     50     0 Yes 
 
 
-
 -- Number of streams per category of podcast, ordered by most number of streams
 SELECT p.category, SUM(X.streamsum) as catsum
 FROM Podcast p,
@@ -69,10 +68,6 @@ ORDER BY catsum DESC
 
 
 
-
-
-
-
 -- Get the average number of songs in the playlists with the most followers
 SELECT F.playlist_name, F.follow_sum, H.songs_sum
 FROM 
@@ -101,6 +96,7 @@ ORDER BY F.follow_sum DESC
 -- PLAYLIST_NAME                   SYSIBM    VARCHAR                     30     0 No    
 -- ACCESSIBILITY                   SYSIBM    CHARACTER                    1     0 Yes   
 -- DESCRIPTION                     SYSIBM    VARCHAR                   2000     0 Yes 
+
 
 
 -- Playlist_Has_Song
@@ -150,7 +146,7 @@ ORDER BY stream_sum DESC
 --FULL_NAME                       SYSIBM    VARCHAR                     20     0 Yes
 --SUBSCRIPTION_NO                 SYSIBM    INTEGER                      4     0 Yes
 
--- Get album lengths across all albums, singles not included. 
+-- Get album lengths across all albums, singles not included. This is a subquery for the next query, but it might be useful in the future.
 SELECT nosingles.album_name, TIME('00:00:00') + (SUM(MIDNIGHT_SECONDS(af.duration)))seconds AS album_duration  
         FROM (   
                --exclude singles and get song durations
@@ -204,3 +200,4 @@ FROM(   --get album durations w/o singles
 ------------------------------- --------- ------------------- ---------- ----- ------
 --AUDIOFILE_ID                    SYSIBM    INTEGER                      4     0 No
 --DURATION                        SYSIBM    TIME                         3     0 Yes
+

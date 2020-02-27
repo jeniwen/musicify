@@ -1,0 +1,29 @@
+DESCRIBE TABLE Podcast;
+
+DESCRIBE TABLE Subscription;
+
+DESCRIBE TABLE Audiofile;
+
+DESCRIBE TABLE b_user;
+
+DESCRIBE TABLE Administrator;
+
+DESCRIBE TABLE Artist;
+
+DESCRIBE TABLE Playlist;
+
+DESCRIBE TABLE Podcast_Episode;
+
+DESCRIBE TABLE Stream;
+
+DESCRIBE TABLE Album;
+
+DESCRIBE TABLE Song;
+
+DESCRIBE TABLE Follows_Playlist;
+
+DESCRIBE TABLE Follows_Podcast;
+
+DESCRIBE TABLE Follows_Artist;
+
+DESCRIBE TABLE Playlist_Has_Song;

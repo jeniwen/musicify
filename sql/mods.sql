@@ -1,13 +1,4 @@
 -- ------------------------------------------------------------------------------------------------------------------------------
--- delete any artist who has not released an album since 2010
-SELECT a.band_name
-FROM Artist a
-WHERE a.band_name NOT IN (
-        SELECT a.band_name
-        FROM Album al INNER JOIN Artist a ON al.email=a.email
-        WHERE al.release_year > 2010
-);
--- ------------------------------------------------------------------------------------------------------------------------------
 
 -- delete all Follows_artist relations for users following Milky Chance
 

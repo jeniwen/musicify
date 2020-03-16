@@ -1,10 +1,28 @@
 package Application.src;
 
-public class Main {
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
-	public static void main(String[] args) 
+public class Main extends Application {
+
+//	public static void main(String[] args) 
+//	{
+//		System.out.println("Hello world!");
+//	}
+
+	@Override
+	public void start(Stage primaryStage) throws Exception 
 	{
-		System.out.println("Hello world!");
+		GridPane root = new GridPane();
+		
+		root.add(new TextField("Test"), 0, 0, 1, 1);
+		
+		primaryStage.setScene(new Scene(root));
+		
+		primaryStage.show();
 	}
 
 }

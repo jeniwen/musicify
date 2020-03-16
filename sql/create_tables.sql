@@ -19,7 +19,7 @@ CREATE TABLE Audiofile (
 	
 CREATE TABLE b_user (
 	email VARCHAR(30) NOT NULL PRIMARY KEY,
-	username VARCHAR(20),
+	username VARCHAR(20) NOT NULL UNIQUE,
 	password VARCHAR(20),
 	full_name VARCHAR(20),
 	subscription_no INTEGER,

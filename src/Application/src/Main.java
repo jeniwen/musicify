@@ -1,10 +1,16 @@
 package Application.src;
 
+import java.util.ArrayList;
+
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
@@ -36,9 +42,11 @@ public class Main extends Application {
 		root.getStyleClass().add("outer_box");
 		root.getChildren().add(createProfileSection());
 		root.getChildren().add(createSearchSection());
+		root.getChildren().add(createRecentlyPlayedSection());
 		root.getChildren().add(createUtilitiesBar());
 		
-		Scene scene = new Scene(root, 500, 500);
+		
+		Scene scene = new Scene(root, 500, 700);
 		scene.getStylesheets().add("Application/src/style.css");
 		
 		primaryStage.setTitle("Application");
@@ -46,6 +54,55 @@ public class Main extends Application {
 		primaryStage.show();
 	}
 	
+	private VBox createRecentlyPlayedSection() 
+	{
+		VBox recentlyPlayedBox = new VBox();
+		recentlyPlayedBox.getStyleClass().add("inner");
+		recentlyPlayedBox.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(2))));
+		
+		Label title = new Label("Recently Played:");
+		title.getStyleClass().add("title");
+		recentlyPlayedBox.getChildren().add(title);
+		
+		HBox recentlyPlayedSongsBox = new HBox();
+		Label recentlyPlayedSongsLabel = new Label("Songs: ");
+		recentlyPlayedSongsLabel.getStyleClass().add("sub_label");
+		ListView recentlyPlayedSongs = new ListView();
+		recentlyPlayedSongs.setPrefWidth(380);
+		recentlyPlayedSongs.setPrefHeight(80);
+		recentlyPlayedSongs.getItems().add("Song 1");
+		recentlyPlayedSongs.getItems().add("Song 2");
+		recentlyPlayedSongs.getItems().add("Song 3");
+		recentlyPlayedSongs.getItems().add("Song 4");
+		recentlyPlayedSongs.getItems().add("Song 5");
+		recentlyPlayedSongs.getItems().add("Song 6");
+		recentlyPlayedSongs.getItems().add("Song 7");
+		recentlyPlayedSongs.getItems().add("Song 8");
+		recentlyPlayedSongs.getItems().add("Song 9");
+		recentlyPlayedSongsBox.getChildren().addAll(recentlyPlayedSongsLabel, recentlyPlayedSongs);
+		recentlyPlayedBox.getChildren().add(recentlyPlayedSongsBox);
+		
+		HBox recentlyPlayedPodEpisodesBox = new HBox();
+		Label recentlyPlayedPodEpisodesLabel = new Label("Songs: ");
+		recentlyPlayedPodEpisodesLabel.getStyleClass().add("sub_label");
+		ListView recentlyPlayedPodEpisodes = new ListView();
+		recentlyPlayedPodEpisodes.setPrefWidth(380);
+		recentlyPlayedPodEpisodes.setPrefHeight(80);
+		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 1");
+		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 2");
+		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 3");
+		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 4");
+		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 5");
+		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 6");
+		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 7");
+		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 8");
+		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 9");
+		recentlyPlayedPodEpisodesBox.getChildren().addAll(recentlyPlayedPodEpisodesLabel, recentlyPlayedPodEpisodes);
+		recentlyPlayedBox.getChildren().add(recentlyPlayedPodEpisodesBox);
+		
+		return recentlyPlayedBox;
+	}
+
 	private HBox createUtilitiesBar() 
 	{
 		HBox utilitiesBar = new HBox();
@@ -153,30 +210,108 @@ public class Main extends Application {
 		title.getStyleClass().add("title");
 		searchBox.getChildren().add(title);
 		
+		ObservableList<String> comboOptions = FXCollections.observableArrayList();
+		
 		HBox searchAreaBox = new HBox();
 		ToggleGroup searchArea = new ToggleGroup();
 		RadioButton songOption = new RadioButton("Song");
 		songOption.setToggleGroup(searchArea);
+		songOption.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) {
+				comboOptions.clear();
+				comboOptions.addAll("Song Name",
+									"Artist Name",
+									"Album Name",
+									"Genre");
+			}
+			
+		});
 		searchAreaBox.getChildren().add(songOption);
 		RadioButton artistOption = new RadioButton("Artist");
 		artistOption.setToggleGroup(searchArea);
+		artistOption.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) {
+				comboOptions.clear();
+				comboOptions.addAll("Band Name",
+									"Album Name",
+									"Song Name");
+			}
+			
+		});
 		searchAreaBox.getChildren().add(artistOption);
 		RadioButton albumOption = new RadioButton("Album");
 		albumOption.setToggleGroup(searchArea);
+		albumOption.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) {
+				comboOptions.clear();
+				comboOptions.addAll("Album Name",
+									"Artist Name",
+									"Song Name",
+									"Release Year",
+									"Genre");
+			}
+			
+		});
 		searchAreaBox.getChildren().add(albumOption);
 		RadioButton playlistOption = new RadioButton("Playlist");
 		playlistOption.setToggleGroup(searchArea);
+		playlistOption.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) {
+				comboOptions.clear();
+				comboOptions.addAll("Playlist Name",
+									"Creator Username",
+									"Song Name");
+			}
+			
+		});
 		searchAreaBox.getChildren().add(playlistOption);
+		RadioButton podcastOption = new RadioButton("Podcast");
+		podcastOption.setToggleGroup(searchArea);
+		podcastOption.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) {
+				comboOptions.clear();
+				comboOptions.addAll("Podcast Name",
+									"Category",
+									"Podcast Episode Name");
+			}
+			
+		});
+		searchAreaBox.getChildren().add(podcastOption);
+		RadioButton podcastEpisodeOption = new RadioButton("Podcast Episode");
+		podcastEpisodeOption.setToggleGroup(searchArea);
+		podcastEpisodeOption.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) {
+				comboOptions.clear();
+				comboOptions.addAll("Podcast Episode Name",
+									"Podcast Name",
+									"Category");
+			}
+			
+		});
+		searchAreaBox.getChildren().add(podcastEpisodeOption);
 		searchBox.getChildren().add(searchAreaBox);
 		
 		HBox searchBarBox = new HBox();
-		Label searchBarLabel = new Label("Search: ");
-		searchBarLabel.getStyleClass().add("sub_label");
+//		Label searchBarLabel = new Label("Search: ");
+//		searchBarLabel.getStyleClass().add("sub_label");
+		ComboBox<String> combo = new ComboBox<String>(comboOptions);
 		TextField searchBarField = new TextField();
 		searchBarField.getStyleClass().add("field");
 		Button enterButton = new Button("Enter");
 		enterButton.getStyleClass().add("button");
-		searchBarBox.getChildren().addAll(searchBarLabel, searchBarField, enterButton);
+		searchBarBox.getChildren().addAll(combo, searchBarField, enterButton);
 		searchBox.getChildren().add(searchBarBox);
 		
 		return searchBox;

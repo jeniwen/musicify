@@ -30,15 +30,11 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
 	Stage pStage;
+	ConnectionManager conManager;
+	QueryExecuter queryExecuter;
 	
 	public static void main(String[] args) 
 	{
-		try {
-			simpleJDBC connection = new simpleJDBC();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		launch(args);
 	}
 	
@@ -46,7 +42,12 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws Exception 
 	{
 		pStage = primaryStage;
-
+		conManager = ConnectionManager.instance();
+		conManager.createConnection();
+		queryExecuter = QueryExecuter.instance();
+		queryExecuter.setConnnection(conManager.getConnection());
+		
+		
 		VBox root = createLoginPage();
 		
 		root.getStyleClass().add("login_b");
@@ -69,18 +70,18 @@ public class Main extends Application {
 		usernameBox.getStyleClass().add("inner");
 		Label usernameLabel = new Label("Username: ");
 		usernameLabel.getStyleClass().add("sub_label");
-		TextField username = new TextField();
-		username.getStyleClass().add("field");
-		usernameBox.getChildren().addAll(usernameLabel, username);
+		TextField usernameField = new TextField();
+		usernameField.getStyleClass().add("field");
+		usernameBox.getChildren().addAll(usernameLabel, usernameField);
 		loginBox.getChildren().add(usernameBox);
 		
 		HBox passwordBox = new HBox();
 		passwordBox.getStyleClass().add("inner");
 		Label passwordLabel = new Label("Password: ");
 		passwordLabel.getStyleClass().add("sub_label");
-		TextField password = new TextField();
-		password.getStyleClass().add("field");
-		passwordBox.getChildren().addAll(passwordLabel, password);
+		TextField passwordField = new TextField();
+		passwordField.getStyleClass().add("field");
+		passwordBox.getChildren().addAll(passwordLabel, passwordField);
 		loginBox.getChildren().add(passwordBox);
 		
 		HBox buttonBox = new HBox();
@@ -94,18 +95,32 @@ public class Main extends Application {
 			{
 				// logic to make it so that the user is logged in only if password works
 				
-				VBox root = new VBox();
-				root.getStyleClass().add("outer_box");
-				root.getChildren().add(createProfileSection());
-				root.getChildren().add(createSearchSection());
-				root.getChildren().add(createRecentlyPlayedSection());
-				root.getChildren().add(createUtilitiesBar());
-				Scene scene = new Scene(root, 500, 700);
-				scene.getStylesheets().add("Application/src/style.css");
+				String usernameValue = usernameField.getText();
+				String passwordValue = passwordField.getText();
 				
-				pStage.setTitle("Application");
-				pStage.setScene(scene);
-				pStage.show();
+				// obtain real password through query : add new class for query throwing
+				String realPassword = queryExecuter.getUserPassword(usernameValue);
+				
+				if(passwordValue.equals(realPassword))
+				{
+					VBox root = new VBox();
+					root.getStyleClass().add("outer_box");
+					root.getChildren().add(createProfileSection());
+					root.getChildren().add(createSearchSection());
+					root.getChildren().add(createRecentlyPlayedSection());
+					root.getChildren().add(createUtilitiesBar());
+					Scene scene = new Scene(root, 500, 700);
+					scene.getStylesheets().add("Application/src/style.css");
+					
+					pStage.setTitle("Application");
+					pStage.setScene(scene);
+					pStage.show();
+				}else{
+					// handle the password error...
+					System.out.println("username or password error handled in right place");
+				}
+				
+
 				
 			}
 			
@@ -117,6 +132,7 @@ public class Main extends Application {
 			@Override
 			public void handle(ActionEvent event) 
 			{
+				conManager.closeConnection();
 				System.exit(0);
 			}
 			
@@ -212,6 +228,7 @@ public class Main extends Application {
 
 			@Override
 			public void handle(ActionEvent event) {
+				conManager.closeConnection();
 				System.exit(0);
 			}
 			

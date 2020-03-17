@@ -1,4 +1,10 @@
+
 package Application.src;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -12,14 +18,15 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-//	public static void main(String[] args) 
-//	{
-//		System.out.println("Hello world!");
-//	}
+	public static void main(String[] args) throws SQLException {
+		simpleJDBC connection = new simpleJDBC();
+	    launch(args);
+		
+	}
 
 	@Override
-	public void start(Stage primaryStage) throws Exception 
-	{
+	public void start(Stage primaryStage) throws Exception {
+
 		GridPane root = new GridPane();
 		
 		VBox profileBox = createProfileSection();
@@ -37,24 +44,22 @@ public class Main extends Application {
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
-	
-	private VBox createProfileSection()
-	{
+
+	private VBox createProfileSection() {
 		VBox profileBox = new VBox();
-		
+
 		profileBox.setMinSize(500, 300);
 		profileBox.getChildren().add(new Text("profile section"));
-		
+
 		return profileBox;
 	}
-	
-	private VBox createSearchSection()
-	{
+
+	private VBox createSearchSection() {
 		VBox searchBox = new VBox();
-		
+
 		searchBox.setMinSize(500, 300);
 		searchBox.getChildren().add(new Text("search section"));
-		
+
 		return searchBox;
 	}
 

@@ -1,0 +1,31 @@
+.root {
+	-fx-background-color: #fff0f5;
+}
+
+.label {
+	-fx-font-family: "Times New Roman";
+	-fx-font-size: 20;
+	-fx-font-weight: bold;
+	-fx-column-alignment: center;
+}
+
+.outer_box {
+	-fx-spacing: 15;
+	-fx-padding: 15;
+}
+
+.inner_box {
+	-fx-spacing: 10;
+	-fx-padding: 5;
+}
+
+.button {
+	-fx-background-color: #eee8aa;
+	-fx-border-color: #000000;
+	-fx-font-family: "Times New Roman";
+}
+
+.button:hover {
+	-fx-background-color: #f0e68c;
+}
+

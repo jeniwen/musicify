@@ -1,3 +1,4 @@
+
 package Application.src;
 
 import javafx.application.Application;
@@ -30,6 +31,7 @@ public class Main extends Application {
 	
 	public static void main(String[] args) 
 	{
+		simpleJDBC connection = new simpleJDBC();
 		launch(args);
 	}
 	
@@ -276,9 +278,8 @@ public class Main extends Application {
 		
 		return profileBox;
 	}
-	
-	private VBox createSearchSection()
-	{
+
+	private VBox createSearchSection() {
 		VBox searchBox = new VBox();
 		
 		searchBox.getStyleClass().add("inner");

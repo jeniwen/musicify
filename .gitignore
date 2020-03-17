@@ -9,3 +9,24 @@ Group11.iml
 .DS_Store
 bin/Python/.ipynb_checkpoints/PodcastAutomation-checkpoint.ipynb
 .DS_Store
+
+
+
+# Eclipse stuff from here down.
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch

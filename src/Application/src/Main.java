@@ -1,6 +1,8 @@
 
 package Application.src;
 
+import java.sql.SQLException;
+
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -31,7 +33,12 @@ public class Main extends Application {
 	
 	public static void main(String[] args) 
 	{
-		simpleJDBC connection = new simpleJDBC();
+		try {
+			simpleJDBC connection = new simpleJDBC();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		launch(args);
 	}
 	

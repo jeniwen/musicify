@@ -446,7 +446,7 @@ public class Main extends Application {
 			public void handle(ActionEvent event) 
 			{
 				// obtain parameters
-				QueryParams parameters = new QueryParams();
+				SearchQueryParams parameters = new SearchQueryParams();
 				if(searchArea.getSelectedToggle().equals(songOption))
 				{
 					parameters.radioOptionValue = "Song";

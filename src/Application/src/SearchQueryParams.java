@@ -1,6 +1,6 @@
 package Application.src;
 
-class QueryParams {
+class SearchQueryParams {
 
 	String radioOptionValue;
 	String comboOptionValue;

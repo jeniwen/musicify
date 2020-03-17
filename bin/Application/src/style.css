@@ -2,20 +2,35 @@
 	-fx-background-color: #fff0f5;
 }
 
-.label {
+.title {
 	-fx-font-family: "Times New Roman";
 	-fx-font-size: 20;
+	-fx-underline: true;
 	-fx-font-weight: bold;
 	-fx-column-alignment: center;
 }
-
+.sub_label {
+	-fx-font-family: "Times New Roman";
+	-fx-font-size: 14;
+	-fx-font-weight: bold;
+	-fx-column-alignment: center;
+}
+.text {
+	-fx-font-family: "Times New Roman";
+	-fx-font-size: 12;
+	-fx-column-alignment: center;
+}
+.field {
+	-fx-font-family: "Times New Roman";
+	-fx-font-size: 12;
+	-fx-column-alignment: center;
+}
 .outer_box {
 	-fx-spacing: 15;
 	-fx-padding: 15;
 }
 
-.inner_box {
-	-fx-spacing: 10;
+.inner{
 	-fx-padding: 5;
 }
 

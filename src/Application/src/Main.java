@@ -302,6 +302,7 @@ public class Main extends Application {
 				comboOptions.addAll("Song Name",
 									"Artist Name",
 									"Album Name",
+									"Playlist Name",
 									"Genre");
 				combo.setValue("Song Name");
 			}
@@ -395,6 +396,44 @@ public class Main extends Application {
 		searchBarField.getStyleClass().add("field");
 		Button enterButton = new Button("Enter");
 		enterButton.getStyleClass().add("button");
+		enterButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				// obtain parameters
+				QueryParams parameters = new QueryParams();
+				if(searchArea.getSelectedToggle().equals(songOption))
+				{
+					parameters.radioOptionValue = "Song";
+				}else if (searchArea.getSelectedToggle().equals(artistOption))
+				{
+					parameters.radioOptionValue = "Artist";
+				}else if(searchArea.getSelectedToggle().equals(albumOption))
+				{
+					parameters.radioOptionValue = "Album";
+				}else if(searchArea.getSelectedToggle().equals(playlistOption))
+				{
+					parameters.radioOptionValue = "Playlist";
+				}else if(searchArea.getSelectedToggle().equals(podcastOption))
+				{
+					parameters.radioOptionValue = "Podcast";
+				}else if(searchArea.getSelectedToggle().equals(podcastEpisodeOption))
+				{
+					parameters.radioOptionValue = "Podcast Episode";
+				}
+				parameters.comboOptionValue = combo.getValue();
+				parameters.searchFieldValue = searchBarField.getText();
+				
+				System.out.println(parameters.radioOptionValue);
+				System.out.println(parameters.comboOptionValue);
+				System.out.println(parameters.searchFieldValue);
+				// pass parameters to code behind
+				
+				
+			}
+			
+		});
 		searchBarBox.getChildren().addAll(combo, searchBarField, enterButton);
 		searchBox.getChildren().add(searchBarBox);
 		

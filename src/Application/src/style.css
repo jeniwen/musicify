@@ -29,7 +29,10 @@
 	-fx-spacing: 15;
 	-fx-padding: 15;
 }
-
+.login_b {
+	-fx-spacing: 10;
+	-fx-padding: 110;
+}
 .inner{
 	-fx-padding: 8;
 	-fx-spacing: 5;

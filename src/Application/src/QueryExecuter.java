@@ -20,7 +20,7 @@ public class QueryExecuter
 	
 	public String getUserPassword(String username)
 	{
-		String result = "";
+		String result = "ERROR";
 		
 		// create the statement to fetch the username's password
 		try {
@@ -42,7 +42,7 @@ public class QueryExecuter
 					
 		}catch (SQLException e)
 		{
-			result = "ERROR IN PASSWORD";
+			//result = "ERROR IN PASSWORD";
 			//e.printStackTrace();
 		}
 		

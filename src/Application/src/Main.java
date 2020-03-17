@@ -24,6 +24,7 @@ import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -117,7 +118,8 @@ public class Main extends Application {
 					pStage.show();
 				}else{
 					// handle the password error...
-					System.out.println("username or password error handled in right place");
+					//System.out.println("username or password error handled in right place");
+					displayError("Username or password incorrect. ");
 				}
 				
 
@@ -141,6 +143,23 @@ public class Main extends Application {
 		loginBox.getChildren().add(buttonBox);
 		
 		return loginBox;
+	}
+	
+	private void displayError(String errorMsg)
+	{
+		Stage errorStage = new Stage();
+		
+		VBox rootB = new VBox();
+		rootB.getStyleClass().add("root");
+		rootB.getStyleClass().add("outer_box");
+		Label errorMsgLabel = new Label(errorMsg);
+		errorMsgLabel.getStyleClass().add("sub_label");
+		errorMsgLabel.setTextFill(Paint.valueOf("red"));
+		rootB.getChildren().add(errorMsgLabel);
+		Scene sceneB = new Scene(rootB, 250, 50);
+		sceneB.getStylesheets().add("Application/src/style.css");
+		errorStage.setScene(sceneB);
+		errorStage.show();
 	}
 
 	private VBox createRecentlyPlayedSection() 

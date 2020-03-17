@@ -49,7 +49,7 @@ public class Main extends Application {
 	private HBox createUtilitiesBar() 
 	{
 		HBox utilitiesBar = new HBox();
-		utilitiesBar.getStyleClass().add("outer_box");
+		utilitiesBar.getStyleClass().add("inner");
 		utilitiesBar.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(2))));
 		
 		Button logoutButton = new Button("Log Out");
@@ -90,7 +90,6 @@ public class Main extends Application {
 		profileBox.getChildren().add(title);
 		
 		HBox fullNameBox = new HBox();
-		fullNameBox.getStyleClass().add("inner");
 		Label fullNameLabel = new Label("Full Name: ");
 		fullNameLabel.getStyleClass().add("sub_label");
 		Text fullName = new Text();
@@ -99,7 +98,6 @@ public class Main extends Application {
 		profileBox.getChildren().add(fullNameBox);
 		
 		HBox usernameBox = new HBox();
-		usernameBox.getStyleClass().add("inner");
 		Label usernameLabel = new Label("Username: ");
 		usernameLabel.getStyleClass().add("sub_label");
 		Text username = new Text();
@@ -108,7 +106,6 @@ public class Main extends Application {
 		profileBox.getChildren().add(usernameBox);
 		
 		HBox emailBox = new HBox();
-		emailBox.getStyleClass().add("inner");
 		Label emailLabel = new Label("Email: ");
 		emailLabel.getStyleClass().add("sub_label");
 		Text email = new Text();
@@ -117,7 +114,6 @@ public class Main extends Application {
 		profileBox.getChildren().add(emailBox);
 		
 		HBox subscriptionNoBox = new HBox();
-		subscriptionNoBox.getStyleClass().add("inner");
 		Label subscriptionNoLabel = new Label("Subscription Number: ");
 		subscriptionNoLabel.getStyleClass().add("sub_label");
 		Text subscriptionNo = new Text();
@@ -126,7 +122,6 @@ public class Main extends Application {
 		profileBox.getChildren().add(subscriptionNoBox);
 		
 		HBox playlistListBox = new HBox();
-		playlistListBox.getStyleClass().add("inner");
 		Label playlistListLabel = new Label("Playlists: ");
 		playlistListLabel.getStyleClass().add("sub_label");
 		ListView playlistList = new ListView();
@@ -152,7 +147,7 @@ public class Main extends Application {
 	{
 		VBox searchBox = new VBox();
 		
-		searchBox.getStyleClass().add("outer_box");
+		searchBox.getStyleClass().add("inner");
 		searchBox.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(2))));
 		Label title = new Label("Search Section");
 		title.getStyleClass().add("title");

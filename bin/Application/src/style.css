@@ -31,7 +31,8 @@
 }
 
 .inner{
-	-fx-padding: 5;
+	-fx-padding: 8;
+	-fx-spacing: 5;
 }
 
 .button {

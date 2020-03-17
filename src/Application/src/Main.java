@@ -1,14 +1,11 @@
 
 package Application.src;
 
-import java.util.ArrayList;
-
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -30,6 +27,8 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+	Stage pStage;
+	
 	public static void main(String[] args) 
 	{
 		simpleJDBC connection = new simpleJDBC();
@@ -39,13 +38,12 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception 
 	{
+		pStage = primaryStage;
 
-		VBox root = new VBox();
-		root.getStyleClass().add("outer_box");
-		root.getChildren().add(createProfileSection());
-		root.getChildren().add(createSearchSection());
-		root.getChildren().add(createRecentlyPlayedSection());
-		root.getChildren().add(createUtilitiesBar());
+		VBox root = createLoginPage();
+		
+		root.getStyleClass().add("login_b");
+		
 		
 		
 		Scene scene = new Scene(root, 500, 700);
@@ -56,6 +54,72 @@ public class Main extends Application {
 		primaryStage.show();
 	}
 	
+	private VBox createLoginPage() 
+	{
+		VBox loginBox = new VBox();
+		
+		HBox usernameBox = new HBox();
+		usernameBox.getStyleClass().add("inner");
+		Label usernameLabel = new Label("Username: ");
+		usernameLabel.getStyleClass().add("sub_label");
+		TextField username = new TextField();
+		username.getStyleClass().add("field");
+		usernameBox.getChildren().addAll(usernameLabel, username);
+		loginBox.getChildren().add(usernameBox);
+		
+		HBox passwordBox = new HBox();
+		passwordBox.getStyleClass().add("inner");
+		Label passwordLabel = new Label("Password: ");
+		passwordLabel.getStyleClass().add("sub_label");
+		TextField password = new TextField();
+		password.getStyleClass().add("field");
+		passwordBox.getChildren().addAll(passwordLabel, password);
+		loginBox.getChildren().add(passwordBox);
+		
+		HBox buttonBox = new HBox();
+		buttonBox.getStyleClass().add("inner");
+		Button loginButton = new Button("Login");
+		loginButton.getStyleClass().add("button");
+		loginButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				// logic to make it so that the user is logged in only if password works
+				
+				VBox root = new VBox();
+				root.getStyleClass().add("outer_box");
+				root.getChildren().add(createProfileSection());
+				root.getChildren().add(createSearchSection());
+				root.getChildren().add(createRecentlyPlayedSection());
+				root.getChildren().add(createUtilitiesBar());
+				Scene scene = new Scene(root, 500, 700);
+				scene.getStylesheets().add("Application/src/style.css");
+				
+				pStage.setTitle("Application");
+				pStage.setScene(scene);
+				pStage.show();
+				
+			}
+			
+		});
+		Button quitButton = new Button("Quit");
+		quitButton.getStyleClass().add("button");
+		quitButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				System.exit(0);
+			}
+			
+		});
+		buttonBox.getChildren().addAll(loginButton, quitButton);
+		loginBox.getChildren().add(buttonBox);
+		
+		return loginBox;
+	}
+
 	private VBox createRecentlyPlayedSection() 
 	{
 		VBox recentlyPlayedBox = new VBox();
@@ -116,8 +180,21 @@ public class Main extends Application {
 		logoutButton.setOnAction(new EventHandler<ActionEvent>() {
 
 			@Override
-			public void handle(ActionEvent event) {
-				// how to logout
+			public void handle(ActionEvent event) 
+			{
+				// return to the initial menu
+				// necessary to forget person's info?
+				
+				VBox root = createLoginPage();
+				
+				root.getStyleClass().add("login_b");
+				Scene scene = new Scene(root, 500, 700);
+				scene.getStylesheets().add("Application/src/style.css");
+				
+				pStage.setTitle("Application");
+				pStage.setScene(scene);
+				pStage.show();
+				
 			}
 			
 		});
@@ -212,6 +289,7 @@ public class Main extends Application {
 		searchBox.getChildren().add(title);
 		
 		ObservableList<String> comboOptions = FXCollections.observableArrayList();
+		ComboBox<String> combo = new ComboBox<String>(comboOptions);
 		
 		HBox searchAreaBox = new HBox();
 		ToggleGroup searchArea = new ToggleGroup();
@@ -226,6 +304,7 @@ public class Main extends Application {
 									"Artist Name",
 									"Album Name",
 									"Genre");
+				combo.setValue("Song Name");
 			}
 			
 		});
@@ -240,6 +319,7 @@ public class Main extends Application {
 				comboOptions.addAll("Band Name",
 									"Album Name",
 									"Song Name");
+				combo.setValue("Band Name");
 			}
 			
 		});
@@ -256,6 +336,7 @@ public class Main extends Application {
 									"Song Name",
 									"Release Year",
 									"Genre");
+				combo.setValue("Album Name");
 			}
 			
 		});
@@ -270,6 +351,7 @@ public class Main extends Application {
 				comboOptions.addAll("Playlist Name",
 									"Creator Username",
 									"Song Name");
+				combo.setValue("Playlist Name");
 			}
 			
 		});
@@ -284,6 +366,7 @@ public class Main extends Application {
 				comboOptions.addAll("Podcast Name",
 									"Category",
 									"Podcast Episode Name");
+				combo.setValue("Podcast Name");
 			}
 			
 		});
@@ -298,6 +381,7 @@ public class Main extends Application {
 				comboOptions.addAll("Podcast Episode Name",
 									"Podcast Name",
 									"Category");
+				combo.setValue("Podcast Episode Name");
 			}
 			
 		});
@@ -307,7 +391,7 @@ public class Main extends Application {
 		HBox searchBarBox = new HBox();
 //		Label searchBarLabel = new Label("Search: ");
 //		searchBarLabel.getStyleClass().add("sub_label");
-		ComboBox<String> combo = new ComboBox<String>(comboOptions);
+		//ComboBox<String> combo = new ComboBox<String>(comboOptions);
 		TextField searchBarField = new TextField();
 		searchBarField.getStyleClass().add("field");
 		Button enterButton = new Button("Enter");

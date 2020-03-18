@@ -429,6 +429,7 @@ public class Main extends Application {
 			}
 			
 		});
+		searchArea.selectToggle(songOption);
 		searchAreaBox.getChildren().add(podcastEpisodeOption);
 		searchBox.getChildren().add(searchAreaBox);
 		
@@ -465,13 +466,16 @@ public class Main extends Application {
 				}else if(searchArea.getSelectedToggle().equals(podcastEpisodeOption))
 				{
 					parameters.radioOptionValue = "Podcast Episode";
+				}else
+				{
+					parameters.radioOptionValue = "None of the above";
 				}
 				parameters.comboOptionValue = combo.getValue();
 				parameters.searchFieldValue = searchBarField.getText();
 				
-				//System.out.println(parameters.radioOptionValue);
-				//System.out.println(parameters.comboOptionValue);
-				//System.out.println(parameters.searchFieldValue);
+//				System.out.println(parameters.radioOptionValue);
+//				System.out.println(parameters.comboOptionValue);
+//				System.out.println(parameters.searchFieldValue);
 				// pass parameters to code behind
 				
 				// display results window

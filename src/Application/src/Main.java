@@ -14,6 +14,8 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.Border;
@@ -46,7 +48,7 @@ public class Main extends Application {
 		conManager = ConnectionManager.instance();
 		conManager.createConnection();
 		queryExecuter = QueryExecuter.instance();
-		queryExecuter.setConnnection(conManager.getConnection());
+		QueryExecuter.setConnnection(conManager.getConnection());
 		
 		
 		VBox root = createLoginPage();
@@ -121,9 +123,7 @@ public class Main extends Application {
 					//System.out.println("username or password error handled in right place");
 					displayError("Username or password incorrect. ");
 				}
-				
 
-				
 			}
 			
 		});
@@ -469,12 +469,22 @@ public class Main extends Application {
 				parameters.comboOptionValue = combo.getValue();
 				parameters.searchFieldValue = searchBarField.getText();
 				
-				System.out.println(parameters.radioOptionValue);
-				System.out.println(parameters.comboOptionValue);
-				System.out.println(parameters.searchFieldValue);
+				//System.out.println(parameters.radioOptionValue);
+				//System.out.println(parameters.comboOptionValue);
+				//System.out.println(parameters.searchFieldValue);
 				// pass parameters to code behind
 				
+				// display results window
 				
+				VBox rootC = new VBox();
+				rootC.getStyleClass().add("outer_box");
+				rootC.getChildren().add(createResultsSection(parameters));
+				Scene scene = new Scene(rootC, 500, 700);
+				scene.getStylesheets().add("Application/src/style.css");
+				
+				pStage.setTitle("Application");
+				pStage.setScene(scene);
+				pStage.show();
 			}
 			
 		});
@@ -482,6 +492,154 @@ public class Main extends Application {
 		searchBox.getChildren().add(searchBarBox);
 		
 		return searchBox;
+	}
+	
+	private VBox createResultsSection(SearchQueryParams parameters)
+	{
+		VBox resultsSection = new VBox();
+		
+		Label resultsSectionLabel = new Label("Results Section");
+		resultsSectionLabel.getStyleClass().add("title");
+		resultsSection.getChildren().add(resultsSectionLabel);
+		
+		TableView table = new TableView();
+		table.setEditable(false);
+		
+		// to create the columns
+		if(parameters.radioOptionValue == "Song")
+		{
+			TableColumn songName = new TableColumn("Song Name");
+			TableColumn bandName = new TableColumn("Band Name");
+			TableColumn albumName = new TableColumn("Album Name");
+			TableColumn genre = new TableColumn("Genre");
+			TableColumn duration = new TableColumn("Duration");
+			
+			table.getColumns().addAll(songName, bandName, albumName, genre, duration);
+			
+		}else if (parameters.radioOptionValue == "Artist")
+		{
+			
+			TableColumn bandName = new TableColumn("Band Name");
+			TableColumn description = new TableColumn("Description");
+			
+			table.getColumns().addAll(bandName, description);
+			
+		}else if(parameters.radioOptionValue == "Album")
+		{
+			
+			TableColumn albumName = new TableColumn("Album Name");
+			TableColumn bandName = new TableColumn("Band Name");
+			TableColumn genre = new TableColumn("Genre");
+			TableColumn releaseYear = new TableColumn("Release Year");
+			
+			table.getColumns().addAll(albumName, bandName, genre, releaseYear);
+			
+		}else if(parameters.radioOptionValue == "Playlist")
+		{
+			
+			TableColumn playlistName = new TableColumn("Playlist Name");
+			TableColumn description = new TableColumn("Description");
+			TableColumn creatorUsername = new TableColumn("Creator Username");
+			
+			table.getColumns().addAll(playlistName, description, creatorUsername);
+			
+		}else if(parameters.radioOptionValue == "Podcast")
+		{
+			
+			TableColumn podcastName = new TableColumn("Podcast Name");
+			TableColumn category = new TableColumn("Category");
+			// make sure to capture description in podcast
+			TableColumn description = new TableColumn("Description");
+			TableColumn numberOfEpisodes = new TableColumn("Number of Episodes");
+			
+			table.getColumns().addAll(podcastName, category, description, numberOfEpisodes);
+			
+		}else if(parameters.radioOptionValue == "Podcast Episode")
+		{
+			TableColumn podcastEpisodeNumber = new TableColumn("Podcast Episode Number");
+			TableColumn podcastEpisodeName = new TableColumn("Podcast Episode Name");
+			TableColumn podcastName = new TableColumn("Podcast Name");
+			TableColumn releaseDate = new TableColumn("Release Date");
+			// make sure to capture description in podcast episode
+			TableColumn description = new TableColumn("Description");
+			
+			table.getColumns().addAll(podcastEpisodeNumber, podcastEpisodeName, podcastName, releaseDate, description);
+			
+		}else
+		{
+			TableColumn dummy = new TableColumn("");
+			table.getColumns().add(dummy);
+		}
+		
+		resultsSection.getChildren().add(table);
+		
+		// for the buttons at the bottom
+		
+		HBox buttonBox = new HBox();
+		buttonBox.getStyleClass().add("inner");
+		Button returnButton = new Button("Return to Main Window");
+		returnButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				VBox root = new VBox();
+				root.getStyleClass().add("outer_box");
+				root.getChildren().add(createProfileSection());
+				root.getChildren().add(createSearchSection());
+				root.getChildren().add(createRecentlyPlayedSection());
+				root.getChildren().add(createUtilitiesBar());
+				Scene scene = new Scene(root, 500, 700);
+				scene.getStylesheets().add("Application/src/style.css");
+				
+				pStage.setTitle("Application");
+				pStage.setScene(scene);
+				pStage.show();
+			}
+			
+		});
+		returnButton.getStyleClass().add("button");
+		buttonBox.getChildren().add(returnButton);
+		
+		Button logoutButton = new Button("Logout");
+		logoutButton.getStyleClass().add("button");
+		logoutButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				VBox root = createLoginPage();
+				
+				root.getStyleClass().add("login_b");
+				Scene scene = new Scene(root, 500, 700);
+				scene.getStylesheets().add("Application/src/style.css");
+				
+				pStage.setTitle("Application");
+				pStage.setScene(scene);
+				pStage.show();
+				
+			}
+			
+		});
+		buttonBox.getChildren().add(logoutButton);
+		
+		Button quitButton = new Button("Quit");
+		quitButton.getStyleClass().add("button");
+		quitButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				conManager.closeConnection();
+				System.exit(0);
+			}
+			
+		});
+		buttonBox.getChildren().add(quitButton);
+		
+		resultsSection.getChildren().add(buttonBox);
+		
+		return resultsSection;
 	}
 
 }

@@ -48,4 +48,34 @@ public class QueryExecuter
 		
 		return result;
 	}
+
+	public static ProfileInfo getBasicUserInfo(ProfileInfo currentUser) 
+	{
+		// obtain fullName, email, subscriptionNumber
+		try {
+			Statement stmt = connection.createStatement();
+			String query = "SELECT b_user.full_name, b_user.email, b_user.subscription_no "
+					+ "FROM b_user "
+					+ "WHERE b_user.username = \'" + currentUser.username + "\'";
+
+			ResultSet rs = stmt.executeQuery(query);
+
+			while(rs.next())
+			{
+				currentUser.fullName = rs.getString(1);
+				currentUser.email = rs.getString(2);
+				currentUser.subscriptionNo = rs.getString(3);
+			}
+			
+					
+		}catch (SQLException e)
+		{
+			System.out.println("Error fetching profile information.");
+		}
+		
+		
+		
+		
+		return currentUser;
+	}
 }

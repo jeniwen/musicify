@@ -35,6 +35,7 @@ public class Main extends Application {
 	Stage pStage;
 	ConnectionManager conManager;
 	QueryExecuter queryExecuter;
+	ProfileInfo currentUser = new ProfileInfo();
 	
 	public static void main(String[] args) 
 	{
@@ -100,6 +101,7 @@ public class Main extends Application {
 				
 				String usernameValue = usernameField.getText();
 				String passwordValue = passwordField.getText();
+				currentUser.username = usernameValue;
 				
 				// obtain real password through query : add new class for query throwing
 				String realPassword = queryExecuter.getUserPassword(usernameValue);
@@ -268,10 +270,13 @@ public class Main extends Application {
 		title.getStyleClass().add("title");
 		profileBox.getChildren().add(title);
 		
+		currentUser = QueryExecuter.getBasicUserInfo(currentUser);
+		
+		
 		HBox fullNameBox = new HBox();
 		Label fullNameLabel = new Label("Full Name: ");
 		fullNameLabel.getStyleClass().add("sub_label");
-		Text fullName = new Text();
+		Text fullName = new Text(currentUser.fullName);
 		fullName.getStyleClass().add("text");
 		fullNameBox.getChildren().addAll(fullNameLabel, fullName);
 		profileBox.getChildren().add(fullNameBox);
@@ -279,15 +284,15 @@ public class Main extends Application {
 		HBox usernameBox = new HBox();
 		Label usernameLabel = new Label("Username: ");
 		usernameLabel.getStyleClass().add("sub_label");
-		Text username = new Text();
-		username.getStyleClass().add("text");
-		usernameBox.getChildren().addAll(usernameLabel, username);
+		Text usernameText = new Text(currentUser.username);
+		usernameText.getStyleClass().add("text");
+		usernameBox.getChildren().addAll(usernameLabel, usernameText);
 		profileBox.getChildren().add(usernameBox);
 		
 		HBox emailBox = new HBox();
 		Label emailLabel = new Label("Email: ");
 		emailLabel.getStyleClass().add("sub_label");
-		Text email = new Text();
+		Text email = new Text(currentUser.email);
 		email.getStyleClass().add("text");
 		emailBox.getChildren().addAll(emailLabel, email);
 		profileBox.getChildren().add(emailBox);
@@ -295,7 +300,7 @@ public class Main extends Application {
 		HBox subscriptionNoBox = new HBox();
 		Label subscriptionNoLabel = new Label("Subscription Number: ");
 		subscriptionNoLabel.getStyleClass().add("sub_label");
-		Text subscriptionNo = new Text();
+		Text subscriptionNo = new Text(currentUser.subscriptionNo);
 		subscriptionNo.getStyleClass().add("text");
 		subscriptionNoBox.getChildren().addAll(subscriptionNoLabel, subscriptionNo);
 		profileBox.getChildren().add(subscriptionNoBox);

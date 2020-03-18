@@ -2,6 +2,7 @@
 package Application.src;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import javafx.application.Application;
 import javafx.collections.FXCollections;
@@ -305,21 +306,17 @@ public class Main extends Application {
 		subscriptionNoBox.getChildren().addAll(subscriptionNoLabel, subscriptionNo);
 		profileBox.getChildren().add(subscriptionNoBox);
 		
+		currentUser = QueryExecuter.getAllPlaylistNamesForUser(currentUser);
+		
 		HBox playlistListBox = new HBox();
 		Label playlistListLabel = new Label("Playlists: ");
 		playlistListLabel.getStyleClass().add("sub_label");
 		ListView playlistList = new ListView();
 		playlistList.setPrefWidth(380);
 		playlistList.setPrefHeight(80);
-		playlistList.getItems().add("Playlist 1");
-		playlistList.getItems().add("Playlist 2");
-		playlistList.getItems().add("Playlist 3");
-		playlistList.getItems().add("Playlist 4");
-		playlistList.getItems().add("Playlist 5");
-		playlistList.getItems().add("Playlist 6");
-		playlistList.getItems().add("Playlist 7");
-		playlistList.getItems().add("Playlist 8");
-		playlistList.getItems().add("Playlist 9");
+		
+		playlistList.getItems().addAll(currentUser.playlistNames);
+		
 		playlistListBox.getChildren().addAll(playlistListLabel, playlistList);
 		profileBox.getChildren().add(playlistListBox);
 		
@@ -343,6 +340,14 @@ public class Main extends Application {
 		ToggleGroup searchArea = new ToggleGroup();
 		RadioButton songOption = new RadioButton("Song");
 		songOption.setToggleGroup(searchArea);
+		// for the default
+		comboOptions.addAll("Song Name",
+				"Artist Name",
+				"Album Name",
+				"Playlist Name",
+				"Genre");
+		combo.setValue("Song Name");
+		// event handling
 		songOption.setOnAction(new EventHandler<ActionEvent>() {
 
 			@Override

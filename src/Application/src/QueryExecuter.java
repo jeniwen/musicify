@@ -1,5 +1,6 @@
 package Application.src;
 import java.sql.*;
+import java.util.ArrayList;
 
 public class QueryExecuter 
 {
@@ -77,5 +78,33 @@ public class QueryExecuter
 		
 		
 		return currentUser;
+	}
+
+	public static ProfileInfo getAllPlaylistNamesForUser(ProfileInfo currentUser) 
+	{
+		
+		try {
+			Statement stmt = connection.createStatement();
+			String query = "SELECT Playlist.playlist_name "
+					+ "FROM Playlist "
+					+ "WHERE Playlist.email = \'" + currentUser.email + "\'";
+
+			ResultSet rs = stmt.executeQuery(query);
+
+			while(rs.next())
+			{
+				currentUser.playlistNames.add(rs.getString(1));
+			}
+			
+					
+		}catch (SQLException e)
+		{
+			System.out.println("Error fetching profile information.");
+		}
+		
+		
+		return currentUser;
+		
+		
 	}
 }

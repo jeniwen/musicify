@@ -107,4 +107,37 @@ public class QueryExecuter
 		
 		
 	}
+	
+	public ResultSet executeQuery(String querySQL) {
+		int sqlCode;
+		String sqlState;
+		try {
+			Statement stmt = connection.createStatement();
+			java.sql.ResultSet rs = stmt.executeQuery(querySQL);
+			return rs;
+		} catch (SQLException e) {
+			sqlCode = e.getErrorCode(); // Get SQLCODE
+			sqlState = e.getSQLState(); // Get SQLSTATE
+			System.out.println("Problem with query: " + querySQL);
+			System.out.println("Code: " + sqlCode + "  sqlState: " + sqlState);
+		}
+		return null;
+	}
+
+	public ResultSet getUser(String username) {
+		return executeQuery("SELECT * from b_user WHERE b_user.username = \'" + username + "\'");
+	}
+	
+	public ResultSet getPlaylistsOfUser(String useremail) {
+		return executeQuery("SELECT * from Playlist WHERE email = \'" + useremail + "\'");
+	}
+	
+	public ResultSet getAudiofile(int audiofileID) {
+		return executeQuery("SELECT * from Audiofile WHERE audiofile_id = " + audiofileID);
+	}
+	
+	public ResultSet getSearch(String tablename, String attribute, String searchString) {
+		return executeQuery("SELECT * from " + tablename + " WHERE " + attribute + " LIKE \'%" + searchString + "%\'");
+	}
+	
 }

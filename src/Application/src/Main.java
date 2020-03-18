@@ -306,6 +306,7 @@ public class Main extends Application {
 		subscriptionNoBox.getChildren().addAll(subscriptionNoLabel, subscriptionNo);
 		profileBox.getChildren().add(subscriptionNoBox);
 		
+		currentUser.playlistNames.clear();
 		currentUser = QueryExecuter.getAllPlaylistNamesForUser(currentUser);
 		
 		HBox playlistListBox = new HBox();

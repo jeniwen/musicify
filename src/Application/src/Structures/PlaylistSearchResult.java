@@ -25,7 +25,7 @@ public class PlaylistSearchResult extends SearchResult<Playlist> {
 		try {
 			ResultSet rs = QueryExecuter.instance().getPlaylistSearch(searchAttribute, searchString);
 			while (rs.next()) {
-				Playlist plToAdd = new Playlist(rs.getString(1), rs.getString(2), rs.getInt(4), rs.getString(4));
+				Playlist plToAdd = new Playlist(rs.getString(1), rs.getString(2), rs.getInt(3), rs.getString(4));
 				this.resultlist.add(plToAdd);
 			}
 		} catch (Exception e) {

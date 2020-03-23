@@ -1,4 +1,4 @@
-package Structures;
+package Application.src.Structures;
 
 public class Playlist {
 	private String playlistName;
@@ -12,6 +12,13 @@ public class Playlist {
 		this.accessibility = access;
 		this.description = desc;
 		
+	}
+	
+	public Playlist(String playlistName, String description, int access, String email) {
+		this.playlistName = playlistName;
+		this.creator = email;
+		this.accessibility = access;
+		this.description = description;
 	}
 
 	public String getPlaylistName() {

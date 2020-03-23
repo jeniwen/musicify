@@ -42,6 +42,7 @@ public class ConnectionManager
 			System.out.println("Could not close connection");
 			e.printStackTrace();
 		}
+		System.out.println("Connection closed.");
 	}
 	
 	public Connection getConnection() {

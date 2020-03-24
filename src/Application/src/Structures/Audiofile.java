@@ -1,4 +1,4 @@
-package Structures;
+package Application.src.Structures;
 
 import java.sql.ResultSet;
 

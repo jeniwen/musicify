@@ -113,6 +113,7 @@ public class QueryExecuter
 		String sqlState;
 		try {
 			Statement stmt = connection.createStatement();
+			System.out.println("Executing query: "+ querySQL);
 			java.sql.ResultSet rs = stmt.executeQuery(querySQL);
 			return rs;
 		} catch (SQLException e) {
@@ -138,6 +139,51 @@ public class QueryExecuter
 	
 	public ResultSet getSearch(String tablename, String attribute, String searchString) {
 		return executeQuery("SELECT * from " + tablename + " WHERE " + attribute + " LIKE \'%" + searchString + "%\'");
+	}
+	
+	public ResultSet getSongSearch(String attribute, String searchString) {
+		String str ="SELECT s.audiofile_id, s.song_name, art.band_name, al.album_name, al.genre FROM Song s, Audiofile au,  Album al, Artist art WHERE LOWER(" + attribute + ") LIKE LOWER(\'%" + searchString + "%\')";
+		str += " AND s.audiofile_id = au.audiofile_id";
+		str += " AND s.email = al.email";
+		str += " AND s.album_name= al.album_name";
+		str += " AND al.email = art.email";
+		return executeQuery(str);
+	}
+	
+	public ResultSet getArtistSearch(String attribute, String searchString) {
+		String str = "SELECT a.email, a.band_name, a.biography FROM Artist a";
+		str += " WHERE LOWER(" + attribute + ") LIKE LOWER(\'%" + searchString + "%\')";
+		return executeQuery(str);
+	}
+	
+	public ResultSet getAlbumSearch(String attribute, String searchString, boolean isOnYear) {
+		String str = "SELECT a.album_name, b.band_name, a.genre, a.release_year FROM Album a, Artist b";
+		if (!isOnYear)
+			str += " WHERE LOWER(" + attribute + ") LIKE LOWER(\'%" + searchString + "%\')";
+		else 
+			str += (" WHERE " + attribute + "=" + searchString);
+		str += " AND b.email = a.email";
+		return executeQuery(str);
+	}
+	
+	public ResultSet getPlaylistSearch(String attribute, String searchString) {
+		String str = "SELECT p.playlist_name, p.description, p.accessibility, u.username FROM Playlist p, b_user u";
+		str += " WHERE LOWER(" + attribute + ") LIKE LOWER(\'%" + searchString + "%\')";
+		str += " AND p.email = u.email";
+		str += " AND p.accessibility = 1";
+		return executeQuery(str);
+	}
+	
+	public ResultSet getPodEpisodes(String podName) {
+		String str = "SELECT audiofile_id, episode_no, pod_episode_name, release_date, pod_name FROM Podcast_Episode";
+		str += " WHERE pod_name = \'" + podName + "\'";
+		return executeQuery(str);
+	}
+	
+	public ResultSet getPodcastSearch(String attribute, String searchString) {
+		String str = "SELECT p.pod_name, p.category, p.description FROM Podcast p";
+		str += " WHERE LOWER(" + attribute + ") LIKE LOWER(\'%" + searchString + "%\')";
+		return executeQuery(str);
 	}
 	
 }

@@ -1,4 +1,4 @@
-package Structures;
+package Application.src.Structures;
 
 public class StructuresExamples {
 	public StructuresExamples() {

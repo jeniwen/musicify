@@ -57,7 +57,7 @@ public class Main extends Application {
 		conManager = ConnectionManager.instance();
 		conManager.createConnection();
 		
-		System.out.println("Connection created");
+		//System.out.println("Connection created");
 		queryExecuter = QueryExecuter.instance();
 		QueryExecuter.setConnnection(conManager.getConnection());
 		

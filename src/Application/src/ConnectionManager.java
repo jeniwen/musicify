@@ -26,6 +26,7 @@ public class ConnectionManager
 		}
 		try {
 			connection = DriverManager.getConnection(url, id, password);
+			System.out.println("Connection created");
 			
 		} catch (Exception e) {
 			System.out.println("Could not connect");

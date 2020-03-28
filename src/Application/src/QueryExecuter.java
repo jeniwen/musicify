@@ -195,6 +195,22 @@ public class QueryExecuter
 		str += " FETCH FIRST 5 ROWS ONLY";
 		return executeQuery(str);
 	}
+	//int audiofileID, String songName, String bandName, String albumName, String genre) {
+	public ResultSet getRecentSongs(String email) {
+		String str = "SELECT s.audiofile_id, s.song_name, s.album_name, st.start_time";
+		str += " FROM Song s INNER JOIN Stream st ON st.audiofile_id = s.audiofile_id";
+		str += " WHERE st.email = \'" + email + "\'" ;
+		str += " ORDER BY st.start_time DESC FETCH FIRST 5 ROWS ONLY";
+		return executeQuery(str);
+	}
+
+	public ResultSet getRecentPodcasts(String email) {
+		String str = "SELECT p.audiofile_id, p.episode_no, p.pod_episode_name, p.release_date, p.pod_name, st.start_time";
+		str += " FROM Podcast_Episode p INNER JOIN Stream st ON st.audiofile_id = p.audiofile_id";
+		str += " WHERE email = \'" + email + "\'";
+		str += " ORDER BY st.start_time DESC FETCH FIRST 5 ROWS ONLY";
+		return executeQuery(str);
+	}
 	
 	public boolean updatePassword(String email, String newPsw) {
 		String str = "UPDATE b_user SET password = \'" + newPsw + "\'";

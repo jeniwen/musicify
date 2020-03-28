@@ -193,41 +193,31 @@ public class Main extends Application {
 		title.getStyleClass().add("title");
 		recentlyPlayedBox.getChildren().add(title);
 		
+		currentUser = QueryExecuter.getBasicUserInfo(currentUser);
+		
 		HBox recentlyPlayedSongsBox = new HBox();
 		Label recentlyPlayedSongsLabel = new Label("Songs: ");
 		recentlyPlayedSongsLabel.getStyleClass().add("sub_label");
 		ListView recentlyPlayedSongs = new ListView();
 		recentlyPlayedSongs.setPrefWidth(380);
 		recentlyPlayedSongs.setPrefHeight(80);
-		recentlyPlayedSongs.getItems().add("Song 1");
-		recentlyPlayedSongs.getItems().add("Song 2");
-		recentlyPlayedSongs.getItems().add("Song 3");
-		recentlyPlayedSongs.getItems().add("Song 4");
-		recentlyPlayedSongs.getItems().add("Song 5");
-		recentlyPlayedSongs.getItems().add("Song 6");
-		recentlyPlayedSongs.getItems().add("Song 7");
-		recentlyPlayedSongs.getItems().add("Song 8");
-		recentlyPlayedSongs.getItems().add("Song 9");
+		
+		StreamResult data = new StreamResult(currentUser.email);
+		//recentlyPlayedSongs.setItems(data.getResultList());
+		recentlyPlayedSongs.getItems().addAll(data.getSongNames());
+		
 		recentlyPlayedSongsBox.getChildren().addAll(recentlyPlayedSongsLabel, recentlyPlayedSongs);
 		recentlyPlayedBox.getChildren().add(recentlyPlayedSongsBox);
 		
-		HBox recentlyPlayedPodEpisodesBox = new HBox();
-		Label recentlyPlayedPodEpisodesLabel = new Label("Songs: ");
+		Label recentlyPlayedPodEpisodesLabel = new Label("Podcast Episodes: ");
 		recentlyPlayedPodEpisodesLabel.getStyleClass().add("sub_label");
 		ListView recentlyPlayedPodEpisodes = new ListView();
 		recentlyPlayedPodEpisodes.setPrefWidth(380);
 		recentlyPlayedPodEpisodes.setPrefHeight(80);
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 1");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 2");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 3");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 4");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 5");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 6");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 7");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 8");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 9");
-		recentlyPlayedPodEpisodesBox.getChildren().addAll(recentlyPlayedPodEpisodesLabel, recentlyPlayedPodEpisodes);
-		recentlyPlayedBox.getChildren().add(recentlyPlayedPodEpisodesBox);
+
+		recentlyPlayedPodEpisodes.getItems().addAll(data.getPodNames());
+		recentlyPlayedBox.getChildren().add(recentlyPlayedPodEpisodesLabel);
+		recentlyPlayedBox.getChildren().add(recentlyPlayedPodEpisodes);
 		
 		return recentlyPlayedBox;
 	}
@@ -629,7 +619,7 @@ public class Main extends Application {
 		TableColumn streams = new TableColumn("Streams");
 		streams.setCellValueFactory(new PropertyValueFactory<Song,String>("streams"));
 		
-		TopStreamResult data = new TopStreamResult();
+		StreamResult data = new StreamResult();
 		
 		streamTable.setItems(data.getResultList());
 		streamTable.getColumns().addAll(songName, bandName, streams);

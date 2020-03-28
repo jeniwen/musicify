@@ -131,8 +131,9 @@ public class Main extends Application {
 					root.getChildren().add(createProfileSection());
 					root.getChildren().add(createSearchSection());
 					root.getChildren().add(createRecentlyPlayedSection());
+					root.getChildren().add(createTopStreamsSection());
 					root.getChildren().add(createUtilitiesBar());
-					Scene scene = new Scene(root, 700, 750);
+					Scene scene = new Scene(root, 500, 700);
 					scene.getStylesheets().add("Application/src/style.css");
 					
 					pStage.setTitle("Application");
@@ -518,6 +519,36 @@ public class Main extends Application {
 		searchBox.getChildren().add(searchBarBox);
 		
 		return searchBox;
+	}
+	
+	private VBox createTopStreamsSection() {
+		VBox topStreamsSection = new VBox();
+		topStreamsSection.getStyleClass().add("inner");
+		topStreamsSection.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(2))));
+		
+		Label topStreamsSectionLabel = new Label("Top Songs");
+		topStreamsSectionLabel.getStyleClass().add("title");
+		topStreamsSection.getChildren().add(topStreamsSectionLabel);
+		
+		TableView table = new TableView();
+		table.setEditable(false);
+		topStreamsSection.setPrefHeight(250);
+				
+		TableView<Song> streamTable = new TableView<Song>();
+		TableColumn songName = new TableColumn("Song Name");
+		songName.setCellValueFactory(new PropertyValueFactory<Song,String>("songName"));
+		TableColumn bandName = new TableColumn("Band Name");
+		bandName.setCellValueFactory(new PropertyValueFactory<Song,String>("bandName"));
+		TableColumn streams = new TableColumn("Streams");
+		streams.setCellValueFactory(new PropertyValueFactory<Song,String>("streams"));
+		
+		TopStreamResult data = new TopStreamResult();
+		
+		streamTable.setItems(data.getResultList());
+		streamTable.getColumns().addAll(songName, bandName, streams);
+		topStreamsSection.getChildren().add(streamTable);
+		
+		return topStreamsSection;
 	}
 	
 	private VBox createResultsSection(SearchQueryParams parameters)

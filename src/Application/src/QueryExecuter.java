@@ -185,5 +185,14 @@ public class QueryExecuter
 		str += " WHERE LOWER(" + attribute + ") LIKE LOWER(\'%" + searchString + "%\')";
 		return executeQuery(str);
 	}
-	
+
+	public ResultSet getTopSongs() {
+		String str = "SELECT s.audiofile_id, s.song_name, a.band_name, COUNT(*)";
+		str += " FROM Song s INNER JOIN Artist a ON s.email = a.email";
+		str += " INNER JOIN Stream st ON st.audiofile_id = s.audiofile_id";
+		str += " GROUP BY s.audiofile_id, s.song_name, a.band_name";
+		str += " ORDER BY COUNT(*) DESC";
+		str += " FETCH FIRST 5 ROWS ONLY";
+		return executeQuery(str);
+	}
 }

@@ -324,6 +324,30 @@ public class Main extends Application {
 		subscriptionNoBox.getChildren().addAll(subscriptionNoLabel, subscriptionNo);
 		profileBox.getChildren().add(subscriptionNoBox);
 		
+		//change password
+		Button pswButton = new Button("Change Password");
+		pswButton.getStyleClass().add("button");
+		pswButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{	
+				VBox rootC = new VBox();
+				rootC.getStyleClass().add("outer_box");
+				rootC.getChildren().add(createPasswordModSection(currentUser.username, currentUser.email));
+				Scene scene = new Scene(rootC, 500, 100);
+				scene.getStylesheets().add("Application/src/style.css");
+				
+				pStage.setTitle("Change Password");
+				pStage.setScene(scene);
+				pStage.show();
+			}
+			
+		});
+		profileBox.getChildren().add(pswButton);
+		
+		//
+		
 		currentUser.playlistNames.clear();
 		currentUser = QueryExecuter.getAllPlaylistNamesForUser(currentUser);
 		
@@ -341,6 +365,69 @@ public class Main extends Application {
 		
 		
 		return profileBox;
+	}
+	
+	private VBox createPasswordModSection(String usernameValue, String email) {
+		VBox passwordModSection = new VBox();	
+		
+		HBox oldPasswordBox = new HBox();
+		Label oldPasswordLabel = new Label("Old Password: ");
+		oldPasswordLabel.getStyleClass().add("sub_label");
+		TextField oldPasswordField = new TextField();
+		oldPasswordField.getStyleClass().add("field");
+		oldPasswordBox.getChildren().addAll(oldPasswordLabel, oldPasswordField);
+		
+		HBox newPasswordBox = new HBox();
+		Label newPasswordLabel = new Label("New Password: ");
+		newPasswordLabel.getStyleClass().add("sub_label");
+		TextField newPasswordField = new TextField();
+		newPasswordField.getStyleClass().add("field");
+		newPasswordBox.getChildren().addAll(newPasswordLabel, newPasswordField);
+		
+		HBox buttonBox = new HBox();
+		Button enterButton = new Button("Enter");
+		enterButton.getStyleClass().add("button");
+		enterButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				String oldPswVal = oldPasswordField.getText();
+				String newPswVal = newPasswordField.getText();
+				String realPassword = queryExecuter.getUserPassword(usernameValue);
+				
+				if(oldPswVal.equals(realPassword)) {
+					if (newPswVal.length() > 6) {
+						
+						boolean updateStatus = queryExecuter.updatePassword(email, newPswVal);
+						System.out.println(updateStatus);
+						
+						VBox root = new VBox();
+						root.getStyleClass().add("outer_box");
+						root.getChildren().add(createProfileSection());
+						root.getChildren().add(createSearchSection());
+						root.getChildren().add(createRecentlyPlayedSection());
+						root.getChildren().add(createUtilitiesBar());
+						Scene scene = new Scene(root, 500, 700);
+						scene.getStylesheets().add("Application/src/style.css");
+						
+						pStage.setTitle("Application");
+						pStage.setScene(scene);
+						pStage.show();
+					} else {
+						displayError("Passwords must have more than 5 characters.");
+					}
+				} else {
+					displayError("Incorrect password.");
+				}	
+			}
+		});
+		buttonBox.getChildren().addAll(enterButton);
+			
+		passwordModSection.getChildren().add(oldPasswordBox);
+		passwordModSection.getChildren().add(newPasswordBox);
+		passwordModSection.getChildren().add(buttonBox);
+		return passwordModSection;
 	}
 
 	private VBox createSearchSection() {

@@ -195,4 +195,19 @@ public class QueryExecuter
 		str += " FETCH FIRST 5 ROWS ONLY";
 		return executeQuery(str);
 	}
+	
+	public boolean updatePassword(String email, String newPsw) {
+		String str = "UPDATE b_user SET password = \'" + newPsw + "\'";
+		str += " WHERE email = \'" + email + "\'";
+		PreparedStatement p;
+		try {
+			p = connection.prepareStatement(str);
+			p.executeUpdate();
+			return true;
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		return false;
+	}
 }

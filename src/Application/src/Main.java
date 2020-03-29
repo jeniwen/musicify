@@ -779,6 +779,53 @@ public class Main extends Application {
 		
 //		resultsSection.getChildren().add(table);
 		
+		// ADD THE SECTION HERE
+		
+		if(parameters.radioOptionValue == "Song")
+		{
+			// this is to add the song to a playlist
+			
+			VBox addSongToPlaylistBox = new VBox();
+			addSongToPlaylistBox.getStyleClass().add("inner");
+			addSongToPlaylistBox.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(2))));
+			
+			Label title = new Label("Add Song to Playlist:");
+			title.getStyleClass().add("title");
+			addSongToPlaylistBox.getChildren().add(title);
+			
+			HBox playlistNameBox = new HBox();
+			
+			Label playListNameLabel = new Label("Playlist Name: ");
+			playListNameLabel.getStyleClass().add("sub_label");
+			
+			TextField playlistNameTextField = new TextField();
+			playlistNameTextField.getStyleClass().add("text");
+			
+			Button addButton = new Button("Add");
+			addButton.getStyleClass().add("button");
+			addButton.setOnAction(new EventHandler<ActionEvent>() {
+
+				@Override
+				public void handle(ActionEvent event) 
+				{
+					// would add the selected song to the playlist here
+					// please beware of non existant playlists (displayError)
+					// also playlists which are not "mine" as in not the currentUser's (displayError)
+					
+				}
+				
+			});
+			playlistNameBox.getChildren().addAll(playListNameLabel, playlistNameTextField, addButton);
+			addSongToPlaylistBox.getChildren().addAll(playlistNameBox);
+			resultsSection.getChildren().add(addSongToPlaylistBox);
+			
+			
+			
+		}else if(parameters.radioOptionValue == "Artist" || parameters.radioOptionValue == "Playlist" || parameters.radioOptionValue == "Podcast")
+		{
+			
+		}
+		
 		// for the buttons at the bottom
 		
 		HBox buttonBox = new HBox();

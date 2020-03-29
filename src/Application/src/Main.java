@@ -823,7 +823,34 @@ public class Main extends Application {
 			
 		}else if(parameters.radioOptionValue == "Artist" || parameters.radioOptionValue == "Playlist" || parameters.radioOptionValue == "Podcast")
 		{
+			// this is to follow {artist, playlist, podcast}
 			
+			VBox followXXXBox = new VBox();
+			followXXXBox.getStyleClass().add("inner");
+			followXXXBox.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(2))));
+			
+			String titleString = "Follow " + parameters.radioOptionValue;
+			Label title = new Label(titleString);
+			title.getStyleClass().add("title");
+			followXXXBox.getChildren().add(title);
+			
+			
+			Button followButton = new Button("Follow");
+			followButton.getStyleClass().add("button");
+			followButton.setOnAction(new EventHandler<ActionEvent>() {
+
+				@Override
+				public void handle(ActionEvent event) 
+				{
+					// add code to follow the {artist, playlist, podcast}
+					// beware if the user is already following it (displayError)
+					
+				}
+				
+			});
+			
+			followXXXBox.getChildren().addAll(followButton);
+			resultsSection.getChildren().add(followXXXBox);
 		}
 		
 		// for the buttons at the bottom

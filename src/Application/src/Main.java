@@ -13,6 +13,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -21,6 +22,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -129,6 +131,7 @@ public class Main extends Application {
 					VBox root = new VBox();
 					root.getStyleClass().add("outer_box");
 					root.getChildren().add(createProfileSection());
+					root.getChildren().add(createNewPlaylistSection());
 					root.getChildren().add(createSearchSection());
 					root.getChildren().add(createRecentlyPlayedSection());
 					root.getChildren().add(createUtilitiesBar());
@@ -165,6 +168,127 @@ public class Main extends Application {
 		return loginBox;
 	}
 	
+	private VBox createNewPlaylistSection() 
+	{
+		VBox newPlaylistBox = new VBox();
+		newPlaylistBox.getStyleClass().add("inner");
+		newPlaylistBox.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(2))));
+		
+		Label title = new Label("Create New Playlist:");
+		title.getStyleClass().add("title");
+		newPlaylistBox.getChildren().add(title);
+		
+		HBox playlistNameBox = new HBox();
+		
+		Label playListNameLabel = new Label("Playlist Name: ");
+		playListNameLabel.getStyleClass().add("sub_label");
+		
+		TextField playlistNameTextField = new TextField();
+		playlistNameTextField.getStyleClass().add("text");
+		
+		playlistNameBox.getChildren().addAll(playListNameLabel, playlistNameTextField);
+		
+		newPlaylistBox.getChildren().add(playlistNameBox);
+		
+		HBox playlistAccessBox = new HBox();
+		
+		Label playlistAccessLabel = new Label("Accessibility: ");
+		playlistAccessLabel.getStyleClass().add("sub_label");
+		
+		ToggleGroup accessibleGroup = new ToggleGroup();
+		RadioButton publicOption = new RadioButton("Public");
+		RadioButton privateOption = new RadioButton("Private");
+		publicOption.setToggleGroup(accessibleGroup);
+		privateOption.setToggleGroup(accessibleGroup);
+		publicOption.setSelected(true);
+		
+		playlistAccessBox.getChildren().addAll(playlistAccessLabel, publicOption, privateOption);
+		
+		newPlaylistBox.getChildren().add(playlistAccessBox);
+		
+		HBox playlistDescriptionBox = new HBox();
+		
+		Label playlistDescriptionLabel = new Label("Description: ");
+		playlistDescriptionLabel.getStyleClass().add("sub_label");
+		
+		TextArea playlistDescriptionTextField = new TextArea();
+		playlistDescriptionTextField.getStyleClass().add("text");
+		playlistDescriptionTextField.setMaxSize(400, 50);
+		
+		playlistDescriptionBox.getChildren().addAll(playlistDescriptionLabel, playlistDescriptionTextField);
+		
+		newPlaylistBox.getChildren().add(playlistDescriptionBox);
+		
+		Button createPlaylistButton = new Button("Create");
+		
+		createPlaylistButton.getStyleClass().add("button");
+		createPlaylistButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				// create the playlist, if there is an SQL error, state that there was an error, maybe that playlist already exists for this user
+				// throw an error message if the field is empty.
+				
+				if(playlistNameTextField.getText().equals(""))
+				{
+					displayError("You must enter a playlist name. ");
+				}else
+				{
+					String playlistName = playlistNameTextField.getText();
+					int isAccessible = 0;
+					if(publicOption.isSelected())
+					{
+						isAccessible = 1;
+					}
+					String playlistDescription = playlistDescriptionTextField.getText();
+					
+					int errorCode = QueryExecuter.insertPlaylist(currentUser.email, playlistName, isAccessible, playlistDescription);
+					
+					if(errorCode == 1)
+					{
+						// say there was an error with insert (maybe already exists)
+						displayError("There was an SQLException, maybe this playlist already exists.");
+						
+					}else if(errorCode == 0)
+					{
+						// reset the main page (so that it shows the playlist now
+						// maybe display a success message?
+						
+						VBox root = new VBox();
+						root.getStyleClass().add("outer_box");
+						root.getChildren().add(createProfileSection());
+						root.getChildren().add(createNewPlaylistSection());
+						root.getChildren().add(createSearchSection());
+						root.getChildren().add(createRecentlyPlayedSection());
+						root.getChildren().add(createUtilitiesBar());
+						Scene scene = new Scene(root, 500, 700);
+						scene.getStylesheets().add("Application/src/style.css");
+						
+						pStage.setTitle("Application");
+						pStage.setScene(scene);
+						pStage.show();
+						
+						displayMessage("Playlist creation successful.");
+						
+						
+					}
+					
+					
+					
+				}
+				
+				
+				
+			}
+			
+		});
+		
+		newPlaylistBox.getChildren().add(createPlaylistButton);		
+		
+		return newPlaylistBox;
+	}
+
 	private void displayError(String errorMsg)
 	{
 		Stage errorStage = new Stage();
@@ -175,6 +299,23 @@ public class Main extends Application {
 		Label errorMsgLabel = new Label(errorMsg);
 		errorMsgLabel.getStyleClass().add("sub_label");
 		errorMsgLabel.setTextFill(Paint.valueOf("red"));
+		rootB.getChildren().add(errorMsgLabel);
+		Scene sceneB = new Scene(rootB, 380, 50);
+		sceneB.getStylesheets().add("Application/src/style.css");
+		errorStage.setScene(sceneB);
+		errorStage.show();
+	}
+	
+	private void displayMessage(String errorMsg)
+	{
+		Stage errorStage = new Stage();
+		
+		VBox rootB = new VBox();
+		rootB.getStyleClass().add("root");
+		rootB.getStyleClass().add("outer_box");
+		Label errorMsgLabel = new Label(errorMsg);
+		errorMsgLabel.getStyleClass().add("sub_label");
+		errorMsgLabel.setTextFill(Paint.valueOf("green"));
 		rootB.getChildren().add(errorMsgLabel);
 		Scene sceneB = new Scene(rootB, 250, 50);
 		sceneB.getStylesheets().add("Application/src/style.css");
@@ -651,6 +792,7 @@ public class Main extends Application {
 				VBox root = new VBox();
 				root.getStyleClass().add("outer_box");
 				root.getChildren().add(createProfileSection());
+				root.getChildren().add(createNewPlaylistSection());
 				root.getChildren().add(createSearchSection());
 				root.getChildren().add(createRecentlyPlayedSection());
 				root.getChildren().add(createUtilitiesBar());

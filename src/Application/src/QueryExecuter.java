@@ -185,5 +185,33 @@ public class QueryExecuter
 		str += " WHERE LOWER(" + attribute + ") LIKE LOWER(\'%" + searchString + "%\')";
 		return executeQuery(str);
 	}
+
+	public static int insertPlaylist(String email, String playlistName, int isAccessible, String description) 
+	{
+		int errorCode = 0;
+		
+		try {
+			
+			Statement stmt = connection.createStatement();
+			
+			String query = "INSERT INTO Playlist"
+					+ " VALUES (\'" + email
+					+ "\', \'" + playlistName
+					+ "\', " + isAccessible
+					+ ", \'" + description + "\')";
+			
+			System.out.println(query);
+			
+			stmt.executeUpdate(query);
+			
+			
+		}catch(SQLException e)
+		{
+			errorCode = 1;
+			e.printStackTrace();
+		}
+		
+		return errorCode;
+	}
 	
 }

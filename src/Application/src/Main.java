@@ -20,6 +20,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
@@ -672,10 +673,12 @@ public class Main extends Application {
 		TableView table = new TableView();
 		table.setEditable(false);
 		
+		TableView<Song> songTable = new TableView<Song>();
+		
 		// to create the columns
 		if(parameters.radioOptionValue == "Song")
 		{
-			TableView<Song> songTable = new TableView<Song>();
+			//TableView<Song> songTable = new TableView<Song>();
 			TableColumn songName = new TableColumn("Song Name");
 			songName.setCellValueFactory(new PropertyValueFactory<Song,String>("songName"));
 			TableColumn bandName = new TableColumn("Band Name");
@@ -689,6 +692,7 @@ public class Main extends Application {
 			
 			SongSearchResult data = new SongSearchResult(parameters.comboOptionValue, parameters.searchFieldValue);
 			songTable.setItems(data.getResultList());
+			songTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 			
 			songTable.getColumns().addAll(songName, bandName, albumName, genre, duration);
 			resultsSection.getChildren().add(songTable);
@@ -812,6 +816,61 @@ public class Main extends Application {
 					// please beware of non existant playlists (displayError)
 					// also playlists which are not "mine" as in not the currentUser's (displayError)
 					
+					// this is to fetch the currently selected songs
+					
+					ArrayList<Integer> audiofile_ids = new ArrayList<Integer>();
+					
+					for(Song s : songTable.getSelectionModel().getSelectedItems())
+					{
+						audiofile_ids.add(s.getAudiofileID());
+						
+					}
+					
+					String playlistName = playlistNameTextField.getText();
+					
+					if(playlistName.equals(""))
+					{
+						displayError("You must enter a playlist name.");
+					}else
+					{
+						// must check that it is a legal playlist to add to
+						boolean flag = false;
+						
+						for(String name : currentUser.playlistNames)
+						{
+							if(playlistName.equalsIgnoreCase(name))
+							{
+								flag = true;
+							}
+						}
+						
+						if(!flag)
+						{
+							displayError("You do not own a playlist named \""+playlistName+"\".");
+						}else
+						{
+							// then must add to the playlist
+							
+							int errorCode = QueryExecuter.insertSongsIntoPlaylist(playlistName, audiofile_ids, currentUser.email);
+							
+							if(errorCode == 1) {
+								// there was an SQL Exception, maybe the song is already in the playlsit
+								displayError("There was an SQLException, maybe some of the selected songs already belong to this playlist.");
+							}else
+							{
+								displayMessage("Songs successfully added to your playlist. ");
+							}
+						}
+						
+						
+						
+						
+					}
+					
+					
+					
+					
+					
 				}
 				
 			});
@@ -844,6 +903,8 @@ public class Main extends Application {
 				{
 					// add code to follow the {artist, playlist, podcast}
 					// beware if the user is already following it (displayError)
+					
+					
 					
 				}
 				

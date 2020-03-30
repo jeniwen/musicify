@@ -213,5 +213,35 @@ public class QueryExecuter
 		
 		return errorCode;
 	}
+
+	public static int insertSongsIntoPlaylist(String playlistName, ArrayList<Integer> audiofile_ids, String email) 
+	{
+		int errorCode = 0;
+		
+try {
+			
+			Statement stmt = connection.createStatement();
+			
+			for(Integer i : audiofile_ids)
+			{
+				String query = "INSERT INTO Playlist_Has_Song"
+						+ " VALUES (" + i
+						+ ", \'" + playlistName
+						+ "\', \'" + email + "\')";
+				
+				System.out.println(query);
+				
+				stmt.executeUpdate(query);
+			}
+			
+			
+		}catch(SQLException e)
+		{
+			errorCode = 1;
+			e.printStackTrace();
+		}
+		
+		return errorCode;
+	}
 	
 }

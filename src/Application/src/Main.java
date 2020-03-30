@@ -674,6 +674,9 @@ public class Main extends Application {
 		table.setEditable(false);
 		
 		TableView<Song> songTable = new TableView<Song>();
+		TableView<Artist> artistTable = new TableView<Artist>();
+		TableView<Playlist> plTable = new TableView<Playlist>();
+		TableView<Podcast> podTable = new TableView<Podcast>();
 		
 		// to create the columns
 		if(parameters.radioOptionValue == "Song")
@@ -699,11 +702,12 @@ public class Main extends Application {
 			
 		}else if (parameters.radioOptionValue == "Artist")
 		{
-			TableView<Artist> artistTable = new TableView<Artist>();
+//			TableView<Artist> artistTable = new TableView<Artist>();
 			TableColumn bandName = new TableColumn("Band Name");
 			bandName.setCellValueFactory(new PropertyValueFactory<Song,String>("bandName"));
 			TableColumn description = new TableColumn("Bio");
 			description.setCellValueFactory(new PropertyValueFactory<Song,String>("bio"));
+			artistTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 			
 			ArtistSearchResult data = new ArtistSearchResult(parameters.comboOptionValue, parameters.searchFieldValue);
 			artistTable.setItems(data.getResultList());
@@ -731,13 +735,15 @@ public class Main extends Application {
 			
 		}else if(parameters.radioOptionValue == "Playlist")
 		{
-			TableView<Playlist> plTable = new TableView<Playlist>();
+//			TableView<Playlist> plTable = new TableView<Playlist>();
 			TableColumn playlistName = new TableColumn("Playlist Name");
 			playlistName.setCellValueFactory(new PropertyValueFactory<Song,String>("playlistName"));
 			TableColumn description = new TableColumn("Description");
 			description.setCellValueFactory(new PropertyValueFactory<Song,String>("description"));
 			TableColumn creatorUsername = new TableColumn("Creator Username");
 			creatorUsername.setCellValueFactory(new PropertyValueFactory<Song,String>("creator"));
+			
+			plTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 			
 			PlaylistSearchResult data = new PlaylistSearchResult(parameters.comboOptionValue, parameters.searchFieldValue);
 			plTable.setItems(data.getResultList());
@@ -746,7 +752,7 @@ public class Main extends Application {
 			
 		}else if(parameters.radioOptionValue == "Podcast")
 		{
-			TableView<Podcast> podTable = new TableView<Podcast>();
+//			TableView<Podcast> podTable = new TableView<Podcast>();
 			TableColumn podcastName = new TableColumn("Podcast Name");
 			podcastName.setCellValueFactory(new PropertyValueFactory<Song,String>("podName"));
 			TableColumn category = new TableColumn("Category");
@@ -757,6 +763,7 @@ public class Main extends Application {
 			TableColumn description = new TableColumn("Description");
 			description.setCellValueFactory(new PropertyValueFactory<Song,String>("description"));
 			
+			podTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 			
 			PodcastSearchResult data = new PodcastSearchResult(parameters.comboOptionValue, parameters.searchFieldValue);
 			podTable.setItems(data.getResultList());
@@ -860,17 +867,10 @@ public class Main extends Application {
 							{
 								displayMessage("Songs successfully added to your playlist. ");
 							}
-						}
-						
-						
-						
+						}		
 						
 					}
-					
-					
-					
-					
-					
+	
 				}
 				
 			});
@@ -904,6 +904,64 @@ public class Main extends Application {
 					// add code to follow the {artist, playlist, podcast}
 					// beware if the user is already following it (displayError)
 					
+					if(parameters.radioOptionValue == "Artist")
+					{
+						ArrayList<String> artistEmails = new ArrayList<String>();
+						
+						for(Artist a : artistTable.getSelectionModel().getSelectedItems())
+						{
+							artistEmails.add(a.getEmail());
+							
+						}
+						
+						int errorCode = QueryExecuter.insertIntoFollowsArtist(currentUser.email, artistEmails);
+						
+						if(errorCode == 1)
+						{
+							displayError("There was an SQLException, maybe you are already following one of these.");
+						}else if(errorCode == 0)
+						{
+							displayMessage("Operation was successful.");
+						}
+						
+						
+					}else if(parameters.radioOptionValue == "Playlist")
+					{
+						ArrayList<Playlist> playlists = new ArrayList<Playlist>(plTable.getSelectionModel().getSelectedItems());
+						
+						int errorCode = QueryExecuter.insertIntoFollowsPlaylist(currentUser.email, playlists);
+						
+						if(errorCode == 1)
+						{
+							displayError("There was an SQLException, maybe you are already following one of these.");
+						}else if(errorCode == 0)
+						{
+							displayMessage("Operation was successful.");
+						}
+						
+						
+					}else if(parameters.radioOptionValue == "Podcast")
+					{
+						ArrayList<String> podcastNames = new ArrayList<String>();
+						
+						for(Podcast p : podTable.getSelectionModel().getSelectedItems())
+						{
+							podcastNames.add(p.getPodName());
+						}
+						
+						int errorCode = QueryExecuter.insertIntoFollowsPodcast(currentUser.email, podcastNames);
+						
+						if(errorCode == 1)
+						{
+							displayError("There was an SQLException, maybe you are already following one of these.");
+						}else if(errorCode == 0)
+						{
+							displayMessage("Operation was successful.");
+						}
+						
+					}
+						
+						
 					
 					
 				}

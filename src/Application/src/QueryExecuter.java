@@ -2,6 +2,8 @@ package Application.src;
 import java.sql.*;
 import java.util.ArrayList;
 
+import Application.src.Structures.Playlist;
+
 public class QueryExecuter 
 {
 	private static QueryExecuter INSTANCE = new QueryExecuter();
@@ -218,7 +220,7 @@ public class QueryExecuter
 	{
 		int errorCode = 0;
 		
-try {
+		try {
 			
 			Statement stmt = connection.createStatement();
 			
@@ -228,6 +230,94 @@ try {
 						+ " VALUES (" + i
 						+ ", \'" + playlistName
 						+ "\', \'" + email + "\')";
+				
+				//System.out.println(query);
+				
+				stmt.executeUpdate(query);
+			}
+			
+			
+		}catch(SQLException e)
+		{
+			errorCode = 1;
+			e.printStackTrace();
+		}
+		
+		return errorCode;
+	}
+
+	public static int insertIntoFollowsArtist(String email, ArrayList<String> artistEmails) 
+	{
+		int errorCode = 0;
+		
+		try {
+			
+			Statement stmt = connection.createStatement();
+			
+			for(String a_email : artistEmails)
+			{
+				String query = "INSERT INTO Follows_Artist"
+						+ " VALUES (\'" + email
+						+ "\', \'" + a_email + "\')";
+				
+				System.out.println(query);
+				
+				stmt.executeUpdate(query);
+			}
+			
+			
+		}catch(SQLException e)
+		{
+			errorCode = 1;
+			e.printStackTrace();
+		}
+		
+		return errorCode;
+	}
+
+	public static int insertIntoFollowsPlaylist(String email, ArrayList<Playlist> playlists) 
+	{
+		int errorCode = 0;
+		
+		try {
+			
+			Statement stmt = connection.createStatement();
+			
+			for(Playlist p : playlists)
+			{
+				String query = "INSERT INTO Follows_Playlist"
+						+ " VALUES (\'" + email
+						+ "\', \'" + p.getCreator() 
+						+ "\', \'" + p.getPlaylistName() + "\')";
+				
+				System.out.println(query);
+				
+				stmt.executeUpdate(query);
+			}
+			
+			
+		}catch(SQLException e)
+		{
+			errorCode = 1;
+			e.printStackTrace();
+		}
+		
+		return errorCode;
+	}
+
+	public static int insertIntoFollowsPodcast(String email, ArrayList<String> podcastNames) 
+	{
+		int errorCode = 0;
+		
+		try {
+			
+			Statement stmt = connection.createStatement();
+			
+			for(String podname : podcastNames)
+			{
+				String query = "INSERT INTO Follows_Podcast"
+						+ " VALUES (\'" + email
+						+ "\', \'" + podname + "\')";
 				
 				System.out.println(query);
 				

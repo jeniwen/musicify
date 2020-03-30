@@ -22,6 +22,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -677,11 +678,12 @@ public class Main extends Application {
 		TableView<Artist> artistTable = new TableView<Artist>();
 		TableView<Playlist> plTable = new TableView<Playlist>();
 		TableView<Podcast> podTable = new TableView<Podcast>();
+		TableView<PodcastEpisode> podEpTable = new TableView<PodcastEpisode>();
 		
 		// to create the columns
 		if(parameters.radioOptionValue == "Song")
 		{
-			//TableView<Song> songTable = new TableView<Song>();
+
 			TableColumn songName = new TableColumn("Song Name");
 			songName.setCellValueFactory(new PropertyValueFactory<Song,String>("songName"));
 			TableColumn bandName = new TableColumn("Band Name");
@@ -698,11 +700,26 @@ public class Main extends Application {
 			songTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 			
 			songTable.getColumns().addAll(songName, bandName, albumName, genre, duration);
+			
+			songTable.setRowFactory( tv -> {
+			    TableRow<Song> row = new TableRow<>();
+			    row.setOnMouseClicked(event -> {
+			        if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
+			        	Song rowData = row.getItem();
+			        	
+			        	//DO INSERTING INTO STREAM TABLE HERE
+			 
+			            System.out.println("Now Streaming: " + rowData.getAudiofileID() + " || " + rowData.getSongName() + " by " + rowData.getBandName());
+			   
+			        }
+			    });
+			    return row ;
+			});
 			resultsSection.getChildren().add(songTable);
 			
 		}else if (parameters.radioOptionValue == "Artist")
 		{
-//			TableView<Artist> artistTable = new TableView<Artist>();
+
 			TableColumn bandName = new TableColumn("Band Name");
 			bandName.setCellValueFactory(new PropertyValueFactory<Song,String>("bandName"));
 			TableColumn description = new TableColumn("Bio");
@@ -713,6 +730,23 @@ public class Main extends Application {
 			artistTable.setItems(data.getResultList());
 			
 			artistTable.getColumns().addAll(bandName, description);
+			
+			artistTable.setRowFactory( tv -> {
+			    TableRow<Artist> row = new TableRow<>();
+			    row.setOnMouseClicked(event -> {
+			        if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
+			        	Artist rowData = row.getItem();
+			            System.out.println("Clicked on:" + rowData.getBandName());
+			            VBox rootC = new VBox();
+						rootC.getStyleClass().add("outer_box");
+						rootC.getChildren().add(createResultsSection(new SearchQueryParams("Album","Artist Name",rowData.getBandName())));
+						Scene scene = new Scene(rootC, 500, 700);
+						scene.getStylesheets().add("Application/src/style.css");
+						pStage.setScene(scene);
+			        }
+			    });
+			    return row ;
+			});
 			resultsSection.getChildren().add(artistTable);
 			
 		}else if(parameters.radioOptionValue == "Album")
@@ -731,11 +765,29 @@ public class Main extends Application {
 			
 			albumTable.setItems(data.getResultList());
 			albumTable.getColumns().addAll(albumName, bandName, genre, releaseYear);
+			albumTable.setRowFactory( tv -> {
+			    TableRow<Album> row = new TableRow<>();
+			    row.setOnMouseClicked(event -> {
+			        if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
+			        	Album rowData = row.getItem();
+			            System.out.println("Clicked on:" + rowData.getAlbumName());
+			            VBox rootC = new VBox();
+						rootC.getStyleClass().add("outer_box");
+						rootC.getChildren().add(createResultsSection(new SearchQueryParams("Song","Album Name",rowData.getAlbumName())));
+						Scene scene = new Scene(rootC, 500, 700);
+						scene.getStylesheets().add("Application/src/style.css");
+						pStage.setScene(scene);
+			        }
+			    });
+			    return row ;
+			});
+			
+			
 			resultsSection.getChildren().add(albumTable);
 			
 		}else if(parameters.radioOptionValue == "Playlist")
 		{
-//			TableView<Playlist> plTable = new TableView<Playlist>();
+
 			TableColumn playlistName = new TableColumn("Playlist Name");
 			playlistName.setCellValueFactory(new PropertyValueFactory<Song,String>("playlistName"));
 			TableColumn description = new TableColumn("Description");
@@ -748,13 +800,32 @@ public class Main extends Application {
 			PlaylistSearchResult data = new PlaylistSearchResult(parameters.comboOptionValue, parameters.searchFieldValue);
 			plTable.setItems(data.getResultList());
 			plTable.getColumns().addAll(playlistName,creatorUsername, description);
+			
+			plTable.setRowFactory( tv -> {
+			    TableRow<Playlist> row = new TableRow<>();
+			    row.setOnMouseClicked(event -> {
+			        if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
+			        	Playlist rowData = row.getItem();
+			            System.out.println("Clicked on:" + rowData.getPlaylistName());
+			            VBox rootC = new VBox();
+						rootC.getStyleClass().add("outer_box");
+						rootC.getChildren().add(createResultsSection(new SearchQueryParams("Song","Playlist",rowData.getPlaylistName())));
+						Scene scene = new Scene(rootC, 500, 700);
+						scene.getStylesheets().add("Application/src/style.css");
+						pStage.setScene(scene);
+			        }
+			    });
+			    return row ;
+			});
+			
+			
 			resultsSection.getChildren().add(plTable);
 			
 		}else if(parameters.radioOptionValue == "Podcast")
 		{
-//			TableView<Podcast> podTable = new TableView<Podcast>();
+
 			TableColumn podcastName = new TableColumn("Podcast Name");
-			podcastName.setCellValueFactory(new PropertyValueFactory<Song,String>("podName"));
+			podcastName.setCellValueFactory(new PropertyValueFactory<Podcast,String>("podName"));
 			TableColumn category = new TableColumn("Category");
 			category.setCellValueFactory(new PropertyValueFactory<Song,String>("category"));
 			// make sure to capture description in podcast
@@ -768,20 +839,43 @@ public class Main extends Application {
 			PodcastSearchResult data = new PodcastSearchResult(parameters.comboOptionValue, parameters.searchFieldValue);
 			podTable.setItems(data.getResultList());
 			podTable.getColumns().addAll(podcastName, category, numberOfEpisodes, description);
+			
+			podTable.setRowFactory( tv -> {
+			    TableRow<Podcast> row = new TableRow<>();
+			    row.setOnMouseClicked(event -> {
+			        if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
+			        	Podcast rowData = row.getItem();
+			            System.out.println("Clicked on:" + rowData.getPodName());
+			            VBox rootC = new VBox();
+						rootC.getStyleClass().add("outer_box");
+						rootC.getChildren().add(createResultsSection(new SearchQueryParams("Podcast Episode","",rowData.getPodName())));
+						Scene scene = new Scene(rootC, 500, 700);
+						scene.getStylesheets().add("Application/src/style.css");
+						pStage.setScene(scene);
+			        }
+			    });
+			    return row ;
+			});
 			resultsSection.getChildren().add(podTable);
 		}
-//		else if(parameters.radioOptionValue == "Podcast Episode")
-//		{
-//			TableColumn podcastEpisodeNumber = new TableColumn("Podcast Episode Number");
-//			TableColumn podcastEpisodeName = new TableColumn("Podcast Episode Name");
-//			TableColumn podcastName = new TableColumn("Podcast Name");
-//			TableColumn releaseDate = new TableColumn("Release Date");
-//			// make sure to capture description in podcast episode
+		else if(parameters.radioOptionValue == "Podcast Episode")
+		{
+			TableColumn podcastEpisodeNumber = new TableColumn("Podcast Episode Number");
+			podcastEpisodeNumber.setCellValueFactory(new PropertyValueFactory<PodcastEpisode,String>("episodeNo"));
+			TableColumn podcastEpisodeName = new TableColumn("Podcast Episode Name");
+			podcastEpisodeName.setCellValueFactory(new PropertyValueFactory<PodcastEpisode,String>("episodeName"));
+			TableColumn podcastName = new TableColumn("Podcast Name");
+			podcastName.setCellValueFactory(new PropertyValueFactory<PodcastEpisode,String>("podcastName"));
+			TableColumn releaseDate = new TableColumn("Release Date");
+			releaseDate.setCellValueFactory(new PropertyValueFactory<PodcastEpisode,String>("releaseDate"));
+			// make sure to capture description in podcast episode
 //			TableColumn description = new TableColumn("Description");
-//			
-//			table.getColumns().addAll(podcastEpisodeNumber, podcastEpisodeName, podcastName, releaseDate, description);
-//			
-//		}
+			
+			PodcastEpisodeSearchResult data = new PodcastEpisodeSearchResult(parameters.searchFieldValue);
+			podEpTable.setItems(data.getResultList());
+			podEpTable.getColumns().addAll(podcastName, podcastEpisodeNumber, podcastEpisodeName, releaseDate);
+			resultsSection.getChildren().add(podEpTable);
+		}
 		else
 		{
 			TableColumn dummy = new TableColumn("");

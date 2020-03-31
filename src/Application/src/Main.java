@@ -272,14 +272,9 @@ public class Main extends Application {
 						
 						displayMessage("Playlist creation successful.");
 						
-						
 					}
 					
-					
-					
 				}
-				
-				
 				
 			}
 			
@@ -403,6 +398,104 @@ public class Main extends Application {
 			
 		});
 		
+		Button goToFollowSectionButton = new Button("Follow Section");
+		goToFollowSectionButton.getStyleClass().add("button");
+		goToFollowSectionButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				// create new scene for follow with 3 sections
+				
+				VBox root = new VBox();
+				root.getStyleClass().add("outer_box");
+				
+				root.getChildren().add(createFollowArtistSection());
+				root.getChildren().add(createFollowPlaylistSection());
+				root.getChildren().add(createFollowPodcastSection());
+				
+				// buttons section
+				
+				HBox buttonBox = new HBox();
+				buttonBox.getStyleClass().add("inner");
+				Button returnButton = new Button("Return to Main Window");
+				returnButton.setOnAction(new EventHandler<ActionEvent>() {
+
+					@Override
+					public void handle(ActionEvent event) 
+					{
+						VBox root = new VBox();
+						root.getStyleClass().add("outer_box");
+						root.getChildren().add(createProfileSection());
+						root.getChildren().add(createNewPlaylistSection());
+						root.getChildren().add(createSearchSection());
+						root.getChildren().add(createRecentlyPlayedSection());
+						root.getChildren().add(createUtilitiesBar());
+						Scene scene = new Scene(root, 500, 700);
+						scene.getStylesheets().add("Application/src/style.css");
+						
+						pStage.setTitle("Application");
+						pStage.setScene(scene);
+						pStage.show();
+					}
+					
+				});
+				returnButton.getStyleClass().add("button");
+				buttonBox.getChildren().add(returnButton);
+				
+				Button logoutButton = new Button("Logout");
+				logoutButton.getStyleClass().add("button");
+				logoutButton.setOnAction(new EventHandler<ActionEvent>() {
+
+					@Override
+					public void handle(ActionEvent event) 
+					{
+						VBox root = createLoginPage();
+						
+						root.getStyleClass().add("login_b");
+						Scene scene = new Scene(root, 500, 700);
+						scene.getStylesheets().add("Application/src/style.css");
+						
+						pStage.setTitle("Application");
+						pStage.setScene(scene);
+						pStage.show();
+						
+					}
+					
+				});
+				buttonBox.getChildren().add(logoutButton);
+				
+				Button quitButton = new Button("Quit");
+				quitButton.getStyleClass().add("button");
+				quitButton.setOnAction(new EventHandler<ActionEvent>() {
+
+					@Override
+					public void handle(ActionEvent event) 
+					{
+						conManager.closeConnection();
+						System.exit(0);
+					}
+					
+				});
+				buttonBox.getChildren().add(quitButton);
+				
+				root.getChildren().add(buttonBox);
+				
+				
+				
+				Scene scene = new Scene(root, 500, 700);
+				scene.getStylesheets().add("Application/src/style.css");
+				
+				pStage.setTitle("Application");
+				pStage.setScene(scene);
+				pStage.show();
+				
+				
+			}
+			
+		});
+		
+		
 		Button quitButton = new Button("Quit");
 		quitButton.getStyleClass().add("button");
 		quitButton.setOnAction(new EventHandler<ActionEvent>() {
@@ -415,9 +508,159 @@ public class Main extends Application {
 			
 		});
 		
-		utilitiesBar.getChildren().addAll(logoutButton, quitButton);
+		utilitiesBar.getChildren().addAll(logoutButton, goToFollowSectionButton, quitButton);
 		
 		return utilitiesBar;
+	}
+
+	private VBox createFollowPodcastSection() 
+	{
+		VBox followPodcastSection = new VBox();
+		followPodcastSection.getStyleClass().add("inner");
+		followPodcastSection.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(2))));
+		
+		Label title = new Label("Podcasts You Currently Follow:");
+		title.getStyleClass().add("title");
+		followPodcastSection.getChildren().add(title);
+		
+		// make table view for podcasts
+		
+		TableView<Podcast> podTable = new TableView<Podcast>();
+		TableColumn podcastName = new TableColumn("Podcast Name");
+		podcastName.setCellValueFactory(new PropertyValueFactory<Song,String>("podName"));
+		TableColumn category = new TableColumn("Category");
+		category.setCellValueFactory(new PropertyValueFactory<Song,String>("category"));
+		// make sure to capture description in podcast
+		TableColumn numberOfEpisodes = new TableColumn("Number of Episodes");
+		numberOfEpisodes.setCellValueFactory(new PropertyValueFactory<Song,String>("numEpisodes"));
+		TableColumn description = new TableColumn("Description");
+		description.setCellValueFactory(new PropertyValueFactory<Song,String>("description"));
+		
+		podTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+		podTable.setMaxSize(400, 100);
+		
+		// this is where we fill the table
+//		PodcastSearchResult data = new PodcastSearchResult(parameters.comboOptionValue, parameters.searchFieldValue);
+//		podTable.setItems(data.getResultList());
+		
+		podTable.getColumns().addAll(podcastName, category, numberOfEpisodes, description);
+		followPodcastSection.getChildren().add(podTable);
+		
+		Button unfollowButton = new Button("Unfollow");
+		unfollowButton.getStyleClass().add("button");
+		unfollowButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				// query to delete the follow entry
+				
+			}
+			
+		});
+		
+		followPodcastSection.getChildren().add(unfollowButton);
+		
+		
+		return followPodcastSection;
+	}
+
+	private VBox createFollowPlaylistSection() 
+	{
+		VBox followPlaylistSection = new VBox();
+		followPlaylistSection.getStyleClass().add("inner");
+		followPlaylistSection.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(2))));
+		
+		Label title = new Label("Playlists You Currently Follow:");
+		title.getStyleClass().add("title");
+		followPlaylistSection.getChildren().add(title);
+		
+		// make table view for playlists
+		
+		TableView<Playlist> plTable = new TableView<Playlist>();
+		TableColumn playlistName = new TableColumn("Playlist Name");
+		playlistName.setCellValueFactory(new PropertyValueFactory<Song,String>("playlistName"));
+		TableColumn description = new TableColumn("Description");
+		description.setCellValueFactory(new PropertyValueFactory<Song,String>("description"));
+		TableColumn creatorUsername = new TableColumn("Creator Username");
+		creatorUsername.setCellValueFactory(new PropertyValueFactory<Song,String>("creator"));
+		
+		plTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+		plTable.setMaxSize(400, 100);
+		
+		// this is to fill the table
+//		PlaylistSearchResult data = new PlaylistSearchResult(parameters.comboOptionValue, parameters.searchFieldValue);
+//		plTable.setItems(data.getResultList());
+		
+		
+		plTable.getColumns().addAll(playlistName,creatorUsername, description);
+		followPlaylistSection.getChildren().add(plTable);
+		
+		
+		Button unfollowButton = new Button("Unfollow");
+		unfollowButton.getStyleClass().add("button");
+		unfollowButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				// query to delete the follow entry
+				
+			}
+			
+		});
+		
+		followPlaylistSection.getChildren().add(unfollowButton);
+		
+		
+		return followPlaylistSection;
+	}
+
+	private VBox createFollowArtistSection() 
+	{
+		VBox followArtistSection = new VBox();
+		followArtistSection.getStyleClass().add("inner");
+		followArtistSection.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(2))));
+		
+		Label title = new Label("Artists You Currently Follow:");
+		title.getStyleClass().add("title");
+		followArtistSection.getChildren().add(title);
+		
+		// make table view for artist
+		
+		TableView<Artist> artistTable = new TableView<Artist>();
+		TableColumn bandName = new TableColumn("Band Name");
+		bandName.setCellValueFactory(new PropertyValueFactory<Song,String>("bandName"));
+		TableColumn description = new TableColumn("Bio");
+		description.setCellValueFactory(new PropertyValueFactory<Song,String>("bio"));
+		artistTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+		artistTable.setMaxSize(400, 100);
+		
+		// this is to fill the table
+		//ArtistSearchResult data = new ArtistSearchResult(parameters.comboOptionValue, parameters.searchFieldValue);
+		
+		
+		//artistTable.setItems(data.getResultList());
+		
+		artistTable.getColumns().addAll(bandName, description);
+		followArtistSection.getChildren().add(artistTable);
+		
+		Button unfollowButton = new Button("Unfollow");
+		unfollowButton.getStyleClass().add("button");
+		unfollowButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				// query to delete the follow entry
+				
+			}
+			
+		});
+		
+		followArtistSection.getChildren().add(unfollowButton);
+		
+		return followArtistSection;
 	}
 
 	private VBox createProfileSection()
@@ -960,10 +1203,6 @@ public class Main extends Application {
 						}
 						
 					}
-						
-						
-					
-					
 				}
 				
 			});

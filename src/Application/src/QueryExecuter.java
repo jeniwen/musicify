@@ -333,5 +333,59 @@ public class QueryExecuter
 		
 		return errorCode;
 	}
+
+	public static ArrayList<String> getArtistsFollowed(String email) 
+	{
+		ArrayList<String> artistEmails = new ArrayList<String>();
+		
+		try {
+			Statement stmt = connection.createStatement();
+			
+			String query = "SELECT artist_email "
+					+ "FROM Follows_Artist "
+					+ "WHERE user_email = \'" + email + "\'";
+
+			ResultSet rs = stmt.executeQuery(query);
+
+			while(rs.next())
+			{
+				artistEmails.add(rs.getString(1));
+			}
+			
+					
+		}catch (SQLException e)
+		{
+			e.printStackTrace();
+		}
+		
+		return artistEmails;
+	}
+
+	public static ArrayList<String> getPodcastsFollowed(String email) 
+	{
+		ArrayList<String> podcastNames = new ArrayList<String>();
+		
+		try {
+			Statement stmt = connection.createStatement();
+			
+			String query = "SELECT pod_name "
+					+ "FROM Follows_Podcast "
+					+ "WHERE user_email = \'" + email + "\'";
+
+			ResultSet rs = stmt.executeQuery(query);
+
+			while(rs.next())
+			{
+				podcastNames.add(rs.getString(1));
+			}
+			
+					
+		}catch (SQLException e)
+		{
+			e.printStackTrace();
+		}
+		
+		return podcastNames;
+	}
 	
 }

@@ -17,6 +17,8 @@ public class ArtistSearchResult extends SearchResult<Artist> {
 		switch (searchOn) { 		// add more cases if we want to search on more!
 		case "Band Name":
 			searchAttribute = "a.band_name"; break;
+		case "email":
+			searchAttribute = "a.email"; break;
 		default:
 			searchAttribute = "a.band_name"; break;
 		}

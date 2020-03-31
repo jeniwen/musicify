@@ -543,6 +543,19 @@ public class Main extends Application {
 //		PodcastSearchResult data = new PodcastSearchResult(parameters.comboOptionValue, parameters.searchFieldValue);
 //		podTable.setItems(data.getResultList());
 		
+		ArrayList<String> podcastNames = QueryExecuter.getPodcastsFollowed(currentUser.email);
+		ArrayList<Podcast> podcasts = new ArrayList<Podcast>();
+		
+		for(String podname : podcastNames)
+		{
+			podcasts.addAll(new PodcastSearchResult("Podcast Name", podname).getResultList());
+		}
+		
+		//ArtistSearchResult data = new ArtistSearchResult(parameters.comboOptionValue, parameters.searchFieldValue);
+		
+		
+		podTable.getItems().addAll(podcasts);
+		
 		podTable.getColumns().addAll(podcastName, category, numberOfEpisodes, description);
 		followPodcastSection.getChildren().add(podTable);
 		
@@ -637,10 +650,19 @@ public class Main extends Application {
 		artistTable.setMaxSize(400, 100);
 		
 		// this is to fill the table
+		
+		ArrayList<String> artistEmails = QueryExecuter.getArtistsFollowed(currentUser.email);
+		ArrayList<Artist> artists = new ArrayList<Artist>();
+		
+		for(String email : artistEmails)
+		{
+			artists.addAll(new ArtistSearchResult("email", email).getResultList());
+		}
+		
 		//ArtistSearchResult data = new ArtistSearchResult(parameters.comboOptionValue, parameters.searchFieldValue);
 		
 		
-		//artistTable.setItems(data.getResultList());
+		artistTable.getItems().addAll(artists);
 		
 		artistTable.getColumns().addAll(bandName, description);
 		followArtistSection.getChildren().add(artistTable);

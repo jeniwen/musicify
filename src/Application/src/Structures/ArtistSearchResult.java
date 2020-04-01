@@ -14,7 +14,7 @@ public class ArtistSearchResult extends SearchResult<Artist> {
 	@Override
 	public void performSearch() {
 		String searchAttribute = "";
-		switch (searchOn) { 		// add more cases if we want to search on more!
+		switch (searchOn) {
 		case "Band Name":
 			searchAttribute = "a.band_name"; break;
 		case "email":

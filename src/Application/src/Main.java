@@ -27,6 +27,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Border;
 import javafx.scene.layout.BorderStroke;
@@ -72,6 +73,7 @@ public class Main extends Application {
 
 		primaryStage.setTitle("Application");
 		primaryStage.setScene(scene);
+		primaryStage.getIcons().add(new Image(this.getClass().getResourceAsStream("/images/logo.png")));
 		primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
 			@Override
 			public void handle(WindowEvent t) {

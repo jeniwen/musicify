@@ -152,6 +152,16 @@ public class QueryExecuter
 		return executeQuery(str);
 	}
 	
+	public ResultSet getSongSearchPlaylist(String searchString) {
+		String str ="SELECT s.audiofile_id, s.song_name, art.band_name, al.album_name, al.genre FROM Song s, Audiofile au,  Album al, Artist art, Playlist_Has_Song phs WHERE phs.playlist_name = \'"+ searchString + "\'";
+		str += " AND s.audiofile_id = phs.audiofile_id";
+		str += " AND s.audiofile_id = au.audiofile_id";
+		str += " AND s.email = al.email";
+		str += " AND s.album_name= al.album_name";
+		str += " AND al.email = art.email";
+		return executeQuery(str);
+	}
+	
 	public ResultSet getArtistSearch(String attribute, String searchString) {
 		String str = "SELECT a.email, a.band_name, a.biography FROM Artist a";
 		str += " WHERE LOWER(" + attribute + ") LIKE LOWER(\'%" + format(searchString) + "%\')";

@@ -26,15 +26,24 @@ public class SongSearchResult extends SearchResult<Song> {
 			searchAttribute = "al.album_name"; break;
 		case "Genre":
 			searchAttribute = "al.genre"; break;
+		case "Playlist":
+			searchAttribute = ""; break; //empty to search for songs in a playlist
 		default:
 			searchAttribute = "s.song_name";
 		}
 
 		try {
-			ResultSet rs = QueryExecuter.instance().getSongSearch(searchAttribute, searchString);
-			while (rs.next()) {
-				Song songToAdd = new Song(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5));
-				this.resultlist.add(songToAdd);
+			ResultSet rs = null;
+			if (searchAttribute.contentEquals("")) {
+				rs = QueryExecuter.instance().getSongSearchPlaylist(searchString); 
+			} else {
+				rs = QueryExecuter.instance().getSongSearch(searchAttribute, searchString);
+			}
+			if (rs != null) {
+				while (rs.next()) {
+					Song songToAdd = new Song(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5));
+					this.resultlist.add(songToAdd);
+				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -44,4 +53,5 @@ public class SongSearchResult extends SearchResult<Song> {
 		}
 		
 	}
+
 }

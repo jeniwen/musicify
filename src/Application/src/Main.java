@@ -18,6 +18,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.SelectionMode;
@@ -102,7 +103,10 @@ public class Main extends Application {
 		passwordBox.getStyleClass().add("inner");
 		Label passwordLabel = new Label("Password: ");
 		passwordLabel.getStyleClass().add("sub_label");
-		TextField passwordField = new TextField();
+		
+//		TextField passwordField = new TextField();
+		PasswordField passwordField = new PasswordField();
+		
 		passwordField.getStyleClass().add("field");
 		passwordBox.getChildren().addAll(passwordLabel, passwordField);
 		loginBox.getChildren().add(passwordBox);

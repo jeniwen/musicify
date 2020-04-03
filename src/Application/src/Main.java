@@ -607,6 +607,13 @@ public class Main extends Application {
 //		plTable.setItems(data.getResultList());
 		
 		ArrayList<Playlist> playlistsFollowed = QueryExecuter.getPlaylistsUserFollows(currentUser.email);
+		
+		System.out.println("Currently following:");
+		for(Playlist p : playlistsFollowed)
+		{
+			System.out.println("name : " + p.getPlaylistName() );
+		}
+		
 		plTable.getItems().addAll(playlistsFollowed);
 		
 		plTable.getColumns().addAll(playlistName,creatorUsername, description);
@@ -621,11 +628,12 @@ public class Main extends Application {
 				// query to delete the follow entry
 				ArrayList<Playlist> selected = new ArrayList<Playlist>();
 				selected.addAll(plTable.getSelectionModel().getSelectedItems());
+				ArrayList<Playlist> toRemove = new ArrayList<Playlist>();
 				
 				for(Playlist p : selected)
 				{
 					int errorCode = QueryExecuter.deleteFromFollowsPlaylist(currentUser.email, p.getCreator(), p.getPlaylistName());
-					
+					toRemove.add(p);
 					if(errorCode == 1)
 					{
 						displayError("There was an error removing the selected playlists from your follows.");
@@ -634,6 +642,11 @@ public class Main extends Application {
 					{
 						displayMessage("Operation succeeded.");
 					}
+				}
+				
+				for(Playlist p : toRemove)
+				{
+					plTable.getItems().remove(p);
 				}
 				
 			}

@@ -500,27 +500,29 @@ public class QueryExecuter
 					+ " WHERE user_email = \'" + email + "\'";
 			System.out.println(query);
 			ResultSet rs = stmt.executeQuery(query);
-			String playlist_maker_email = "";
+			//String playlist_maker_email = "";
+			System.out.println("first query:");
 			while(rs.next())
 			{
-				playlist_maker_email = rs.getString(2);
+				//playlist_maker_email = rs.getString(2);
 				interim.add(new Playlist(rs.getString(1), "", -1, rs.getString(2)));
-				//System.out.println("playlist_make : " + playlist_maker_email);
+				System.out.println("name : " + rs.getString(1));
 			}
 			// now we must get the two other fields (description, accessibility)
-			
+			System.out.println("second query:");
 			for(Playlist p : interim)
 			{
 				query = "SELECT description, accessibility "
 						+ "FROM Playlist "
 						+ "WHERE playlist_name = \'" + format(p.getPlaylistName()) + "\' "
-						+ "AND email = \'" + playlist_maker_email + "\'";
+						+ "AND email = \'" + p.getCreator() + "\'";
 				System.out.println(query);
 				Statement s = connection.createStatement();
 				ResultSet rs2 = s.executeQuery(query);
 				while(rs2.next())
 				{
-					result.add(new Playlist(p.getPlaylistName(), rs2.getString(1), Integer.parseInt(rs2.getString(2)), playlist_maker_email));
+					System.out.println("name : " + p.getPlaylistName());
+					result.add(new Playlist(p.getPlaylistName(), rs2.getString(1), Integer.parseInt(rs2.getString(2)), p.getCreator()));
 					
 				}
 				

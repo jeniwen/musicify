@@ -636,11 +636,11 @@ public class Main extends Application {
 					toRemove.add(p);
 					if(errorCode == 1)
 					{
-						displayError("There was an error removing the selected playlists from your follows.");
+						displayError("There was and SQLException.");
 						
 					}else if(errorCode == 0)
 					{
-						displayMessage("Operation succeeded.");
+						displayMessage("Operation was successful.");
 					}
 				}
 				
@@ -1380,9 +1380,9 @@ public class Main extends Application {
 							if (errorCode == 1) {
 								// there was an SQL Exception, maybe the song is already in the playlsit
 								displayError(
-										"There was an SQLException, maybe some of the selected songs already belong to this playlist.");
+										"There was an SQLException.");
 							} else {
-								displayMessage("Songs successfully added to your playlist. ");
+								displayMessage("Operation was successful. ");
 							}
 						}
 
@@ -1429,7 +1429,7 @@ public class Main extends Application {
 						int errorCode = QueryExecuter.insertIntoFollowsArtist(currentUser.email, artistEmails);
 
 						if (errorCode == 1) {
-							displayError("There was an SQLException, maybe you are already following one of these.");
+							displayError("There was an SQLException.");
 						} else if (errorCode == 0) {
 							displayMessage("Operation was successful.");
 						}
@@ -1441,7 +1441,7 @@ public class Main extends Application {
 						int errorCode = QueryExecuter.insertIntoFollowsPlaylist(currentUser.email, playlists);
 
 						if (errorCode == 1) {
-							displayError("There was an SQLException, maybe you are already following one of these.");
+							displayError("There was an SQLException.");
 						} else if (errorCode == 0) {
 							displayMessage("Operation was successful.");
 						}
@@ -1456,7 +1456,7 @@ public class Main extends Application {
 						int errorCode = QueryExecuter.insertIntoFollowsPodcast(currentUser.email, podcastNames);
 
 						if (errorCode == 1) {
-							displayError("There was an SQLException, maybe you are already following one of these.");
+							displayError("There was an SQLException.");
 						} else if (errorCode == 0) {
 							displayMessage("Operation was successful.");
 						}

@@ -621,6 +621,22 @@ public class Main extends Application {
 			public void handle(ActionEvent event) 
 			{
 				// query to delete the follow entry
+				ArrayList<Playlist> selected = new ArrayList<Playlist>();
+				selected.addAll(plTable.getSelectionModel().getSelectedItems());
+				
+				for(Playlist p : selected)
+				{
+					int errorCode = QueryExecuter.deleteFromFollowsPlaylist(currentUser.email, p.getCreator(), p.getPlaylistName());
+					
+					if(errorCode == 1)
+					{
+						displayError("There was an error removing the selected playlists from your follows.");
+						
+					}else if(errorCode == 0)
+					{
+						displayMessage("Operation succeeded.");
+					}
+				}
 				
 			}
 			

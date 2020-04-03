@@ -479,5 +479,28 @@ public class QueryExecuter
 		
 		return result;
 	}
+
+	public static int deleteFromFollowsPlaylist(String email, String creator, String playlistName) {
+		
+		int errorCode = 0;
+		
+		try {
+			
+			Statement stmt = connection.createStatement();
+			String query = "DELETE FROM follows_playlist "
+					+ "WHERE user_email = \'" + email 
+					+ "\' AND playlist_name = \'" + playlistName
+					+ "\' AND playlist_maker_email = \'" + creator + "\'";
+			System.out.println(query);
+			stmt.executeUpdate(query);
+			
+		}catch(SQLException e)
+		{
+			e.printStackTrace();
+			errorCode = 1;
+		}
+		
+		return errorCode;
+	}
 	
 }

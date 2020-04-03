@@ -20,6 +20,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
@@ -70,12 +71,10 @@ public class Main extends Application {
 		
 		root.getStyleClass().add("login_b");
 		
-		
-		
 		Scene scene = new Scene(root, 500, 700);
 		scene.getStylesheets().add("Application/src/style.css");
 		
-		primaryStage.setTitle("Application");
+		primaryStage.setTitle("Spotifie");
 		primaryStage.setScene(scene);
 		primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
 		    @Override
@@ -138,10 +137,14 @@ public class Main extends Application {
 					root.getChildren().add(createRecentlyPlayedSection());
 					root.getChildren().add(createTopStreamsSection());
 					root.getChildren().add(createUtilitiesBar());
-					Scene scene = new Scene(root, 500, 700);
+					
+					ScrollPane sp = new ScrollPane();
+					sp.setContent(root);
+					
+					Scene scene = new Scene(sp, 500, 700);
 					scene.getStylesheets().add("Application/src/style.css");
 					
-					pStage.setTitle("Application");
+					pStage.setTitle("Spotifie");
 					pStage.setScene(scene);
 					pStage.show();
 				}else{
@@ -265,10 +268,14 @@ public class Main extends Application {
 						root.getChildren().add(createSearchSection());
 						root.getChildren().add(createRecentlyPlayedSection());
 						root.getChildren().add(createUtilitiesBar());
-						Scene scene = new Scene(root, 500, 700);
+						
+						ScrollPane sp = new ScrollPane();
+						sp.setContent(root);
+						
+						Scene scene = new Scene(sp, 500, 700);
 						scene.getStylesheets().add("Application/src/style.css");
 						
-						pStage.setTitle("Application");
+						pStage.setTitle("Spotifie");
 						pStage.setScene(scene);
 						pStage.show();
 						
@@ -382,7 +389,7 @@ public class Main extends Application {
 				Scene scene = new Scene(root, 500, 700);
 				scene.getStylesheets().add("Application/src/style.css");
 				
-				pStage.setTitle("Application");
+				pStage.setTitle("Spotifie");
 				pStage.setScene(scene);
 				pStage.show();
 				
@@ -423,10 +430,14 @@ public class Main extends Application {
 						root.getChildren().add(createSearchSection());
 						root.getChildren().add(createRecentlyPlayedSection());
 						root.getChildren().add(createUtilitiesBar());
-						Scene scene = new Scene(root, 500, 700);
+						
+						ScrollPane sp = new ScrollPane();
+						sp.setContent(root);
+						
+						Scene scene = new Scene(sp, 500, 700);
 						scene.getStylesheets().add("Application/src/style.css");
 						
-						pStage.setTitle("Application");
+						pStage.setTitle("Spotifie");
 						pStage.setScene(scene);
 						pStage.show();
 					}
@@ -448,7 +459,7 @@ public class Main extends Application {
 						Scene scene = new Scene(root, 500, 700);
 						scene.getStylesheets().add("Application/src/style.css");
 						
-						pStage.setTitle("Application");
+						pStage.setTitle("Spotifie");
 						pStage.setScene(scene);
 						pStage.show();
 						
@@ -478,7 +489,7 @@ public class Main extends Application {
 				Scene scene = new Scene(root, 500, 700);
 				scene.getStylesheets().add("Application/src/style.css");
 				
-				pStage.setTitle("Application");
+				pStage.setTitle("Spotifie");
 				pStage.setScene(scene);
 				pStage.show();
 				
@@ -824,10 +835,14 @@ public class Main extends Application {
 						root.getChildren().add(createSearchSection());
 						root.getChildren().add(createRecentlyPlayedSection());
 						root.getChildren().add(createUtilitiesBar());
-						Scene scene = new Scene(root, 500, 700);
+						
+						ScrollPane sp = new ScrollPane();
+						sp.setContent(root);
+						
+						Scene scene = new Scene(sp, 500, 700);
 						scene.getStylesheets().add("Application/src/style.css");
 						
-						pStage.setTitle("Application");
+						pStage.setTitle("Spotifie");
 						pStage.setScene(scene);
 						pStage.show();
 					} else {
@@ -1011,7 +1026,7 @@ public class Main extends Application {
 				Scene scene = new Scene(rootC, 500, 700);
 				scene.getStylesheets().add("Application/src/style.css");
 				
-				pStage.setTitle("Application");
+				pStage.setTitle("Spotifie");
 				pStage.setScene(scene);
 				pStage.show();
 			}
@@ -1469,10 +1484,14 @@ public class Main extends Application {
 				root.getChildren().add(createSearchSection());
 				root.getChildren().add(createRecentlyPlayedSection());
 				root.getChildren().add(createUtilitiesBar());
-				Scene scene = new Scene(root, 500, 700);
+				
+				ScrollPane sp = new ScrollPane();
+				sp.setContent(root);
+				
+				Scene scene = new Scene(sp, 500, 700);
 				scene.getStylesheets().add("Application/src/style.css");
 				
-				pStage.setTitle("Application");
+				pStage.setTitle("Spotifie");
 				pStage.setScene(scene);
 				pStage.show();
 			}
@@ -1494,7 +1513,7 @@ public class Main extends Application {
 				Scene scene = new Scene(root, 500, 700);
 				scene.getStylesheets().add("Application/src/style.css");
 				
-				pStage.setTitle("Application");
+				pStage.setTitle("Spotifie");
 				pStage.setScene(scene);
 				pStage.show();
 				

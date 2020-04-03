@@ -35,9 +35,9 @@ public class AlbumSearchResult extends SearchResult<Album>{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		for (Album a: resultlist) {
-			System.out.println(a.getAlbumName());
-		}
+//		for (Album a: resultlist) {
+//			System.out.println(a.getAlbumName());
+//		}
 	}
 	
 

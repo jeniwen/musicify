@@ -115,7 +115,7 @@ public class QueryExecuter
 		String sqlState;
 		try {
 			Statement stmt = connection.createStatement();
-			System.out.println("Executing query: "+ querySQL);
+//			System.out.println("Executing query: "+ querySQL);
 			java.sql.ResultSet rs = stmt.executeQuery(querySQL);
 			return rs;
 		} catch (SQLException e) {
@@ -212,7 +212,7 @@ public class QueryExecuter
 					+ "\', " + isAccessible
 					+ ", \'" + format(description) + "\')";
 			
-			System.out.println(query);
+//			System.out.println(query);
 			
 			stmt.executeUpdate(query);
 			
@@ -270,7 +270,7 @@ public class QueryExecuter
 						+ " WHERE user_email = \'" + email + '\''
 						+ " AND artist_email = \'" + a_email + "\'";
 				
-				System.out.println(query);
+//				System.out.println(query);
 				
 				stmt.executeUpdate(query);
 			}
@@ -298,8 +298,8 @@ public class QueryExecuter
 				String query = "INSERT INTO Follows_Artist"
 						+ " VALUES (\'" + email
 						+ "\', \'" + a_email + "\')";
-				
-				System.out.println(query);
+//				
+//				System.out.println(query);
 				
 				stmt.executeUpdate(query);
 			}
@@ -331,7 +331,7 @@ public class QueryExecuter
 						+ "\', \'" + creator_email 
 						+ "\', \'" + format(p.getPlaylistName()) + "\')";
 				
-				System.out.println(query);
+//				System.out.println(query);
 				
 				stmt.executeUpdate(query);
 			}
@@ -359,7 +359,7 @@ public class QueryExecuter
 						+ " WHERE user_email = \'" + email + '\''
 						+ " AND pod_name = \'" + podname + "\'";
 				
-				System.out.println(query);
+//				System.out.println(query);
 				
 				stmt.executeUpdate(query);
 			}
@@ -413,7 +413,7 @@ public class QueryExecuter
 						+ " VALUES (\'" + email
 						+ "\', \'" + format(podname) + "\')";
 				
-				System.out.println(query);
+//				System.out.println(query);
 				
 				stmt.executeUpdate(query);
 			}
@@ -498,30 +498,30 @@ public class QueryExecuter
 			String query = "SELECT playlist_name, playlist_maker_email "
 					+ "FROM follows_playlist"
 					+ " WHERE user_email = \'" + email + "\'";
-			System.out.println(query);
+//			System.out.println(query);
 			ResultSet rs = stmt.executeQuery(query);
 			//String playlist_maker_email = "";
-			System.out.println("first query:");
+//			System.out.println("first query:");
 			while(rs.next())
 			{
 				//playlist_maker_email = rs.getString(2);
 				interim.add(new Playlist(rs.getString(1), "", -1, rs.getString(2)));
-				System.out.println("name : " + rs.getString(1));
+//				System.out.println("name : " + rs.getString(1));
 			}
 			// now we must get the two other fields (description, accessibility)
-			System.out.println("second query:");
+//			System.out.println("second query:");
 			for(Playlist p : interim)
 			{
 				query = "SELECT description, accessibility "
 						+ "FROM Playlist "
 						+ "WHERE playlist_name = \'" + format(p.getPlaylistName()) + "\' "
 						+ "AND email = \'" + p.getCreator() + "\'";
-				System.out.println(query);
+//				System.out.println(query);
 				Statement s = connection.createStatement();
 				ResultSet rs2 = s.executeQuery(query);
 				while(rs2.next())
 				{
-					System.out.println("name : " + p.getPlaylistName());
+//					System.out.println("name : " + p.getPlaylistName());
 					result.add(new Playlist(p.getPlaylistName(), rs2.getString(1), Integer.parseInt(rs2.getString(2)), p.getCreator()));
 					
 				}
@@ -549,7 +549,7 @@ public class QueryExecuter
 					+ "WHERE user_email = \'" + email 
 					+ "\' AND playlist_name = \'" + format(playlistName)
 					+ "\' AND playlist_maker_email = \'" + creator + "\'";
-			System.out.println(query);
+//			System.out.println(query);
 			stmt.executeUpdate(query);
 			
 		}catch(SQLException e)

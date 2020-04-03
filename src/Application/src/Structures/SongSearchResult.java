@@ -48,9 +48,9 @@ public class SongSearchResult extends SearchResult<Song> {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		for (Song s: resultlist) {
-			System.out.println(s.getSongName());
-		}
+//		for (Song s: resultlist) {
+//			System.out.println(s.getSongName());
+//		}
 		
 	}
 

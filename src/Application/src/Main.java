@@ -554,7 +554,7 @@ public class Main extends Application {
 				ArrayList<Podcast> podcastsToRemove = new ArrayList<Podcast>();
 
 				for (Podcast p : podTable.getSelectionModel().getSelectedItems()) {
-					System.out.println("Unfollowing: " + p.getPodName());
+//					System.out.println("Unfollowing: " + p.getPodName());
 					podnames.add(p.getPodName());
 					podcastsToRemove.add(p);
 					
@@ -608,11 +608,11 @@ public class Main extends Application {
 		
 		ArrayList<Playlist> playlistsFollowed = QueryExecuter.getPlaylistsUserFollows(currentUser.email);
 		
-		System.out.println("Currently following:");
-		for(Playlist p : playlistsFollowed)
-		{
-			System.out.println("name : " + p.getPlaylistName() );
-		}
+//		System.out.println("Currently following:");
+//		for(Playlist p : playlistsFollowed)
+//		{
+//			System.out.println("name : " + p.getPlaylistName() );
+//		}
 		
 		plTable.getItems().addAll(playlistsFollowed);
 		
@@ -705,7 +705,7 @@ public class Main extends Application {
 				ArrayList<Artist> artistsToRemove = new ArrayList<Artist>();
 
 				for (Artist a : artistTable.getSelectionModel().getSelectedItems()) {
-					System.out.println("Unfollowing: " + a.getBandName());
+//					System.out.println("Unfollowing: " + a.getBandName());
 					artistEmails.add(a.getEmail());
 					artistsToRemove.add(a);
 					
@@ -818,7 +818,7 @@ public class Main extends Application {
 				if (click.getClickCount() == 2) {
 					// Use ListView's getSelected Item
 					String currentItemSelected = (String) playlistList.getSelectionModel().getSelectedItem();
-					System.out.println(currentItemSelected);
+//					System.out.println(currentItemSelected);
 					VBox rootC = new VBox();
 					rootC.getStyleClass().add("outer_box");
 					rootC.getChildren().add(
@@ -872,7 +872,7 @@ public class Main extends Application {
 					if (newPswVal.length() > 6) {
 						
 						boolean updateStatus = queryExecuter.updatePassword(email, newPswVal);
-						System.out.println(updateStatus);
+//						System.out.println(updateStatus);
 						
 						VBox root = new VBox();
 						root.getStyleClass().add("outer_box");
@@ -1168,7 +1168,7 @@ public class Main extends Application {
 				row.setOnMouseClicked(event -> {
 					if (event.getClickCount() == 2 && (!row.isEmpty())) {
 						Artist rowData = row.getItem();
-						System.out.println("Clicked on:" + rowData.getBandName());
+//						System.out.println("Clicked on:" + rowData.getBandName());
 						VBox rootC = new VBox();
 						rootC.getStyleClass().add("outer_box");
 						rootC.getChildren().add(createResultsSection(
@@ -1202,7 +1202,7 @@ public class Main extends Application {
 				row.setOnMouseClicked(event -> {
 					if (event.getClickCount() == 2 && (!row.isEmpty())) {
 						Album rowData = row.getItem();
-						System.out.println("Clicked on:" + rowData.getAlbumName());
+//						System.out.println("Clicked on:" + rowData.getAlbumName());
 						VBox rootC = new VBox();
 						rootC.getStyleClass().add("outer_box");
 						rootC.getChildren().add(createResultsSection(
@@ -1238,7 +1238,7 @@ public class Main extends Application {
 				row.setOnMouseClicked(event -> {
 					if (event.getClickCount() == 2 && (!row.isEmpty())) {
 						Playlist rowData = row.getItem();
-						System.out.println("Clicked on:" + rowData.getPlaylistName());
+//						System.out.println("Clicked on:" + rowData.getPlaylistName());
 						VBox rootC = new VBox();
 						rootC.getStyleClass().add("outer_box");
 						rootC.getChildren().add(createResultsSection(
@@ -1277,7 +1277,7 @@ public class Main extends Application {
 				row.setOnMouseClicked(event -> {
 					if (event.getClickCount() == 2 && (!row.isEmpty())) {
 						Podcast rowData = row.getItem();
-						System.out.println("Clicked on:" + rowData.getPodName());
+//						System.out.println("Clicked on:" + rowData.getPodName());
 						VBox rootC = new VBox();
 						rootC.getStyleClass().add("outer_box");
 						rootC.getChildren().add(createResultsSection(

@@ -31,9 +31,9 @@ public class ArtistSearchResult extends SearchResult<Artist> {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		for (Artist s: resultlist) {
-			System.out.println(s.getBandName());
-		}
+//		for (Artist s: resultlist) {
+//			System.out.println(s.getBandName());
+//		}
 		
 	}
 

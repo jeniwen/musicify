@@ -30,9 +30,9 @@ public class PodcastSearchResult extends SearchResult<Podcast> {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		for (Podcast p: resultlist) {
-			System.out.println(p.getPodName());
-		}
+//		for (Podcast p: resultlist) {
+//			System.out.println(p.getPodName());
+//		}
 	}
 
 }

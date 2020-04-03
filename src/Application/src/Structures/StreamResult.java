@@ -33,9 +33,9 @@ public class StreamResult {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		for (Song s: song_resultlist) {
-			System.out.println(s.getSongName());
-		}
+//		for (Song s: song_resultlist) {
+//			System.out.println(s.getSongName());
+//		}
 		
 	}
 	
@@ -57,12 +57,12 @@ public class StreamResult {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		for (Song s: song_resultlist) {
-			System.out.println(s.getSongName());
-		}
-		for (PodcastEpisode p: pod_resultlist) {
-			System.out.println(p.getPodcastName()+" "+p.getEpisodeName());
-		}
+//		for (Song s: song_resultlist) {
+//			System.out.println(s.getSongName());
+//		}
+//		for (PodcastEpisode p: pod_resultlist) {
+//			System.out.println(p.getPodcastName()+" "+p.getEpisodeName());
+//		}
 		
 	}
 	

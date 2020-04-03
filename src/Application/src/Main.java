@@ -551,12 +551,18 @@ public class Main extends Application {
 			@Override
 			public void handle(ActionEvent event) {
 				ArrayList<String> podnames = new ArrayList<String>();
+				ArrayList<Podcast> podcastsToRemove = new ArrayList<Podcast>();
 
 				for (Podcast p : podTable.getSelectionModel().getSelectedItems()) {
 					System.out.println("Unfollowing: " + p.getPodName());
 					podnames.add(p.getPodName());
-					podTable.getItems().remove(p);
+					podcastsToRemove.add(p);
+					
 				}
+				for (Podcast p : podcastsToRemove) {
+					podTable.getItems().remove(p);
+				} 
+				
 				int errorCode = QueryExecuter.deleteFromFollowsPodcast(currentUser.email, podnames);
 				if (errorCode == 1) {
 					displayError("There was an SQLException.");
@@ -683,13 +689,19 @@ public class Main extends Application {
 			@Override
 			public void handle(ActionEvent event) {
 				ArrayList<String> artistEmails = new ArrayList<String>();
+				ArrayList<Artist> artistsToRemove = new ArrayList<Artist>();
 
 				for (Artist a : artistTable.getSelectionModel().getSelectedItems()) {
 					System.out.println("Unfollowing: " + a.getBandName());
 					artistEmails.add(a.getEmail());
-					System.out.println(a.getEmail());
+					artistsToRemove.add(a);
+					
+				}
+				for (Artist a: artistsToRemove) {
 					artistTable.getItems().remove(a);
 				}
+				
+				
 				int errorCode = QueryExecuter.deleteFromFollowsArtist(currentUser.email, artistEmails);
 				if (errorCode == 1) {
 					displayError("There was an SQLException.");

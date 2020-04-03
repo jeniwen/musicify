@@ -255,6 +255,35 @@ public class QueryExecuter
 		
 		return errorCode;
 	}
+	
+	public static int deleteFromFollowsArtist(String email, ArrayList<String> artistEmails) 
+	{
+		int errorCode = 0;
+		
+		try {
+			
+			Statement stmt = connection.createStatement();
+			
+			for(String a_email : artistEmails)
+			{
+				String query = "DELETE FROM Follows_Artist"
+						+ " WHERE user_email = \'" + email + '\''
+						+ " AND artist_email = \'" + a_email + "\'";
+				
+				System.out.println(query);
+				
+				stmt.executeUpdate(query);
+			}
+			
+			
+		}catch(SQLException e)
+		{
+			errorCode = 1;
+			e.printStackTrace();
+		}
+		
+		return errorCode;
+	}
 
 	public static int insertIntoFollowsArtist(String email, ArrayList<String> artistEmails) 
 	{
@@ -315,6 +344,33 @@ public class QueryExecuter
 		}
 		
 		return errorCode;
+	}
+	
+	public static int deleteFromFollowsPodcast(String email, ArrayList<String> podcastNames) {
+			int errorCode = 0;
+		
+		try {
+			
+			Statement stmt = connection.createStatement();
+			
+			for(String podname : podcastNames)
+			{
+				String query = "DELETE FROM Follows_Podcast"
+						+ " WHERE user_email = \'" + email + '\''
+						+ " AND pod_name = \'" + podname + "\'";
+				
+				System.out.println(query);
+				
+				stmt.executeUpdate(query);
+			}
+			
+			
+		}catch(SQLException e)
+		{
+			errorCode = 1;
+			e.printStackTrace();
+		}
+		return 0;
 	}
 
 	private static String getEmailFromUsername(String username) 

@@ -136,8 +136,9 @@ public class Main extends Application {
 					root.getChildren().add(createNewPlaylistSection());
 					root.getChildren().add(createSearchSection());
 					root.getChildren().add(createRecentlyPlayedSection());
+					root.getChildren().add(createTopStreamsSection());
 					root.getChildren().add(createUtilitiesBar());
-					Scene scene = new Scene(root, 700, 750);
+					Scene scene = new Scene(root, 500, 700);
 					scene.getStylesheets().add("Application/src/style.css");
 					
 					pStage.setTitle("Application");
@@ -330,41 +331,31 @@ public class Main extends Application {
 		title.getStyleClass().add("title");
 		recentlyPlayedBox.getChildren().add(title);
 		
+		currentUser = QueryExecuter.getBasicUserInfo(currentUser);
+		
 		HBox recentlyPlayedSongsBox = new HBox();
 		Label recentlyPlayedSongsLabel = new Label("Songs: ");
 		recentlyPlayedSongsLabel.getStyleClass().add("sub_label");
 		ListView recentlyPlayedSongs = new ListView();
 		recentlyPlayedSongs.setPrefWidth(380);
 		recentlyPlayedSongs.setPrefHeight(80);
-		recentlyPlayedSongs.getItems().add("Song 1");
-		recentlyPlayedSongs.getItems().add("Song 2");
-		recentlyPlayedSongs.getItems().add("Song 3");
-		recentlyPlayedSongs.getItems().add("Song 4");
-		recentlyPlayedSongs.getItems().add("Song 5");
-		recentlyPlayedSongs.getItems().add("Song 6");
-		recentlyPlayedSongs.getItems().add("Song 7");
-		recentlyPlayedSongs.getItems().add("Song 8");
-		recentlyPlayedSongs.getItems().add("Song 9");
+		
+		StreamResult data = new StreamResult(currentUser.email);
+		//recentlyPlayedSongs.setItems(data.getResultList());
+		recentlyPlayedSongs.getItems().addAll(data.getSongNames());
+		
 		recentlyPlayedSongsBox.getChildren().addAll(recentlyPlayedSongsLabel, recentlyPlayedSongs);
 		recentlyPlayedBox.getChildren().add(recentlyPlayedSongsBox);
 		
-		HBox recentlyPlayedPodEpisodesBox = new HBox();
-		Label recentlyPlayedPodEpisodesLabel = new Label("Songs: ");
+		Label recentlyPlayedPodEpisodesLabel = new Label("Podcast Episodes: ");
 		recentlyPlayedPodEpisodesLabel.getStyleClass().add("sub_label");
 		ListView recentlyPlayedPodEpisodes = new ListView();
 		recentlyPlayedPodEpisodes.setPrefWidth(380);
 		recentlyPlayedPodEpisodes.setPrefHeight(80);
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 1");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 2");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 3");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 4");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 5");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 6");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 7");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 8");
-		recentlyPlayedPodEpisodes.getItems().add("PodcastEpisode 9");
-		recentlyPlayedPodEpisodesBox.getChildren().addAll(recentlyPlayedPodEpisodesLabel, recentlyPlayedPodEpisodes);
-		recentlyPlayedBox.getChildren().add(recentlyPlayedPodEpisodesBox);
+
+		recentlyPlayedPodEpisodes.getItems().addAll(data.getPodNames());
+		recentlyPlayedBox.getChildren().add(recentlyPlayedPodEpisodesLabel);
+		recentlyPlayedBox.getChildren().add(recentlyPlayedPodEpisodes);
 		
 		return recentlyPlayedBox;
 	}
@@ -749,6 +740,30 @@ public class Main extends Application {
 		subscriptionNoBox.getChildren().addAll(subscriptionNoLabel, subscriptionNo);
 		profileBox.getChildren().add(subscriptionNoBox);
 		
+		//change password
+		Button pswButton = new Button("Change Password");
+		pswButton.getStyleClass().add("button");
+		pswButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{	
+				VBox rootC = new VBox();
+				rootC.getStyleClass().add("outer_box");
+				rootC.getChildren().add(createPasswordModSection(currentUser.username, currentUser.email));
+				Scene scene = new Scene(rootC, 500, 100);
+				scene.getStylesheets().add("Application/src/style.css");
+				
+				pStage.setTitle("Change Password");
+				pStage.setScene(scene);
+				pStage.show();
+			}
+			
+		});
+		profileBox.getChildren().add(pswButton);
+		
+		//
+		
 		currentUser.playlistNames.clear();
 		currentUser = QueryExecuter.getAllPlaylistNamesForUser(currentUser);
 		
@@ -766,6 +781,69 @@ public class Main extends Application {
 		
 		
 		return profileBox;
+	}
+	
+	private VBox createPasswordModSection(String usernameValue, String email) {
+		VBox passwordModSection = new VBox();	
+		
+		HBox oldPasswordBox = new HBox();
+		Label oldPasswordLabel = new Label("Old Password: ");
+		oldPasswordLabel.getStyleClass().add("sub_label");
+		TextField oldPasswordField = new TextField();
+		oldPasswordField.getStyleClass().add("field");
+		oldPasswordBox.getChildren().addAll(oldPasswordLabel, oldPasswordField);
+		
+		HBox newPasswordBox = new HBox();
+		Label newPasswordLabel = new Label("New Password: ");
+		newPasswordLabel.getStyleClass().add("sub_label");
+		TextField newPasswordField = new TextField();
+		newPasswordField.getStyleClass().add("field");
+		newPasswordBox.getChildren().addAll(newPasswordLabel, newPasswordField);
+		
+		HBox buttonBox = new HBox();
+		Button enterButton = new Button("Enter");
+		enterButton.getStyleClass().add("button");
+		enterButton.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) 
+			{
+				String oldPswVal = oldPasswordField.getText();
+				String newPswVal = newPasswordField.getText();
+				String realPassword = queryExecuter.getUserPassword(usernameValue);
+				
+				if(oldPswVal.equals(realPassword)) {
+					if (newPswVal.length() > 6) {
+						
+						boolean updateStatus = queryExecuter.updatePassword(email, newPswVal);
+						System.out.println(updateStatus);
+						
+						VBox root = new VBox();
+						root.getStyleClass().add("outer_box");
+						root.getChildren().add(createProfileSection());
+						root.getChildren().add(createSearchSection());
+						root.getChildren().add(createRecentlyPlayedSection());
+						root.getChildren().add(createUtilitiesBar());
+						Scene scene = new Scene(root, 500, 700);
+						scene.getStylesheets().add("Application/src/style.css");
+						
+						pStage.setTitle("Application");
+						pStage.setScene(scene);
+						pStage.show();
+					} else {
+						displayError("Passwords must have more than 5 characters.");
+					}
+				} else {
+					displayError("Incorrect password.");
+				}	
+			}
+		});
+		buttonBox.getChildren().addAll(enterButton);
+			
+		passwordModSection.getChildren().add(oldPasswordBox);
+		passwordModSection.getChildren().add(newPasswordBox);
+		passwordModSection.getChildren().add(buttonBox);
+		return passwordModSection;
 	}
 
 	private VBox createSearchSection() {
@@ -943,6 +1021,36 @@ public class Main extends Application {
 		searchBox.getChildren().add(searchBarBox);
 		
 		return searchBox;
+	}
+	
+	private VBox createTopStreamsSection() {
+		VBox topStreamsSection = new VBox();
+		topStreamsSection.getStyleClass().add("inner");
+		topStreamsSection.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(2))));
+		
+		Label topStreamsSectionLabel = new Label("Top Songs");
+		topStreamsSectionLabel.getStyleClass().add("title");
+		topStreamsSection.getChildren().add(topStreamsSectionLabel);
+		
+		TableView table = new TableView();
+		table.setEditable(false);
+		topStreamsSection.setPrefHeight(250);
+				
+		TableView<Song> streamTable = new TableView<Song>();
+		TableColumn songName = new TableColumn("Song Name");
+		songName.setCellValueFactory(new PropertyValueFactory<Song,String>("songName"));
+		TableColumn bandName = new TableColumn("Band Name");
+		bandName.setCellValueFactory(new PropertyValueFactory<Song,String>("bandName"));
+		TableColumn streams = new TableColumn("Streams");
+		streams.setCellValueFactory(new PropertyValueFactory<Song,String>("streams"));
+		
+		StreamResult data = new StreamResult();
+		
+		streamTable.setItems(data.getResultList());
+		streamTable.getColumns().addAll(songName, bandName, streams);
+		topStreamsSection.getChildren().add(streamTable);
+		
+		return topStreamsSection;
 	}
 	
 	private VBox createResultsSection(SearchQueryParams parameters)

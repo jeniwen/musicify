@@ -430,5 +430,54 @@ public class QueryExecuter
 	{
 		return str.replaceAll("'", "''");
 	}
+
+	public static ArrayList<Playlist> getPlaylistsUserFollows(String email) 
+	{
+		ArrayList<Playlist> interim = new ArrayList<Playlist>();
+		ArrayList<Playlist> result = new ArrayList<Playlist>();
+		try
+		{
+			
+			Statement stmt = connection.createStatement();
+			String query = "SELECT playlist_name, playlist_maker_email "
+					+ "FROM follows_playlist"
+					+ " WHERE user_email = \'" + email + "\'";
+			System.out.println(query);
+			ResultSet rs = stmt.executeQuery(query);
+			String playlist_maker_email = "";
+			while(rs.next())
+			{
+				playlist_maker_email = rs.getString(2);
+				interim.add(new Playlist(rs.getString(1), "", -1, rs.getString(2)));
+				//System.out.println("playlist_make : " + playlist_maker_email);
+			}
+			// now we must get the two other fields (description, accessibility)
+			
+			for(Playlist p : interim)
+			{
+				query = "SELECT description, accessibility "
+						+ "FROM Playlist "
+						+ "WHERE playlist_name = \'" + format(p.getPlaylistName()) + "\' "
+						+ "AND email = \'" + playlist_maker_email + "\'";
+				System.out.println(query);
+				Statement s = connection.createStatement();
+				ResultSet rs2 = s.executeQuery(query);
+				while(rs2.next())
+				{
+					result.add(new Playlist(p.getPlaylistName(), rs2.getString(1), Integer.parseInt(rs2.getString(2)), playlist_maker_email));
+					
+				}
+				
+			}
+			
+			
+			
+		}catch (SQLException e)
+		{
+			e.printStackTrace();
+		}
+		
+		return result;
+	}
 	
 }

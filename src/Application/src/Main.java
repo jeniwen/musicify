@@ -606,6 +606,8 @@ public class Main extends Application {
 //		PlaylistSearchResult data = new PlaylistSearchResult(parameters.comboOptionValue, parameters.searchFieldValue);
 //		plTable.setItems(data.getResultList());
 		
+		ArrayList<Playlist> playlistsFollowed = QueryExecuter.getPlaylistsUserFollows(currentUser.email);
+		plTable.getItems().addAll(playlistsFollowed);
 		
 		plTable.getColumns().addAll(playlistName,creatorUsername, description);
 		followPlaylistSection.getChildren().add(plTable);
@@ -781,7 +783,6 @@ public class Main extends Application {
 				comboOptions.addAll("Song Name",
 									"Artist Name",
 									"Album Name",
-									"Playlist Name",
 									"Genre");
 				combo.setValue("Song Name");
 			}

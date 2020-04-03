@@ -295,9 +295,11 @@ public class QueryExecuter
 			
 			for(Playlist p : playlists)
 			{
+				String creator_email = QueryExecuter.getEmailFromUsername(p.getCreator());
+				
 				String query = "INSERT INTO Follows_Playlist"
 						+ " VALUES (\'" + email
-						+ "\', \'" + p.getCreator() 
+						+ "\', \'" + creator_email 
 						+ "\', \'" + format(p.getPlaylistName()) + "\')";
 				
 				System.out.println(query);
@@ -313,6 +315,32 @@ public class QueryExecuter
 		}
 		
 		return errorCode;
+	}
+
+	private static String getEmailFromUsername(String username) 
+	{
+		// make a query to fetch the email from the usename of the creator
+		
+		String email = "";
+		
+		try {
+			Statement stmt = connection.createStatement();
+			
+			String query = "SELECT email"
+					 + " FROM b_user "
+					+ "WHERE username = \'" + username + "\'";
+			ResultSet rs = stmt.executeQuery(query);
+			while(rs.next())
+			{
+				email = rs.getString(1);
+			}
+			
+		}catch (SQLException e)
+		{
+			e.printStackTrace();
+		}
+		
+		return email;
 	}
 
 	public static int insertIntoFollowsPodcast(String email, ArrayList<String> podcastNames) 

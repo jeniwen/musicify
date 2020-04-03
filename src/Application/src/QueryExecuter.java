@@ -501,6 +501,7 @@ public class QueryExecuter
 		}
 		
 		return errorCode;
+	}
 
 	public ResultSet getTopSongs() {
 		String str = "SELECT s.audiofile_id, s.song_name, a.band_name, COUNT(*)";

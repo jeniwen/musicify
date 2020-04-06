@@ -1,6 +1,7 @@
 package Application.src;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 import Application.src.Structures.Playlist;
 
@@ -8,6 +9,7 @@ public class QueryExecuter
 {
 	private static QueryExecuter INSTANCE = new QueryExecuter();
 	private static Connection connection;
+	private static int MAX_STREAMS = 3000;
 	
 	private QueryExecuter() {}
 	
@@ -110,7 +112,7 @@ public class QueryExecuter
 		
 	}
 	
-	public ResultSet executeQuery(String querySQL) {
+	public static ResultSet executeQuery(String querySQL) {
 		int sqlCode;
 		String sqlState;
 		try {
@@ -417,6 +419,50 @@ public class QueryExecuter
 				
 				stmt.executeUpdate(query);
 			}
+			
+			
+		}catch(SQLException e)
+		{
+			errorCode = 1;
+			e.printStackTrace();
+		}
+		
+		return errorCode;
+	}
+	
+
+	
+	public static int insertIntoStreams(String email, int audiofileID) 
+	{
+		int errorCode = 0;
+		//Find the first available streamid to use, up to MAX_STREAMS
+		int streamid;
+		for (streamid = 500; streamid < MAX_STREAMS; streamid++) {
+			String query = "SELECT stream_id FROM Stream WHERE stream_id = "+streamid;
+			ResultSet rs = executeQuery(query);
+			try {
+				if (!rs.next()) break; //if result set empty, then this stream_id is available to use.
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		try {
+			
+			Statement stmt = connection.createStatement();
+			Calendar calendar = Calendar.getInstance();
+			java.util.Date now = calendar.getTime();
+			java.sql.Timestamp currentTimestamp = new java.sql.Timestamp(System.currentTimeMillis());
+			java.sql.Timestamp sqlDate = new java.sql.Timestamp(new java.util.Date().getTime());
+			
+			String query = "INSERT INTO Stream"
+					+ " VALUES (" + streamid + ","
+					+  "\'" + sqlDate + "\',"
+					+ "\'" + email + "\',"
+					+ audiofileID + ")";
+//			System.out.println(query);
+				
+			stmt.executeUpdate(query);
+		
 			
 			
 		}catch(SQLException e)

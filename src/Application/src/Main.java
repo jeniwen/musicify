@@ -1145,8 +1145,9 @@ public class Main extends Application {
 
 						// DO INSERTING INTO STREAM TABLE HERE
 
-						System.out.println("Now Streaming: " + rowData.getAudiofileID() + " || " + rowData.getSongName()
-								+ " by " + rowData.getBandName());
+//						System.out.println("Now Streaming: " + rowData.getAudiofileID() + " || " + rowData.getSongName()
+//								+ " by " + rowData.getBandName());
+						QueryExecuter.insertIntoStreams(currentUser.email, rowData.getAudiofileID());
 
 					}
 				});
@@ -1309,6 +1310,23 @@ public class Main extends Application {
 			PodcastEpisodeSearchResult data = new PodcastEpisodeSearchResult(parameters.searchFieldValue);
 			podEpTable.setItems(data.getResultList());
 			podEpTable.getColumns().addAll(podcastName, podcastEpisodeNumber, podcastEpisodeName, releaseDate);
+			
+			podEpTable.setRowFactory(tv -> {
+				TableRow<PodcastEpisode> row = new TableRow<>();
+				row.setOnMouseClicked(event -> {
+					if (event.getClickCount() == 2 && (!row.isEmpty())) {
+						PodcastEpisode rowData = row.getItem();
+
+						QueryExecuter.insertIntoStreams(currentUser.email, rowData.getAudiofileID());
+
+					}
+				});
+				return row;
+			});
+			
+			
+			
+			
 			resultsSection.getChildren().add(podEpTable);
 		} else {
 			TableColumn dummy = new TableColumn("");

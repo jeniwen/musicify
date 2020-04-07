@@ -17,10 +17,11 @@ public class Podcast {
 		this.category = category;
 		this.description = description;
 		this.episodes = new ArrayList<PodcastEpisode>();
+		setEpisodes();
 		this.numEpisodes = episodes.size();
 	}
 
-	public void setEpisodes() {
+	private void setEpisodes() {
 		try {
 			ResultSet rs = QueryExecuter.instance().getPodEpisodes(podName);
 			if (rs != null) {

@@ -262,6 +262,7 @@ public class Main extends Application {
 						root.getChildren().add(createNewPlaylistSection());
 						root.getChildren().add(createSearchSection());
 						root.getChildren().add(createRecentlyPlayedSection());
+						root.getChildren().add(createTopStreamsSection());
 						root.getChildren().add(createUtilitiesBar());
 						
 						ScrollPane sp = new ScrollPane();
@@ -422,8 +423,8 @@ public class Main extends Application {
 						root.getChildren().add(createNewPlaylistSection());
 						root.getChildren().add(createSearchSection());
 						root.getChildren().add(createRecentlyPlayedSection());
+						root.getChildren().add(createTopStreamsSection());
 						root.getChildren().add(createUtilitiesBar());
-						
 						ScrollPane sp = new ScrollPane();
 						sp.setContent(root);
 						
@@ -881,8 +882,10 @@ public class Main extends Application {
 						VBox root = new VBox();
 						root.getStyleClass().add("outer_box");
 						root.getChildren().add(createProfileSection());
+						root.getChildren().add(createNewPlaylistSection());
 						root.getChildren().add(createSearchSection());
 						root.getChildren().add(createRecentlyPlayedSection());
+						root.getChildren().add(createTopStreamsSection());
 						root.getChildren().add(createUtilitiesBar());
 						
 						ScrollPane sp = new ScrollPane();
@@ -1507,6 +1510,7 @@ public class Main extends Application {
 				root.getChildren().add(createNewPlaylistSection());
 				root.getChildren().add(createSearchSection());
 				root.getChildren().add(createRecentlyPlayedSection());
+				root.getChildren().add(createTopStreamsSection());
 				root.getChildren().add(createUtilitiesBar());
 				
 				ScrollPane sp = new ScrollPane();

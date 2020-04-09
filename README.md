@@ -16,3 +16,5 @@ All `.sql` files, including code for table creation, data imports, selects, inse
 All data in `csv` format can be found the `data` folder
 
 All automation-related files can be found in the `src` folder.
+
+The JDBC Application code can be found in the 'src/Application/src' folder.

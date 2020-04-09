@@ -10,6 +10,7 @@ public class Song extends Audiofile{
 	private final String albumName;
 	private final String genre;
 	private final String duration;
+	private final String streams;
 //	private String duration;
 //	public Song(int audiofileID) {
 //		super(audiofileID);
@@ -33,6 +34,17 @@ public class Song extends Audiofile{
 		this.albumName = albumName;
 		this.genre = genre;
 		this.duration = super.getDuration().toString();
+		this.streams = "-1";
+	}
+	
+	public Song(int audiofileID,String songName, String bandName, int totalStreams) {
+		super(audiofileID);
+		this.songName = songName;
+		this.bandName = bandName;
+		this.albumName = "";
+		this.genre = "";
+		this.duration = "";
+		this.streams = String.valueOf(totalStreams);
 	}
 
 	public String getAlbumName() {
@@ -49,6 +61,10 @@ public class Song extends Audiofile{
 	
 	public String getGenre() {
 		return genre;
+	}
+	
+	public String getStreams() {
+		return streams;
 	}
 
 }

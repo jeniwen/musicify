@@ -11,7 +11,7 @@ public class Podcast {
 	private final String description;
 	private ArrayList<PodcastEpisode> episodes;
 	private final int numEpisodes;
-	
+
 	public Podcast(String podName, String category, String description) {
 		this.podName = podName;
 		this.category = category;
@@ -20,13 +20,16 @@ public class Podcast {
 		setEpisodes();
 		this.numEpisodes = episodes.size();
 	}
-	
-	public void setEpisodes() {
+
+	private void setEpisodes() {
 		try {
 			ResultSet rs = QueryExecuter.instance().getPodEpisodes(podName);
-			while (rs.next()) {
-				PodcastEpisode plToAdd = new PodcastEpisode(rs.getInt(1), rs.getInt(2), rs.getString(3), rs.getDate(4), rs.getString(5));
-				this.episodes.add(plToAdd);
+			if (rs != null) {
+				while (rs.next()) {
+					PodcastEpisode plToAdd = new PodcastEpisode(rs.getInt(1), rs.getInt(2), rs.getString(3),
+							rs.getDate(4), rs.getString(5));
+					this.episodes.add(plToAdd);
+				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -54,6 +57,6 @@ public class Podcast {
 
 	public int getNumEpisodes() {
 		return numEpisodes;
-	} 
+	}
 
 }

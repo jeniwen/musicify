@@ -31,9 +31,9 @@ public class PlaylistSearchResult extends SearchResult<Playlist> {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		for (Playlist pl: resultlist) {
-			System.out.println(pl.getPlaylistName());
-		}
+//		for (Playlist pl: resultlist) {
+//			System.out.println(pl.getPlaylistName());
+//		}
 		
 		
 	}
